@@ -2,7 +2,7 @@ import { Ban, Sparkles } from "lucide-react";
 
 export function TravelPersonal() {
   return (
-    <section className="w-full py-20 md:py-32 lg:py-40 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
+    <section className="w-full py-20 md:py-32 lg:py-12 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
       {/* Decorative gradient orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4" />

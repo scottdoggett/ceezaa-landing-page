@@ -36,7 +36,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 shrink-0">
           <Image
-            src="/ceezaa-logo.svg"
+            src="/ceezaa-logo2.svg"
             alt="Ceezaa"
             width={120}
             height={40}
@@ -45,8 +45,8 @@ export function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation - Centered */}
-        <nav className="hidden xl:flex items-center space-x-6 absolute left-1/2 -translate-x-1/2">
+        {/* Desktop Navigation - Centered with responsive gap */}
+        <nav className="hidden lg:flex items-center space-x-1 xl:space-x-6 absolute left-1/2 -translate-x-1/2">
           {navigationLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -74,7 +74,7 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="xl:hidden"
+            className="lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu className="h-6 w-6" />
@@ -91,7 +91,7 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="xl:hidden border-b bg-background overflow-hidden"
+            className="lg:hidden border-b bg-background overflow-hidden"
           >
             <nav className="px-4 sm:px-6 lg:px-8 py-4">
               <div className="grid gap-2">
