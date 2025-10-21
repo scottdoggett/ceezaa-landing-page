@@ -2,80 +2,94 @@ import { Backpack, Hotel, Check } from "lucide-react";
 
 export function WhatCeezaaIs() {
   return (
-    <section className="w-full py-20 md:py-32 bg-linear-to-br from-background via-primary/5 to-background">
+    <section className="w-full py-12 md:py-16 bg-linear-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-6xl mx-auto space-y-16">
-          {/* Header */}
-          <div className="max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-              One home for{" "}
-              <span className="text-primary">everything that makes a stay come alive.</span>
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Ceezaa brings the heart of hostel life into one simple place.
-            </p>
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* Main content with image and text */}
+          <div className="grid lg:grid-cols-5 gap-8 items-center">
+            {/* Left - Image placeholder */}
+            <div className="lg:col-span-2">
+              <div className="relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden bg-muted/10">
+                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                  <div className="text-center space-y-3 p-6">
+                    <Check className="w-12 h-12 mx-auto text-primary" />
+                    <p className="text-sm text-muted-foreground font-semibold">
+                      Everything in one place
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Content */}
+            <div className="lg:col-span-3 space-y-6">
+              <div>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                  One home for{" "}
+                  <span className="text-primary">everything that makes a stay come alive.</span>
+                </h2>
+                <p className="text-lg text-muted-foreground font-semibold">
+                  Ceezaa brings the heart of hostel life into one simple place.
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                <p className="text-lg md:text-xl font-semibold">
+                  From <span className="text-primary font-bold">check-in</span> to{" "}
+                  <span className="text-primary font-bold">check-out,</span> everything about your stay lives inside Ceezaa.
+                </p>
+                <p className="text-base text-muted-foreground">
+                  Events, dining, tours, and local recommendations are personalized so every guest feels part of the story unfolding around them.
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Feature highlight */}
-          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg">
-            <p className="text-xl md:text-2xl mb-8">
-              From{" "}
-              <span className="font-bold text-primary bg-primary/10 px-3 py-1 rounded">
-                check-in
-              </span>{" "}
-              to{" "}
-              <span className="font-bold text-primary bg-primary/10 px-3 py-1 rounded">
-                check-out,
-              </span>{" "}
-              everything about your stay lives inside Ceezaa.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Events, dining, tours, and local recommendations are personalized
-              so every guest feels part of the story unfolding around them.
-            </p>
-          </div>
-
-          {/* Benefits cards */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8 space-y-4">
-              <Backpack className="w-10 h-10" />
-              <h3 className="text-2xl font-bold">For travelers</h3>
-              <p className="text-lg text-muted-foreground">
+          {/* Benefits */}
+          <div className="grid md:grid-cols-2 gap-6 pt-4">
+            <div className="space-y-3 bg-secondary/5 rounded-xl p-5 border border-accent/10">
+              <div className="flex items-center gap-3">
+                <Backpack className="w-8 h-8 text-primary" />
+                <h3 className="text-xl font-bold">For travelers</h3>
+              </div>
+              <p className="text-base text-muted-foreground font-semibold">
                 More connection and discovery. Every moment personalized to your journey.
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Curated experiences</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Connect with fellow travelers</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Discover hidden gems</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-secondary/10 border-2 border-secondary/30 rounded-2xl p-8 space-y-4">
-              <Hotel className="w-10 h-10" />
-              <h3 className="text-2xl font-bold">For hostels</h3>
-              <p className="text-lg text-muted-foreground">
+            <div className="space-y-3 bg-secondary/5 rounded-xl p-5 border border-primary/10">
+              <div className="flex items-center gap-3">
+                <Hotel className="w-8 h-8 text-primary" />
+                <h3 className="text-xl font-bold">For hostels</h3>
+              </div>
+              <p className="text-base text-muted-foreground font-semibold">
                 Guests who are engaged, informed, and feel at home from day one.
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Streamlined communication</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Increase engagement</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
+                  <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Build community</span>
                 </li>
               </ul>
