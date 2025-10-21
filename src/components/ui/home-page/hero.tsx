@@ -10,13 +10,13 @@ export function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover object-center"
+          className="w-full h-[120%] lg:h-full object-cover object-[60%_center] lg:object-center -translate-y-[20%] lg:translate-y-0"
         >
           <source src="/home-page/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Gradient overlay for text readability - changes direction at lg */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,white_0%,hsl(0_0%_100%/0.95)_35%,transparent_60%)] lg:bg-[linear-gradient(to_right,white_0%,hsl(0_0%_100%/0.9)_30%,transparent_65%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_top,white_0%,hsl(0_0%_100%/0.95)_45%,transparent_60%)] lg:bg-[linear-gradient(to_right,white_0%,hsl(0_0%_100%/0.9)_30%,transparent_65%)]" />
       </div>
 
       {/* Content */}
