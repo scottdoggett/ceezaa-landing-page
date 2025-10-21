@@ -1,4 +1,5 @@
-import { Ticket, Brain, Globe, Sparkles } from "lucide-react";
+import { Ticket, Brain, Globe, Sparkles, MapPin, Calendar, Users } from "lucide-react";
+import Image from "next/image";
 
 export function CeezaaId() {
   return (
@@ -8,39 +9,108 @@ export function CeezaaId() {
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             {/* Left - Visual Card */}
             <div className="lg:col-span-2">
-              <div className="bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-primary/20 rounded-full p-4">
-                      <Ticket className="w-10 h-10" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground uppercase tracking-wider">Your Digital Passport</p>
-                      <p className="text-xl font-bold text-primary">Ceezaa ID</p>
-                    </div>
-                  </div>
+              <div className="relative group">
+                {/* Glow effect */}
+                <div className="absolute -inset-1 bg-linear-to-br from-primary via-accent to-primary rounded-3xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity" />
 
-                  <div className="h-px bg-border" />
+                {/* Card */}
+                <div className="relative bg-linear-to-br from-card via-card to-muted/20 border-2 border-primary/30 rounded-3xl p-6 shadow-2xl overflow-hidden">
+                  {/* Decorative background pattern */}
+                  <div className="absolute top-0 right-0 w-48 h-48 bg-linear-to-bl from-primary/10 to-transparent rounded-full blur-3xl" />
+                  <div className="absolute bottom-0 left-0 w-32 h-32 bg-linear-to-tr from-accent/10 to-transparent rounded-full blur-2xl" />
 
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm text-muted-foreground">12 cities visited</p>
+                  <div className="relative space-y-5">
+                    {/* Header */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="bg-linear-to-br from-primary to-primary/80 rounded-full p-3 shadow-lg">
+                          <Ticket className="w-7 h-7 text-primary-foreground" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Digital Passport</p>
+                          <p className="text-2xl font-bold bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">Ceezaa ID</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm text-muted-foreground">47 experiences joined</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm text-muted-foreground">89 connections made</p>
-                    </div>
-                  </div>
 
-                  <div className="bg-linear-to-r from-primary/20 to-accent/20 rounded-xl p-4">
-                    <p className="text-xs text-center font-medium">
-                      Your journey, your story, always with you
-                    </p>
+                    {/* Divider */}
+                    <div className="h-px bg-linear-to-r from-transparent via-primary/30 to-transparent" />
+
+                    {/* User Info Section */}
+                    <div className="bg-muted/30 backdrop-blur-sm rounded-xl p-4 border border-primary/10">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-full bg-linear-to-br from-primary/20 to-accent/20 flex items-center justify-center text-lg font-bold border-2 border-primary/30">
+                          JD
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-semibold text-foreground">Jane Doe</p>
+                          <p className="text-xs text-muted-foreground">Member since 2024</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
+                        <div className="flex justify-center mb-1">
+                          <MapPin className="w-4 h-4 text-primary" />
+                        </div>
+                        <p className="text-lg font-bold text-foreground">12</p>
+                        <p className="text-xs text-muted-foreground">Cities</p>
+                      </div>
+                      <div className="bg-accent/5 rounded-lg p-3 text-center border border-accent/10">
+                        <div className="flex justify-center mb-1">
+                          <Calendar className="w-4 h-4 text-accent" />
+                        </div>
+                        <p className="text-lg font-bold text-foreground">47</p>
+                        <p className="text-xs text-muted-foreground">Events</p>
+                      </div>
+                      <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
+                        <div className="flex justify-center mb-1">
+                          <Users className="w-4 h-4 text-primary" />
+                        </div>
+                        <p className="text-lg font-bold text-foreground">89</p>
+                        <p className="text-xs text-muted-foreground">Friends</p>
+                      </div>
+                    </div>
+
+                    {/* QR Code Section */}
+                    <div className="bg-white rounded-xl p-4 shadow-inner border-2 border-dashed border-primary/20">
+                      <div className="flex items-center justify-between gap-4">
+                        <div className="flex-1">
+                          <p className="text-xs font-semibold text-gray-700 mb-1">Scan to connect</p>
+                          <div className="space-y-1">
+                            <div className="flex items-center gap-1.5">
+                              <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                              <p className="text-xs text-gray-600">Quick check-in</p>
+                            </div>
+                            <div className="flex items-center gap-1.5">
+                              <div className="w-1.5 h-1.5 bg-accent rounded-full" />
+                              <p className="text-xs text-gray-600">Share profile</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="relative">
+                          <div className="absolute -inset-1 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg blur-sm" />
+                          <div className="relative bg-white p-2 rounded-lg shadow-md">
+                            <Image
+                              src="/qr-code.png"
+                              alt="Ceezaa ID QR Code"
+                              width={80}
+                              height={80}
+                              className="rounded"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Footer */}
+                    <div className="bg-linear-to-r from-primary/15 via-accent/10 to-primary/15 rounded-lg p-3 border border-primary/20">
+                      <p className="text-xs text-center font-medium text-foreground/80 leading-relaxed">
+                        Your journey, your story, always with you
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
