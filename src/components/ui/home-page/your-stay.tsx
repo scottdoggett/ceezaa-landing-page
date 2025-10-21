@@ -2,86 +2,110 @@ import { Eye, Target, Utensils, Sparkles } from "lucide-react";
 
 export function YourStay() {
   return (
-    <section className="w-full py-20 md:py-32 bg-muted/50">
+    <section className="w-full py-16 md:py-24 lg:py-32 bg-muted/50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content side */}
-          <div className="space-y-8">
-            <div>
-              <div className="inline-block mb-4">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full">
-                  Your Experience
-                </span>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Content side */}
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <div className="inline-block">
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+                    Your Experience
+                  </span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight">
+                  Live your stay,{" "}
+                  <span className="text-primary">not just your check-in.</span>
+                </h2>
+                <div className="h-1 w-20 bg-primary rounded-full" />
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-                Live your stay,{" "}
-                <span className="text-primary">not just your check-in.</span>
-              </h2>
+
+              <div className="space-y-6">
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                  A hostel is more than a place to sleep. It is a living space
+                  filled with stories, people, and small moments that make a trip
+                  unforgettable.
+                </p>
+
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-linear-to-r from-primary to-accent rounded-2xl blur-sm opacity-25 group-hover:opacity-40 transition-opacity" />
+                  <div className="relative bg-linear-to-br from-primary/75 to-accent/65 rounded-lg p-4 border border-primary/20 shadow-md">
+                    <p className="text-lg lg:text-xl font-semibold text-secondary-foreground leading-relaxed">
+                      Ceezaa brings those moments closer.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-5 pt-2">
+                  <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-background/50">
+                    <div className="shrink-0 mt-1">
+                      <div className="p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                        <Eye className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-foreground text-base lg:text-lg">See what&apos;s happening</p>
+                      <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">Stay in the loop with live updates</p>
+                    </div>
+                  </div>
+
+                  <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-background/50">
+                    <div className="shrink-0 mt-1">
+                      <div className="p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                        <Target className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-foreground text-base lg:text-lg">Join experiences that match your mood</p>
+                      <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">Activities tailored to your vibe</p>
+                    </div>
+                  </div>
+
+                  <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-background/50">
+                    <div className="shrink-0 mt-1">
+                      <div className="p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                        <Utensils className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-foreground text-base lg:text-lg">Discover dining and activities</p>
+                      <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">Curated recommendations just for you</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <p className="text-base lg:text-lg font-medium text-foreground leading-relaxed">
+                    Every stay feels natural, warm, and alive.{" "}
+                    <span className="text-primary">Travel should feel like living, not logistics.</span>
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                A hostel is more than a place to sleep. It is a living space
-                filled with stories, people, and small moments that make a trip
-                unforgettable.
-              </p>
-
-              <div className="bg-card border-l-4 border-primary rounded-r-xl p-6 shadow-sm">
-                <p className="font-semibold text-foreground text-xl">
-                  Ceezaa brings those moments closer.
-                </p>
-              </div>
-
-              <div className="grid gap-4 pt-4">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 rounded-lg p-3">
-                    <Eye className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">See what&apos;s happening</p>
-                    <p className="text-sm">Stay in the loop with live updates</p>
+            {/* Image side */}
+            <div className="relative">
+              <div className="sticky top-[calc(50vh-200px)] lg:top-[calc(50vh-250px)] h-[400px] lg:h-[500px] rounded-2xl overflow-hidden bg-linear-to-br from-primary/5 via-accent/5 to-primary/10 shadow-xl">
+                <div className="absolute inset-0 flex items-center justify-center backdrop-blur-[1px]">
+                  <div className="text-center space-y-6 p-8">
+                    <div className="relative inline-block">
+                      <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full" />
+                      <Sparkles className="w-20 h-20 mx-auto relative text-primary stroke-[1.5]" />
+                    </div>
+                    <div className="space-y-2">
+                      <p className="text-lg font-semibold text-foreground/80">
+                        Stay Experience
+                      </p>
+                      <p className="text-sm text-muted-foreground max-w-xs mx-auto">
+                        Travelers enjoying hostel activities and connections
+                      </p>
+                    </div>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 rounded-lg p-3">
-                    <Target className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">Join experiences that match your mood</p>
-                    <p className="text-sm">Activities tailored to your vibe</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 rounded-lg p-3">
-                    <Utensils className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">Discover dining and activities</p>
-                    <p className="text-sm">Curated recommendations just for you</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 mt-8">
-                <p className="text-lg font-medium text-foreground">
-                  Every stay feels natural, warm, and alive.{" "}
-                  <span className="text-primary">Travel should feel like living, not logistics.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Image side */}
-          <div className="relative h-[600px] rounded-2xl overflow-hidden bg-card border border-border shadow-2xl">
-            <div className="absolute inset-0 bg-linear-to-bl from-primary/20 to-accent/20 flex items-center justify-center">
-              <div className="text-center space-y-4 p-8">
-                <Sparkles className="w-24 h-24 mx-auto" />
-                <p className="text-muted-foreground font-medium">Stay Experience</p>
-                <p className="text-sm text-muted-foreground max-w-xs">
-                  Image showing travelers enjoying hostel activities
-                </p>
+                {/* Decorative elements */}
+                <div className="absolute top-8 right-8 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
+                <div className="absolute bottom-8 left-8 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
               </div>
             </div>
           </div>
