@@ -32,21 +32,23 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 shrink-0">
-          <Image
-            src="/ceezaa-logo2.svg"
-            alt="Ceezaa"
-            width={120}
-            height={40}
-            className="h-8 w-auto"
-            priority
-          />
-        </Link>
+      <div className="flex h-16 items-center gap-4 px-4 sm:px-6 lg:px-8">
+        {/* Logo - Left section with flex-1 to create equal spacing */}
+        <div className="flex-1 flex justify-start">
+          <Link href="/" className="flex items-center space-x-2 shrink-0">
+            <Image
+              src="/ceezaa-logo2.svg"
+              alt="Ceezaa"
+              width={120}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
+          </Link>
+        </div>
 
-        {/* Desktop Navigation - Centered with responsive gap */}
-        <nav className="hidden lg:flex items-center space-x-1 xl:space-x-6 absolute left-1/2 -translate-x-1/2">
+        {/* Desktop Navigation - Centered between logo and button */}
+        <nav className="hidden lg:flex items-center space-x-1 xl:space-x-6">
           {navigationLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -66,8 +68,8 @@ export function Header() {
           })}
         </nav>
 
-        {/* Right Side Actions */}
-        <div className="flex items-center gap-2">
+        {/* Right Side Actions - Right section with flex-1 to create equal spacing */}
+        <div className="flex-1 flex justify-end items-center gap-2">
           <Button variant="join" className="whitespace-nowrap">Join Now</Button>
 
           {/* Mobile Menu Button */}
