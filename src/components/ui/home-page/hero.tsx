@@ -15,10 +15,8 @@ export function Hero() {
           <source src="/home-page/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* Solid panel on left for text readability */}
-        <div className="absolute inset-0 left-0 w-2/3 bg-linear-to-r from-background via-background/" />
-        {/* Subtle top and bottom gradient */}
-        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-transparent to-background/40" />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,hsl(0_0%_100%/0.9)_30%,transparent_65%)]" />
       </div>
 
       {/* Content */}
@@ -27,17 +25,17 @@ export function Hero() {
           {/* Left side - Text content */}
           <div className="space-y-8 max-w-2xl">
             <div className="inline-block">
-              <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20" style={{ textShadow: '0 0 40px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 120px rgba(255, 255, 255, 0.6)' }}>
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                 Welcome to Ceezaa
               </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-foreground" style={{ textShadow: '0 0 60px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 0.9), 0 0 150px rgba(255, 255, 255, 0.7), 0 0 200px rgba(255, 255, 255, 0.5)' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-foreground">
               The world meets in hostels.{" "}
-              <span className="text-primary" style={{ textShadow: '0 0 60px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 0.9), 0 0 150px rgba(255, 255, 255, 0.7), 0 0 200px rgba(255, 255, 255, 0.5)' }}>
+              <span className="text-primary">
                 We make those moments matter.
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl" style={{ textShadow: '0 0 80px rgba(255, 255, 255, 1), 0 0 140px rgba(255, 255, 255, 1), 0 0 200px rgba(255, 255, 255, 0.9), 0 0 260px rgba(255, 255, 255, 0.7)' }}>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl font-semibold">
               Ceezaa connects travelers with the people, experiences, and stories
               that make every hostel stay unforgettable.
             </p>
