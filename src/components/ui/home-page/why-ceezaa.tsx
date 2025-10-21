@@ -1,4 +1,4 @@
-import { Handshake, Frown, HelpCircle, Sparkles } from "lucide-react";
+import { Handshake, HeartCrack, HelpCircle, Sparkles } from "lucide-react";
 
 export function WhyCeezaa() {
   return (
@@ -45,9 +45,9 @@ export function WhyCeezaa() {
                 {/* Problem statements */}
                 <div className="space-y-5">
                   <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-muted/20">
-                    <div className="shrink-0 mt-1">
+                    <div className="shrink-0 my-auto">
                       <div className="p-2 rounded-lg bg-secondary-foreground/10 group-hover:bg-secondary-foreground/15 transition-colors">
-                        <Frown className="w-5 h-5 text-secondary-foreground/70" />
+                        <HeartCrack className="w-7 h-7 text-secondary-foreground/70" />
                       </div>
                     </div>
                     <p className="text-base lg:text-lg text-secondary-foreground/90 leading-relaxed">
@@ -56,9 +56,9 @@ export function WhyCeezaa() {
                   </div>
 
                   <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-muted/20">
-                    <div className="shrink-0 mt-1">
+                    <div className="shrink-0 my-auto">
                       <div className="p-2 rounded-lg bg-secondary-foreground/10 group-hover:bg-secondary-foreground/15 transition-colors">
-                        <HelpCircle className="w-5 h-5 text-secondary-foreground/70" />
+                        <HelpCircle className="w-7 h-7 text-secondary-foreground/70" />
                       </div>
                     </div>
                     <p className="text-base lg:text-lg text-secondary-foreground/90 leading-relaxed">
@@ -72,12 +72,12 @@ export function WhyCeezaa() {
                   <div className="relative group">
                     <div className="absolute -inset-1 bg-linear-to-r from-primary to-accent rounded-2xl blur-sm opacity-25 group-hover:opacity-40 transition-opacity" />
                     <div className="relative flex items-start gap-4 bg-linear-to-br from-primary/15 to-accent/10 rounded-xl p-6 border border-primary/20 shadow-lg">
-                      <div className="shrink-0 mt-1">
+                      <div className="shrink-0 my-auto">
                         <div className="p-2.5 rounded-lg bg-primary/20">
-                          <Sparkles className="w-6 h-6 text-primary" />
+                          <Sparkles className="w-8 h-8 text-primary" />
                         </div>
                       </div>
-                      <p className="text-lg lg:text-xl font-semibold text-foreground leading-relaxed">
+                      <p className="text-lg lg:text-xl font-semibold text-foreground-secondary leading-relaxed">
                         Ceezaa brings that sense of belonging back to every stay.
                       </p>
                     </div>
