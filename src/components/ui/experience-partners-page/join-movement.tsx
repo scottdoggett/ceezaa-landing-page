@@ -27,22 +27,22 @@ export function JoinMovement() {
 
           {/* Features grid */}
           <div className="grid sm:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
+            <div className="bg-linear-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
               <BookOpen className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Local Stories</p>
             </div>
-            <div className="bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/30 rounded-xl p-6">
+            <div className="bg-linear-to-br from-accent/20 to-accent/5 border border-accent/30 rounded-xl p-6">
               <Utensils className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Authentic Flavors</p>
             </div>
-            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
+            <div className="bg-linear-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
               <Sparkles className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Unique Experiences</p>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-primary/30 to-accent/30 backdrop-blur border-2 border-primary/40 rounded-3xl p-10 md:p-12 space-y-8">
+          <div className="bg-linear-to-br from-primary/30 to-accent/30 backdrop-blur border-2 border-primary/40 rounded-3xl p-10 md:p-12 space-y-8">
             <div className="space-y-4">
               <Rocket className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
               <h3 className="text-2xl md:text-3xl font-bold">
@@ -55,7 +55,7 @@ export function JoinMovement() {
             </div>
             <Button
               size="lg"
-              className="text-base md:text-lg px-10 py-7 text-lg font-semibold shadow-xl hover:scale-105 transition-transform"
+              className="text-lg md:text-lg px-10 py-7 font-semibold shadow-xl hover:scale-105 transition-transform"
             >
               Become a Partner →
             </Button>
