@@ -1,3 +1,5 @@
+import { HelpCircle, Rocket } from "lucide-react";
+
 export function ContactFooter() {
   return (
     <section className="w-full py-12 md:py-16 bg-muted/50">
@@ -6,7 +8,7 @@ export function ContactFooter() {
           {/* Quick Questions */}
           <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
             <div className="flex items-start gap-3 mb-3">
-              <div className="text-3xl">❓</div>
+              <HelpCircle className="w-8 h-8 shrink-0" />
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-2">Quick Questions?</h3>
                 <p className="text-sm font-semibold text-muted-foreground mb-3">
@@ -30,7 +32,7 @@ export function ContactFooter() {
 
           {/* Join the Movement */}
           <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-xl p-8 text-center">
-            <div className="text-4xl mb-3">🚀</div>
+            <Rocket className="w-12 h-12 mb-3 mx-auto" />
             <h3 className="text-xl md:text-2xl font-bold mb-3">
               Join the Movement
             </h3>

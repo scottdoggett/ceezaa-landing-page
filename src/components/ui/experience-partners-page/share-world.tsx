@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Target, MapPin, Waves } from "lucide-react";
 
 export function ShareWorld() {
   return (
@@ -39,7 +40,7 @@ export function ShareWorld() {
           {/* Content sections */}
           <div className="space-y-6 max-w-4xl mx-auto mt-16">
             <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-              <div className="text-4xl mb-4">🎯</div>
+              <Target className="w-10 h-10 mb-4" />
               <p className="text-xl font-semibold leading-relaxed">
                 Ceezaa helps you reach the right travelers at the right time.
               </p>
@@ -47,7 +48,7 @@ export function ShareWorld() {
 
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-                <div className="text-4xl mb-4">📍</div>
+                <MapPin className="w-10 h-10 mb-4" />
                 <p className="text-lg font-semibold leading-relaxed">
                   Your experiences appear directly inside the places where
                   guests stay and explore.
@@ -55,7 +56,7 @@ export function ShareWorld() {
               </div>
 
               <div className="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8">
-                <div className="text-4xl mb-4">🌊</div>
+                <Waves className="w-10 h-10 mb-4" />
                 <p className="text-lg font-semibold leading-relaxed">
                   From surf lessons and food tours to yoga sessions, café
                   tastings, and community events.

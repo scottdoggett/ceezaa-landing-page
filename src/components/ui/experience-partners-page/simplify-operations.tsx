@@ -1,3 +1,5 @@
+import { ClipboardList, Megaphone, Ticket, MessageCircle } from "lucide-react";
+
 export function SimplifyOperations() {
   return (
     <section className="w-full py-20 md:py-32 bg-muted/50">
@@ -14,7 +16,7 @@ export function SimplifyOperations() {
           <div className="space-y-6">
             <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
               <div className="flex items-start gap-4">
-                <div className="text-4xl mt-1">📝</div>
+                <ClipboardList className="w-10 h-10 mt-1" />
                 <div className="space-y-3">
                   <p className="text-xl font-semibold">
                     You can post your experiences, manage bookings, and share
@@ -30,7 +32,7 @@ export function SimplifyOperations() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
-                <div className="text-3xl mb-3">📢</div>
+                <Megaphone className="w-8 h-8 mb-3" />
                 <h3 className="font-bold mb-2">Announcements</h3>
                 <p className="text-sm text-muted-foreground font-semibold">
                   Share updates with your community
@@ -38,7 +40,7 @@ export function SimplifyOperations() {
               </div>
 
               <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
-                <div className="text-3xl mb-3">🎟️</div>
+                <Ticket className="w-8 h-8 mb-3" />
                 <h3 className="font-bold mb-2">Event Details</h3>
                 <p className="text-sm text-muted-foreground font-semibold">
                   Manage all your experience information
@@ -46,7 +48,7 @@ export function SimplifyOperations() {
               </div>
 
               <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
-                <div className="text-3xl mb-3">💬</div>
+                <MessageCircle className="w-8 h-8 mb-3" />
                 <h3 className="font-bold mb-2">Guest Communication</h3>
                 <p className="text-sm text-muted-foreground font-semibold">
                   Keep everyone informed and connected

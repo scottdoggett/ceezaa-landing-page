@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Globe, Handshake, Sparkles, User } from "lucide-react";
 
 export function WorldCloser() {
   return (
@@ -19,7 +20,7 @@ export function WorldCloser() {
           {/* Content cards */}
           <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <div className="text-4xl mb-4">🌍</div>
+              <Globe className="w-10 h-10 mb-4" />
               <p className="text-lg">
                 Whether you are staying for a night or a month, you can find your
                 people and make each stay your own.
@@ -27,7 +28,7 @@ export function WorldCloser() {
             </div>
 
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <div className="text-4xl mb-4">🤝</div>
+              <Handshake className="w-10 h-10 mb-4" />
               <p className="text-lg font-semibold mb-2">Travel is about connection.</p>
               <p className="text-lg">Ceezaa helps you feel part of it.</p>
             </div>
@@ -36,7 +37,7 @@ export function WorldCloser() {
           {/* CTA */}
           <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-3xl p-10 md:p-12 space-y-8">
             <div className="space-y-4">
-              <div className="text-5xl md:text-6xl">✨</div>
+              <Sparkles className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
               <h3 className="text-2xl md:text-3xl font-bold">
                 Ready to travel differently?
               </h3>
@@ -60,13 +61,13 @@ export function WorldCloser() {
             </p>
             <div className="flex justify-center gap-2">
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm">
-                👤
+                <User className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                👤
+                <User className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                👤
+                <User className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
                 +

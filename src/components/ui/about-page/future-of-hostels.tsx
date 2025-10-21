@@ -1,3 +1,5 @@
+import { Rocket } from "lucide-react";
+
 export function FutureOfHostels() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
@@ -13,7 +15,7 @@ export function FutureOfHostels() {
               <div className="bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-2xl">
                 <div className="space-y-6">
                   <div className="text-center">
-                    <div className="text-6xl mb-4">🚀</div>
+                    <Rocket className="w-16 h-16 mb-4 mx-auto" />
                     <p className="text-sm text-muted-foreground uppercase tracking-wider">
                       Building Tomorrow
                     </p>

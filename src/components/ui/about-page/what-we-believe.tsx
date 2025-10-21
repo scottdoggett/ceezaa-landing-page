@@ -1,3 +1,5 @@
+import { Handshake, Home, Map, Sparkles, Globe } from "lucide-react";
+
 export function WhatWeBelieve() {
   return (
     <section className="w-full py-20 md:py-32 bg-muted/50">
@@ -15,7 +17,7 @@ export function WhatWeBelieve() {
             {/* Connection */}
             <div className="bg-card border-2 border-primary/30 rounded-2xl p-8 space-y-4 hover:shadow-xl transition-shadow">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🤝</div>
+                <Handshake className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Connection</h3>
               <p className="text-lg text-muted-foreground">
@@ -26,7 +28,7 @@ export function WhatWeBelieve() {
             {/* Belonging */}
             <div className="bg-card border-2 border-accent/30 rounded-2xl p-8 space-y-4 hover:shadow-xl transition-shadow">
               <div className="bg-accent/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🏠</div>
+                <Home className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Belonging</h3>
               <p className="text-lg text-muted-foreground">
@@ -37,7 +39,7 @@ export function WhatWeBelieve() {
             {/* Discovery */}
             <div className="bg-card border-2 border-secondary/30 rounded-2xl p-8 space-y-4 hover:shadow-xl transition-shadow">
               <div className="bg-secondary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🗺️</div>
+                <Map className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Discovery</h3>
               <p className="text-lg text-muted-foreground">
@@ -48,7 +50,7 @@ export function WhatWeBelieve() {
             {/* Simplicity */}
             <div className="bg-card border-2 border-primary/30 rounded-2xl p-8 space-y-4 hover:shadow-xl transition-shadow">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">✨</div>
+                <Sparkles className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Simplicity</h3>
               <p className="text-lg text-muted-foreground">
@@ -57,9 +59,9 @@ export function WhatWeBelieve() {
             </div>
 
             {/* Community - full width */}
-            <div className="md:col-span-2 bg-gradient-to-r from-primary/10 to-accent/10 border-2 border-primary/40 rounded-2xl p-10 text-center hover:shadow-xl transition-shadow">
+            <div className="md:col-span-2 bg-linear-to-r from-primary/10 to-accent/10 border-2 border-primary/40 rounded-2xl p-10 text-center hover:shadow-xl transition-shadow">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6">
-                <div className="text-5xl">🌍</div>
+                <Globe className="w-12 h-12" />
               </div>
               <h3 className="text-3xl font-bold mb-4">Community</h3>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

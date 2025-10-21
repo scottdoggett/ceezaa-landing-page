@@ -1,3 +1,5 @@
+import { Ticket, Lock } from "lucide-react";
+
 export function CeezaaId() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
@@ -14,7 +16,7 @@ export function CeezaaId() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="bg-primary/20 rounded-full p-4">
-                      <div className="text-4xl">🎫</div>
+                      <Ticket className="w-10 h-10" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground uppercase tracking-wider">
@@ -51,8 +53,8 @@ export function CeezaaId() {
                   </div>
 
                   <div className="bg-linear-to-r from-primary/20 to-accent/20 rounded-xl p-4">
-                    <p className="text-xs text-center font-medium">
-                      🔒 Your data stays yours. You control what you share.
+                    <p className="text-xs text-center font-medium flex items-center justify-center gap-2">
+                      <Lock className="w-3 h-3" /> Your data stays yours. You control what you share.
                     </p>
                   </div>
                 </div>

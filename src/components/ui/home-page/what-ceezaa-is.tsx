@@ -1,3 +1,5 @@
+import { Backpack, Hotel, Check } from "lucide-react";
+
 export function WhatCeezaaIs() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-background via-primary/5 to-background">
@@ -36,44 +38,44 @@ export function WhatCeezaaIs() {
           {/* Benefits cards */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8 space-y-4">
-              <div className="text-4xl">🎒</div>
+              <Backpack className="w-10 h-10" />
               <h3 className="text-2xl font-bold">For travelers</h3>
               <p className="text-lg text-muted-foreground">
                 More connection and discovery. Every moment personalized to your journey.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Curated experiences</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Connect with fellow travelers</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Discover hidden gems</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-secondary/10 border-2 border-secondary/30 rounded-2xl p-8 space-y-4">
-              <div className="text-4xl">🏨</div>
+              <Hotel className="w-10 h-10" />
               <h3 className="text-2xl font-bold">For hostels</h3>
               <p className="text-lg text-muted-foreground">
                 Guests who are engaged, informed, and feel at home from day one.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Streamlined communication</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Increase engagement</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">✓</span>
+                  <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                   <span>Build community</span>
                 </li>
               </ul>

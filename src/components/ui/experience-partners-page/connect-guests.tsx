@@ -1,3 +1,5 @@
+import { Handshake, Sparkles } from "lucide-react";
+
 export function ConnectGuests() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -9,7 +11,7 @@ export function ConnectGuests() {
               <div className="relative h-[450px] rounded-2xl overflow-hidden bg-muted/10 border border-secondary-foreground/10 shadow-xl">
                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                   <div className="text-center space-y-4 p-8">
-                    <div className="text-6xl">🤝</div>
+                    <Handshake className="w-16 h-16 mx-auto" />
                     <p className="text-secondary-foreground/70 font-semibold">
                       Connecting Image
                     </p>
@@ -44,7 +46,7 @@ export function ConnectGuests() {
                 </div>
 
                 <div className="bg-accent/20 backdrop-blur border border-accent/30 rounded-xl p-6">
-                  <div className="text-3xl mb-3">✨</div>
+                  <Sparkles className="w-8 h-8 mb-3" />
                   <p className="text-lg font-semibold">
                     Your tours, classes, and gatherings become part of the
                     memories that define someone&apos;s trip.

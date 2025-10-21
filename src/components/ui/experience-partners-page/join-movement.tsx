@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Globe, BookOpen, Utensils, Sparkles, Rocket, Star } from "lucide-react";
 
 export function JoinMovement() {
   return (
@@ -17,7 +18,7 @@ export function JoinMovement() {
 
           {/* Content card */}
           <div className="bg-card border-2 border-primary/30 rounded-2xl p-10 shadow-xl">
-            <div className="text-5xl mb-6">🌍</div>
+            <Globe className="w-12 h-12 mb-6 mx-auto" />
             <p className="text-lg md:text-xl font-semibold max-w-2xl mx-auto">
               Join us in creating a world where every traveler can connect with
               the best local stories, flavors, and experiences.
@@ -27,15 +28,15 @@ export function JoinMovement() {
           {/* Features grid */}
           <div className="grid sm:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-              <div className="text-4xl mb-3">📖</div>
+              <BookOpen className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Local Stories</p>
             </div>
             <div className="bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/30 rounded-xl p-6">
-              <div className="text-4xl mb-3">🍽️</div>
+              <Utensils className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Authentic Flavors</p>
             </div>
             <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-              <div className="text-4xl mb-3">✨</div>
+              <Sparkles className="w-10 h-10 mb-3 mx-auto" />
               <p className="font-semibold">Unique Experiences</p>
             </div>
           </div>
@@ -43,7 +44,7 @@ export function JoinMovement() {
           {/* CTA */}
           <div className="bg-gradient-to-r from-primary/30 to-accent/30 backdrop-blur border-2 border-primary/40 rounded-3xl p-10 md:p-12 space-y-8">
             <div className="space-y-4">
-              <div className="text-5xl md:text-6xl">🚀</div>
+              <Rocket className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
               <h3 className="text-2xl md:text-3xl font-bold">
                 Ready to share your world?
               </h3>
@@ -67,13 +68,13 @@ export function JoinMovement() {
             </p>
             <div className="flex justify-center gap-2">
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm">
-                ⭐
+                <Star className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                ⭐
+                <Star className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                ⭐
+                <Star className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
                 +

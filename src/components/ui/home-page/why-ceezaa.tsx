@@ -1,3 +1,5 @@
+import { Handshake, Frown, HelpCircle, Sparkles } from "lucide-react";
+
 export function WhyCeezaa() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -8,7 +10,7 @@ export function WhyCeezaa() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden bg-muted/10 border border-secondary-foreground/10 shadow-xl">
               <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                 <div className="text-center space-y-4 p-8">
-                  <div className="text-6xl">🤝</div>
+                  <Handshake className="w-24 h-24 mx-auto" />
                   <p className="text-secondary-foreground/70 font-medium">Connection Image</p>
                   <p className="text-sm text-secondary-foreground/60 max-w-xs">
                     Travelers connecting and sharing stories in a hostel
@@ -28,7 +30,7 @@ export function WhyCeezaa() {
             <div className="space-y-6">
               {/* Problem cards */}
               <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 space-y-3">
-                <div className="text-2xl">😔</div>
+                <Frown className="w-8 h-8" />
                 <p className="text-lg">
                   Hostels are built on connection, but most travelers still arrive
                   as strangers.
@@ -36,7 +38,7 @@ export function WhyCeezaa() {
               </div>
 
               <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 space-y-3">
-                <div className="text-2xl">❓</div>
+                <HelpCircle className="w-8 h-8" />
                 <p className="text-lg">
                   You never really know what is going on. You miss the dinners, the
                   stories, the people who could have become part of your journey.
@@ -45,8 +47,8 @@ export function WhyCeezaa() {
 
               {/* Solution */}
               <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-6 mt-8">
-                <p className="text-xl font-semibold text-foreground">
-                  ✨ Ceezaa brings that sense of belonging back to every stay.
+                <p className="text-xl font-semibold text-foreground flex items-center gap-2">
+                  <Sparkles className="w-6 h-6" /> Ceezaa brings that sense of belonging back to every stay.
                 </p>
               </div>
             </div>

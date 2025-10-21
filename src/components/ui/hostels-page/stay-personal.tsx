@@ -1,3 +1,5 @@
+import { Megaphone, Zap } from "lucide-react";
+
 export function StayPersonal() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -35,8 +37,8 @@ export function StayPersonal() {
             {/* Right - Features */}
             <div className="space-y-6">
               <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
-                <div className="text-4xl mb-4">📢</div>
-                <h3 className="text-xl font-bold mb-3">Direct Communication</h3>
+                <Megaphone className="w-10 h-10 mb-4 text-foreground" />
+                <h3 className="text-xl font-bold mb-3 text-foreground">Direct Communication</h3>
                 <p className="text-lg text-muted-foreground font-semibold">
                   You can post updates, share events, and highlight offers
                   directly to your guests.
@@ -44,7 +46,7 @@ export function StayPersonal() {
               </div>
 
               <div className="bg-accent/10 border border-accent/30 rounded-2xl p-8">
-                <div className="text-4xl mb-4">⚡</div>
+                <Zap className="w-10 h-10 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Simple & Organized</h3>
                 <p className="text-lg text-muted-foreground font-semibold">
                   Everything is simple, organized, and made to fit the rhythm of

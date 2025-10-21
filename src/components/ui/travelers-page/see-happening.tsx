@@ -1,3 +1,5 @@
+import { Target, Calendar, Utensils, Building, Palette, Map } from "lucide-react";
+
 export function SeeHappening() {
   return (
     <section className="w-full py-20 md:py-32 bg-muted/50">
@@ -18,7 +20,7 @@ export function SeeHappening() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-card border border-border rounded-2xl p-8 space-y-4 shadow-lg hover:shadow-xl transition-shadow">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🎯</div>
+                <Target className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Match Your Energy</h3>
               <p className="text-lg text-muted-foreground">
@@ -29,7 +31,7 @@ export function SeeHappening() {
 
             <div className="bg-card border border-border rounded-2xl p-8 space-y-4 shadow-lg hover:shadow-xl transition-shadow">
               <div className="bg-accent/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">📅</div>
+                <Calendar className="w-10 h-10" />
               </div>
               <h3 className="text-2xl font-bold">Your Rhythm, Your Way</h3>
               <p className="text-lg text-muted-foreground">
@@ -42,19 +44,19 @@ export function SeeHappening() {
           {/* Visual examples */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
             <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-2">🍽️</div>
+              <Utensils className="w-8 h-8 mb-2 mx-auto" />
               <p className="font-semibold">Dinners</p>
             </div>
             <div className="bg-gradient-to-br from-accent/20 to-accent/5 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-2">🏙️</div>
+              <Building className="w-8 h-8 mb-2 mx-auto" />
               <p className="font-semibold">City Tours</p>
             </div>
             <div className="bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-2">🎨</div>
+              <Palette className="w-8 h-8 mb-2 mx-auto" />
               <p className="font-semibold">Local Events</p>
             </div>
             <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-2">🗺️</div>
+              <Map className="w-8 h-8 mb-2 mx-auto" />
               <p className="font-semibold">Experiences</p>
             </div>
           </div>

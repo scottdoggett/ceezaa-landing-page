@@ -1,3 +1,5 @@
+import { Check, Palette, Lock, Sparkles, Handshake, Star } from "lucide-react";
+
 export function PartnerPurpose() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-primary/10 via-background to-accent/10 relative overflow-hidden">
@@ -23,7 +25,7 @@ export function PartnerPurpose() {
                 </div>
 
                 <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-6">
-                  <div className="text-3xl mb-3">✓</div>
+                  <Check className="w-8 h-8 mb-3" />
                   <p className="text-lg font-semibold">
                     Every partner is reviewed to ensure guests have trusted,
                     high-quality experiences.
@@ -42,7 +44,7 @@ export function PartnerPurpose() {
             {/* Right - Values */}
             <div className="space-y-6">
               <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-                <div className="text-4xl mb-4">🎨</div>
+                <Palette className="w-10 h-10 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Your Passion & Craft</h3>
                 <p className="text-lg text-muted-foreground font-semibold">
                   You bring your passion and craft, and we help travelers
@@ -52,19 +54,19 @@ export function PartnerPurpose() {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl p-6 text-center">
-                  <div className="text-3xl mb-2">🔒</div>
+                  <Lock className="w-8 h-8 mb-2 mx-auto" />
                   <p className="font-semibold">Safety</p>
                 </div>
                 <div className="bg-gradient-to-br from-accent/20 to-accent/5 rounded-xl p-6 text-center">
-                  <div className="text-3xl mb-2">✨</div>
+                  <Sparkles className="w-8 h-8 mb-2 mx-auto" />
                   <p className="font-semibold">Authenticity</p>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl p-6 text-center">
-                  <div className="text-3xl mb-2">🤝</div>
+                  <Handshake className="w-8 h-8 mb-2 mx-auto" />
                   <p className="font-semibold">Connection</p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl p-6 text-center">
-                  <div className="text-3xl mb-2">⭐</div>
+                  <Star className="w-8 h-8 mb-2 mx-auto" />
                   <p className="font-semibold">Quality</p>
                 </div>
               </div>

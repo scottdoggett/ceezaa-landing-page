@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Backpack, Hotel, Target } from "lucide-react";
 
 export function JoinMovement() {
   return (
@@ -23,7 +24,7 @@ export function JoinMovement() {
             {/* For Travelers */}
             <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <div className="text-5xl">🎒</div>
+                <Backpack className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold mb-4">For Travelers</h3>
               <p className="text-secondary-foreground/80 mb-6">
@@ -37,7 +38,7 @@ export function JoinMovement() {
             {/* For Hostels */}
             <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <div className="text-5xl">🏨</div>
+                <Hotel className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold mb-4">For Hostels</h3>
               <p className="text-secondary-foreground/80 mb-6">
@@ -51,7 +52,7 @@ export function JoinMovement() {
             {/* For Experience Partners */}
             <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <div className="text-5xl">🎯</div>
+                <Target className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold mb-4">For Experience Partners</h3>
               <p className="text-secondary-foreground/80 mb-6">

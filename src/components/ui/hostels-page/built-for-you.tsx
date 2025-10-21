@@ -1,3 +1,5 @@
+import { DollarSign, Gift, Rocket, Sparkles, Target } from "lucide-react";
+
 export function BuiltForYou() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
@@ -20,7 +22,7 @@ export function BuiltForYou() {
           {/* Features grid */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-              <div className="text-4xl mb-4">💰</div>
+              <DollarSign className="w-10 h-10 mb-4" />
               <h3 className="text-xl font-bold mb-3">No Setup Costs</h3>
               <p className="text-lg text-muted-foreground font-semibold">
                 There are no setup costs or complicated integrations.
@@ -28,7 +30,7 @@ export function BuiltForYou() {
             </div>
 
             <div className="bg-card border-2 border-accent/20 rounded-2xl p-8 shadow-xl">
-              <div className="text-4xl mb-4">🎁</div>
+              <Gift className="w-10 h-10 mb-4" />
               <h3 className="text-xl font-bold mb-3">Completely Free</h3>
               <p className="text-lg text-muted-foreground font-semibold">
                 It is completely free to start.
@@ -36,7 +38,7 @@ export function BuiltForYou() {
             </div>
 
             <div className="bg-primary/10 border border-primary/30 rounded-2xl p-8">
-              <div className="text-4xl mb-4">🚀</div>
+              <Rocket className="w-10 h-10 mb-4" />
               <h3 className="text-xl font-bold mb-3">Quick Start</h3>
               <p className="text-lg text-muted-foreground font-semibold">
                 You can add your property, upload your events and experiences,
@@ -45,7 +47,7 @@ export function BuiltForYou() {
             </div>
 
             <div className="bg-accent/10 border border-accent/30 rounded-2xl p-8">
-              <div className="text-4xl mb-4">✨</div>
+              <Sparkles className="w-10 h-10 mb-4" />
               <h3 className="text-xl font-bold mb-3">Instant Impact</h3>
               <p className="text-lg text-muted-foreground font-semibold">
                 Ceezaa is designed to make your property feel more alive and
@@ -56,7 +58,7 @@ export function BuiltForYou() {
 
           {/* Bottom CTA callout */}
           <div className="bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 border-2 border-primary/30 rounded-3xl p-10 md:p-12 text-center">
-            <div className="text-5xl md:text-6xl mb-6">🎯</div>
+            <Target className="w-14 h-14 md:w-16 md:h-16 mb-6 mx-auto" />
             <p className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto">
               Simple setup. Zero complexity. Immediate results.
             </p>

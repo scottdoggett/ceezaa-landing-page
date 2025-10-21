@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Star, Rocket, Sparkles, Home } from "lucide-react";
 
 export function JoinMovement() {
   return (
@@ -24,14 +25,14 @@ export function JoinMovement() {
           {/* Content cards */}
           <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <div className="text-4xl mb-4">🌟</div>
+              <Star className="w-10 h-10 mb-4" />
               <p className="text-lg font-semibold">
                 Join the hostels shaping the future of connection and belonging.
               </p>
             </div>
 
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <div className="text-4xl mb-4">🚀</div>
+              <Rocket className="w-10 h-10 mb-4" />
               <p className="text-lg font-semibold">
                 Be part of a community that believes hostels can be more than
                 just a place to sleep.
@@ -42,7 +43,7 @@ export function JoinMovement() {
           {/* CTA */}
           <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-3xl p-10 md:p-12 space-y-8">
             <div className="space-y-4">
-              <div className="text-5xl md:text-6xl">✨</div>
+              <Sparkles className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
               <h3 className="text-2xl md:text-3xl font-bold">
                 Ready to transform your hostel?
               </h3>
@@ -66,13 +67,13 @@ export function JoinMovement() {
             </p>
             <div className="flex justify-center gap-2">
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm">
-                🏠
+                <Home className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                🏠
+                <Home className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                🏠
+                <Home className="w-5 h-5" />
               </div>
               <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
                 +

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Hotel, Target, Check } from "lucide-react";
 
 export function Community() {
   return (
@@ -22,7 +23,7 @@ export function Community() {
             <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 lg:p-10 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group">
               <div className="space-y-6">
                 <div className="bg-primary/20 rounded-2xl p-4 w-fit group-hover:scale-110 transition-transform">
-                  <div className="text-5xl">🏨</div>
+                  <Hotel className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">Hostels</h3>
                 <p className="text-xl font-medium text-secondary-foreground/90">
@@ -34,15 +35,15 @@ export function Community() {
                 </p>
                 <ul className="space-y-2 text-secondary-foreground/70">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Increase guest engagement</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Streamline communication</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Build lasting connections</span>
                   </li>
                 </ul>
@@ -56,7 +57,7 @@ export function Community() {
             <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 lg:p-10 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group">
               <div className="space-y-6">
                 <div className="bg-primary/20 rounded-2xl p-4 w-fit group-hover:scale-110 transition-transform">
-                  <div className="text-5xl">🎯</div>
+                  <Target className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold">
                   Experience Partners
@@ -70,15 +71,15 @@ export function Community() {
                 </p>
                 <ul className="space-y-2 text-secondary-foreground/70">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Reach engaged travelers</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Showcase unique experiences</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
+                    <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
                     <span>Grow your local impact</span>
                   </li>
                 </ul>

@@ -1,3 +1,5 @@
+import { Frown, UserX, Clipboard, Backpack, Hotel } from "lucide-react";
+
 export function BuiltForModern() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
@@ -21,21 +23,21 @@ export function BuiltForModern() {
           {/* Problem cards */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-muted/50 border border-border rounded-2xl p-8 space-y-4">
-              <div className="text-3xl">😕</div>
+              <Frown className="w-8 h-8" />
               <p className="text-lg">
                 Every traveler is different, yet most hostel stays still feel the same.
               </p>
             </div>
 
             <div className="bg-muted/50 border border-border rounded-2xl p-8 space-y-4">
-              <div className="text-3xl">🤷</div>
+              <UserX className="w-8 h-8" />
               <p className="text-lg">
                 Guests arrive, check in, and try to figure things out on their own.
               </p>
             </div>
 
             <div className="bg-muted/50 border border-border rounded-2xl p-8 space-y-4 md:col-span-2">
-              <div className="text-3xl">📋</div>
+              <Clipboard className="w-8 h-8" />
               <p className="text-lg">
                 Staff work hard to organize everything through group chats and posters,
                 but the experience often feels disconnected.
@@ -61,7 +63,7 @@ export function BuiltForModern() {
           {/* Benefits */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-accent/10 border-l-4 border-accent rounded-r-xl p-8">
-              <div className="text-4xl mb-4">🎒</div>
+              <Backpack className="w-10 h-10 mb-4" />
               <p className="text-xl font-semibold mb-2">For travelers</p>
               <p className="text-muted-foreground">
                 Fewer decisions and more meaningful moments.
@@ -69,7 +71,7 @@ export function BuiltForModern() {
             </div>
 
             <div className="bg-secondary/10 border-l-4 border-secondary rounded-r-xl p-8">
-              <div className="text-4xl mb-4">🏨</div>
+              <Hotel className="w-10 h-10 mb-4" />
               <p className="text-xl font-semibold mb-2">For hostels</p>
               <p className="text-muted-foreground">
                 Smoother operations and guests who feel understood.

@@ -1,3 +1,5 @@
+import { Ticket, Brain, Globe, Sparkles } from "lucide-react";
+
 export function CeezaaId() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10">
@@ -10,7 +12,7 @@ export function CeezaaId() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="bg-primary/20 rounded-full p-4">
-                      <div className="text-4xl">🎫</div>
+                      <Ticket className="w-10 h-10" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground uppercase tracking-wider">Your Digital Passport</p>
@@ -70,7 +72,7 @@ export function CeezaaId() {
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="bg-muted/50 rounded-xl p-5 space-y-2">
-                    <div className="text-2xl">🧠</div>
+                    <Brain className="w-8 h-8" />
                     <p className="font-medium text-foreground">Learns with you</p>
                     <p className="text-sm text-muted-foreground">
                       Understands what you love and seek
@@ -78,7 +80,7 @@ export function CeezaaId() {
                   </div>
 
                   <div className="bg-muted/50 rounded-xl p-5 space-y-2">
-                    <div className="text-2xl">🌍</div>
+                    <Globe className="w-8 h-8" />
                     <p className="font-medium text-foreground">Grows alongside you</p>
                     <p className="text-sm text-muted-foreground">
                       Each new place feels more familiar
@@ -87,8 +89,8 @@ export function CeezaaId() {
                 </div>
 
                 <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
-                  <p className="font-medium text-foreground mb-2">
-                    ✨ It is your passport to a personalized world.
+                  <p className="font-medium text-foreground mb-2 flex items-center gap-2">
+                    <Sparkles className="w-5 h-5" /> It is your passport to a personalized world.
                   </p>
                   <p className="text-sm text-muted-foreground">
                     A quiet connection to the experiences, cities, and stories that

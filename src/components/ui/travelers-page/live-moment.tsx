@@ -1,3 +1,5 @@
+import { Star, Check } from "lucide-react";
+
 export function LiveMoment() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -8,7 +10,7 @@ export function LiveMoment() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden bg-muted/10 border border-secondary-foreground/10 shadow-xl">
               <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                 <div className="text-center space-y-4 p-8">
-                  <div className="text-6xl">🌟</div>
+                  <Star className="w-16 h-16 mx-auto" />
                   <p className="text-secondary-foreground/70 font-medium">
                     Moment Image
                   </p>
@@ -39,14 +41,14 @@ export function LiveMoment() {
 
               <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-6 space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="text-2xl mt-1">✓</div>
+                  <Check className="w-6 h-6 mt-1 shrink-0" />
                   <p className="text-lg">
                     You will never miss the events, meals, or experiences that make
                     a place special.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="text-2xl mt-1">✓</div>
+                  <Check className="w-6 h-6 mt-1 shrink-0" />
                   <p className="text-lg">
                     You will always feel part of what is going on.
                   </p>

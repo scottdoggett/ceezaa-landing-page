@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Sparkles, MapPin, Star } from "lucide-react";
 
 export function BringToLife() {
   return (
@@ -38,7 +39,7 @@ export function BringToLife() {
           {/* Content sections */}
           <div className="grid md:grid-cols-2 gap-6 text-left mt-16">
             <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-              <div className="text-4xl mb-4">✨</div>
+              <Sparkles className="w-10 h-10 mb-4" />
               <p className="text-lg font-semibold leading-relaxed">
                 Ceezaa helps you create the kind of experience travelers
                 remember.
@@ -46,7 +47,7 @@ export function BringToLife() {
             </div>
 
             <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-              <div className="text-4xl mb-4">📍</div>
+              <MapPin className="w-10 h-10 mb-4" />
               <p className="text-lg font-semibold leading-relaxed">
                 It brings your events, meals, and local experiences together in
                 one place where every guest can see them.
@@ -70,7 +71,7 @@ export function BringToLife() {
             </div>
 
             <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-8">
-              <div className="text-4xl mb-4 text-center">🌟</div>
+              <Star className="w-10 h-10 mb-4 mx-auto" />
               <p className="text-xl font-semibold text-center">
                 When travelers feel connected, they stay longer, spend more, and
                 share their stories with the world.

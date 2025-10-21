@@ -1,3 +1,5 @@
+import { Clock, Calendar, Megaphone, PartyPopper, Sparkles } from "lucide-react";
+
 export function SaveTime() {
   return (
     <section className="w-full py-20 md:py-32 bg-muted/50">
@@ -19,7 +21,7 @@ export function SaveTime() {
           <div className="space-y-6">
             <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
               <div className="flex items-start gap-4">
-                <div className="text-4xl mt-1">⏰</div>
+                <Clock className="w-10 h-10 mt-1" />
                 <div className="space-y-3">
                   <p className="text-lg font-semibold">
                     Ceezaa cuts down the small, repetitive tasks that take
@@ -35,21 +37,21 @@ export function SaveTime() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-3">📅</div>
+                <Calendar className="w-8 h-8 mb-3 mx-auto" />
                 <p className="font-semibold">Schedules</p>
               </div>
               <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-3">📣</div>
+                <Megaphone className="w-8 h-8 mb-3 mx-auto" />
                 <p className="font-semibold">Announcements</p>
               </div>
               <div className="bg-secondary/20 border border-secondary/30 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-3">🎉</div>
+                <PartyPopper className="w-8 h-8 mb-3 mx-auto" />
                 <p className="font-semibold">Events</p>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-10 text-center">
-              <div className="text-5xl mb-4">✨</div>
+              <Sparkles className="w-12 h-12 mb-4 mx-auto" />
               <p className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto">
                 Everything runs more smoothly, giving you and your team time to
                 focus on hospitality, connection, and growth.

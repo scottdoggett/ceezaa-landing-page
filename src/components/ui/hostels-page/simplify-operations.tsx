@@ -1,3 +1,5 @@
+import { Settings, Eye, Zap, MessageCircle, Target } from "lucide-react";
+
 export function SimplifyOperations() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
@@ -13,7 +15,7 @@ export function SimplifyOperations() {
               <div className="relative h-[400px] rounded-2xl overflow-hidden bg-muted/10 border-2 border-primary/20 shadow-2xl">
                 <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
                   <div className="text-center space-y-4 p-8">
-                    <div className="text-6xl">⚙️</div>
+                    <Settings className="w-16 h-16 mx-auto" />
                     <p className="text-muted-foreground font-semibold">
                       Operations Dashboard
                     </p>
@@ -38,7 +40,7 @@ export function SimplifyOperations() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl mt-1">👁️</div>
+                    <Eye className="w-6 h-6 mt-1 shrink-0" />
                     <div>
                       <p className="font-semibold mb-2">Self-Service Guests</p>
                       <p className="text-sm text-muted-foreground">
@@ -50,7 +52,7 @@ export function SimplifyOperations() {
 
                 <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl mt-1">⚡</div>
+                    <Zap className="w-6 h-6 mt-1 shrink-0" />
                     <div>
                       <p className="font-semibold mb-2">Quick Updates</p>
                       <p className="text-sm text-muted-foreground">
@@ -62,7 +64,7 @@ export function SimplifyOperations() {
 
                 <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl mt-1">💬</div>
+                    <MessageCircle className="w-6 h-6 mt-1 shrink-0" />
                     <div>
                       <p className="font-semibold mb-2">Clear Communication</p>
                       <p className="text-sm text-muted-foreground">
@@ -75,7 +77,7 @@ export function SimplifyOperations() {
 
                 <div className="bg-card border border-border rounded-xl p-6 shadow-lg">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl mt-1">🎯</div>
+                    <Target className="w-6 h-6 mt-1 shrink-0" />
                     <div>
                       <p className="font-semibold mb-2">Focus on People</p>
                       <p className="text-sm text-muted-foreground">

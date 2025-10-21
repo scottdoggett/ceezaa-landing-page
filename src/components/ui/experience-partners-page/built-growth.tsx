@@ -1,3 +1,5 @@
+import { DollarSign, CheckCircle, Rocket, Eye, Handshake, Globe } from "lucide-react";
+
 export function BuiltGrowth() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -17,7 +19,7 @@ export function BuiltGrowth() {
           <div className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-                <div className="text-4xl mb-4">💰</div>
+                <DollarSign className="w-10 h-10 mb-4 text-foreground" />
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   No Setup Costs
                 </h3>
@@ -27,7 +29,7 @@ export function BuiltGrowth() {
               </div>
 
               <div className="bg-card border-2 border-accent/20 rounded-2xl p-8 shadow-xl">
-                <div className="text-4xl mb-4">✅</div>
+                <CheckCircle className="w-10 h-10 mb-4 text-foreground" />
                 <h3 className="text-xl font-bold mb-3 text-foreground">
                   Quick Verification
                 </h3>
@@ -40,7 +42,7 @@ export function BuiltGrowth() {
 
             <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-2xl p-10">
               <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className="text-5xl">🚀</div>
+                <Rocket className="w-12 h-12" />
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-secondary-foreground">
                     Grow Through Connection
@@ -55,15 +57,15 @@ export function BuiltGrowth() {
 
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-2">👁️</div>
+                <Eye className="w-8 h-8 mb-2 mx-auto" />
                 <p className="font-semibold">Visibility</p>
               </div>
               <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-2">🤝</div>
+                <Handshake className="w-8 h-8 mb-2 mx-auto" />
                 <p className="font-semibold">Connection</p>
               </div>
               <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl mb-2">🌍</div>
+                <Globe className="w-8 h-8 mb-2 mx-auto" />
                 <p className="font-semibold">Community</p>
               </div>
             </div>

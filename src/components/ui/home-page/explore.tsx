@@ -1,3 +1,5 @@
+import { Map, Palette, Star } from "lucide-react";
+
 export function Explore() {
   return (
     <section className="w-full py-20 md:py-32 bg-linear-to-t from-primary/5 to-background">
@@ -22,7 +24,7 @@ export function Explore() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🗺️</div>
+                <Map className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold">Curated Experiences</h3>
               <p className="text-muted-foreground">
@@ -33,7 +35,7 @@ export function Explore() {
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🎨</div>
+                <Palette className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold">Hostel Activities</h3>
               <p className="text-muted-foreground">
@@ -43,7 +45,7 @@ export function Explore() {
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
               <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <div className="text-4xl">🌟</div>
+                <Star className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold">Hidden Gems</h3>
               <p className="text-muted-foreground">

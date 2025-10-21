@@ -1,3 +1,5 @@
+import { Ban, Sparkles } from "lucide-react";
+
 export function TravelPersonal() {
   return (
     <section className="w-full py-20 md:py-32 lg:py-40 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
@@ -31,7 +33,7 @@ export function TravelPersonal() {
             {/* Right - Feature cards */}
             <div className="space-y-6">
               <div className="bg-card border-2 border-primary/30 rounded-2xl p-8 shadow-xl">
-                <div className="text-4xl mb-4">🚫</div>
+                <Ban className="w-10 h-10 mb-4" />
                 <p className="text-lg font-medium mb-2">No more guessing</p>
                 <p className="text-muted-foreground">
                   No more guessing what is happening or trying to find things
@@ -40,7 +42,7 @@ export function TravelPersonal() {
               </div>
 
               <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-                <div className="text-4xl mb-4">✨</div>
+                <Sparkles className="w-10 h-10 mb-4" />
                 <p className="text-lg font-semibold mb-3 text-foreground">
                   Everything in one place
                 </p>

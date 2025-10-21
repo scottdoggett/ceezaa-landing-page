@@ -111,8 +111,8 @@ export function Header() {
                         className={cn(
                           "flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors",
                           isActive
-                            ? "bg-primary text-primary-foreground"
-                            : "hover:bg-accent hover:text-accent-foreground"
+                            ? "bg-primary/90 text-primary-foreground"
+                            : "hover:bg-primary/50 hover:text-accent-foreground"
                         )}
                       >
                         <Icon className="h-5 w-5 shrink-0" />
