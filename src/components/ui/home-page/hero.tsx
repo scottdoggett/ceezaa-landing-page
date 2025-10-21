@@ -1,21 +1,22 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/home-page/hero-background.jpg"
-          alt="Travelers connecting in a hostel"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={90}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover object-center"
+        >
+          <source src="/home-page/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* Solid panel on left for text readability */}
-        <div className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-linear-to-r from-background via-background/70 to-transparent" />
+        <div className="absolute inset-0 left-0 w-2/3 bg-linear-to-r from-background via-background/" />
         {/* Subtle top and bottom gradient */}
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-transparent to-background/40" />
       </div>
@@ -26,15 +27,17 @@ export function Hero() {
           {/* Left side - Text content */}
           <div className="space-y-8 max-w-2xl">
             <div className="inline-block">
-              <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20" style={{ textShadow: '0 0 40px rgba(255, 255, 255, 1), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 120px rgba(255, 255, 255, 0.6)' }}>
                 Welcome to Ceezaa
               </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-foreground">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight text-foreground" style={{ textShadow: '0 0 60px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 0.9), 0 0 150px rgba(255, 255, 255, 0.7), 0 0 200px rgba(255, 255, 255, 0.5)' }}>
               The world meets in hostels.{" "}
-              <span className="text-primary">We make those moments matter.</span>
+              <span className="text-primary" style={{ textShadow: '0 0 60px rgba(255, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 0.9), 0 0 150px rgba(255, 255, 255, 0.7), 0 0 200px rgba(255, 255, 255, 0.5)' }}>
+                We make those moments matter.
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl" style={{ textShadow: '0 0 80px rgba(255, 255, 255, 1), 0 0 140px rgba(255, 255, 255, 1), 0 0 200px rgba(255, 255, 255, 0.9), 0 0 260px rgba(255, 255, 255, 0.7)' }}>
               Ceezaa connects travelers with the people, experiences, and stories
               that make every hostel stay unforgettable.
             </p>
