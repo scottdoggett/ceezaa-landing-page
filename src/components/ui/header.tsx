@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Home,
@@ -10,11 +11,11 @@ import {
   Users,
   Building2,
   Sparkles,
-  HelpCircle,
   Mail,
   Menu,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const navigationLinks = [
   { name: "Home", href: "/", icon: Home },
@@ -22,18 +23,18 @@ const navigationLinks = [
   { name: "Travellers", href: "/travellers", icon: Users },
   { name: "Hostels", href: "/hostels", icon: Building2 },
   { name: "Experience Partners", href: "/experience-partners", icon: Sparkles },
-  { name: "FAQ", href: "/faq", icon: HelpCircle },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2 shrink-0">
           <Image
             src="/ceezaa-logo.svg"
             alt="Ceezaa"
@@ -44,29 +45,42 @@ export function Header() {
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          {navigationLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              {link.name}
-            </Link>
-          ))}
+        {/* Desktop Navigation - Centered */}
+        <nav className="hidden xl:flex items-center space-x-6 absolute left-1/2 -translate-x-1/2">
+          {navigationLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors whitespace-nowrap rounded-3xl px-3 py-2",
+                  isActive
+                    ? "bg-primary text-white"
+                    : "text-foreground hover:text-primary"
+                )}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Mobile Menu Button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Menu className="h-6 w-6" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+        {/* Right Side Actions */}
+        <div className="flex items-center gap-2">
+          <Button variant="join" className="whitespace-nowrap">Join Now</Button>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="xl:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Menu className="h-6 w-6" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
@@ -77,12 +91,13 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="md:hidden border-b bg-background overflow-hidden"
+            className="xl:hidden border-b bg-background overflow-hidden"
           >
-            <nav className="container mx-auto px-4 py-4">
+            <nav className="px-4 sm:px-6 lg:px-8 py-4">
               <div className="grid gap-2">
                 {navigationLinks.map((link, index) => {
                   const Icon = link.icon;
+                  const isActive = pathname === link.href;
                   return (
                     <motion.div
                       key={link.href}
@@ -93,7 +108,12 @@ export function Header() {
                       <Link
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className="flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+                        className={cn(
+                          "flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors",
+                          isActive
+                            ? "bg-primary text-primary-foreground"
+                            : "hover:bg-accent hover:text-accent-foreground"
+                        )}
                       >
                         <Icon className="h-5 w-5 shrink-0" />
                         <span>{link.name}</span>
