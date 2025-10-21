@@ -20,7 +20,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6 py-20 md:py-32 lg:py-40">
+      <div className="relative z-10 container mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[500px] md:min-h-[600px]">
           {/* Left side - Text content */}
           <div className="space-y-8 max-w-2xl">

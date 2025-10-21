@@ -4,7 +4,7 @@ export function OurStory() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
           {/* Left - Title and intro */}
-          <div className="space-y-8 lg:sticky lg:top-8">
+          <div className="space-y-8 lg:sticky lg:top-[55vh] lg:-translate-y-1/2">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               Our <span className="text-primary">Story</span>
             </h2>
