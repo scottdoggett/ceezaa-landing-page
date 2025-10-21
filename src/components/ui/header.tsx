@@ -1,25 +1,29 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { motion, AnimatePresence } from "framer-motion";
 import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+  Home,
+  Info,
+  Users,
+  Building2,
+  Sparkles,
+  HelpCircle,
+  Mail,
+  Menu,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const navigationLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Travellers", href: "/travellers" },
-  { name: "Hostels", href: "/hostels" },
-  { name: "Experience Partners", href: "/experience-partners" },
-  { name: "FAQ", href: "/faq" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/", icon: Home },
+  { name: "About", href: "/about", icon: Info },
+  { name: "Travellers", href: "/travellers", icon: Users },
+  { name: "Hostels", href: "/hostels", icon: Building2 },
+  { name: "Experience Partners", href: "/experience-partners", icon: Sparkles },
+  { name: "FAQ", href: "/faq", icon: HelpCircle },
+  { name: "Contact", href: "/contact", icon: Mail },
 ];
 
 export function Header() {
@@ -30,7 +34,14 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold">Ceezaa</span>
+          <Image
+            src="/ceezaa-logo.svg"
+            alt="Ceezaa"
+            width={120}
+            height={40}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -46,33 +57,55 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Mobile Menu */}
-        <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <SheetHeader>
-              <SheetTitle className="text-left">Navigation</SheetTitle>
-            </SheetHeader>
-            <nav className="flex flex-col space-y-4 mt-8">
-              {navigationLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium transition-colors hover:text-primary py-2"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </nav>
-          </SheetContent>
-        </Sheet>
+        {/* Mobile Menu Button */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Toggle menu</span>
+        </Button>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="md:hidden border-b bg-background overflow-hidden"
+          >
+            <nav className="container mx-auto px-4 py-4">
+              <div className="grid gap-2">
+                {navigationLinks.map((link, index) => {
+                  const Icon = link.icon;
+                  return (
+                    <motion.div
+                      key={link.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className="flex items-center gap-3 rounded-lg px-4 py-3 text-base font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+                      >
+                        <Icon className="h-5 w-5 shrink-0" />
+                        <span>{link.name}</span>
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
