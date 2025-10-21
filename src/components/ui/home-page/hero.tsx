@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen lg:min-h-[800px] overflow-hidden">
+    <section className="relative w-full min-h-[85vh] sm:min-h-[90vh] md:min-h-[95vh] lg:min-h-[800px] overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -10,17 +10,17 @@ export function Hero() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover object-[50%_70%] md:object-[50%_60%] lg:object-center"
+          className="w-full h-full object-cover object-center"
         >
           <source src="/home-page/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Gradient overlay for text readability - changes direction at lg */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,white_0%,hsl(0_0%_100%/0.95)_25%,transparent_60%)] lg:bg-[linear-gradient(to_right,white_0%,hsl(0_0%_100%/0.9)_30%,transparent_65%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_top,white_0%,hsl(0_0%_100%/0.95)_35%,transparent_60%)] lg:bg-[linear-gradient(to_right,white_0%,hsl(0_0%_100%/0.9)_30%,transparent_65%)]" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full min-h-screen lg:min-h-[800px] px-6 py-8 lg:py-12 flex flex-col">
+      <div className="relative z-10 w-full h-full min-h-[85vh] sm:min-h-[90vh] md:min-h-[95vh] lg:min-h-[800px] px-6 py-8 lg:py-12 flex flex-col">
         {/* Welcome badge - always in same position */}
         <div className="absolute top-8 lg:top-12 left-6">
           <span className="hidden lg:inline text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
