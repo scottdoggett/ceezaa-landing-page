@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Lightbulb, Plane, Home, Handshake, Utensils, CreditCard, LucideIcon } from "lucide-react";
 
 interface FAQ {
   question: string;
@@ -12,7 +13,7 @@ interface FAQ {
 
 interface FAQSection {
   title: string;
-  icon: string;
+  icon: LucideIcon;
   faqs: FAQ[];
 }
 
@@ -20,7 +21,7 @@ export function FaqContent() {
   const faqSections: FAQSection[] = [
     {
       title: "General",
-      icon: "💡",
+      icon: Lightbulb,
       faqs: [
         {
           question: "What is Ceezaa?",
@@ -65,7 +66,7 @@ export function FaqContent() {
     },
     {
       title: "For Travelers",
-      icon: "✈️",
+      icon: Plane,
       faqs: [
         {
           question: "How does Ceezaa improve my stay?",
@@ -103,7 +104,7 @@ export function FaqContent() {
     },
     {
       title: "For Hostels",
-      icon: "🏠",
+      icon: Home,
       faqs: [
         {
           question: "How does Ceezaa help my hostel?",
@@ -140,7 +141,7 @@ export function FaqContent() {
     },
     {
       title: "For Experience Partners",
-      icon: "🤝",
+      icon: Handshake,
       faqs: [
         {
           question: "Who can become a Ceezaa partner?",
@@ -184,7 +185,7 @@ export function FaqContent() {
     },
     {
       title: "For Restaurants",
-      icon: "🍽️",
+      icon: Utensils,
       faqs: [
         {
           question: "How can restaurants join Ceezaa?",
@@ -217,7 +218,7 @@ export function FaqContent() {
     },
     {
       title: "Payments and Policies",
-      icon: "💳",
+      icon: CreditCard,
       faqs: [
         {
           question: "How are payments handled?",
@@ -246,15 +247,17 @@ export function FaqContent() {
     <section className="w-full py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto space-y-8">
-          {faqSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="space-y-4">
-              {/* Section Header */}
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">{section.icon}</span>
-                <h2 className="text-xl md:text-2xl font-bold">
-                  {section.title}
-                </h2>
-              </div>
+          {faqSections.map((section, sectionIndex) => {
+            const Icon = section.icon;
+            return (
+              <div key={sectionIndex} className="space-y-4">
+                {/* Section Header */}
+                <div className="flex items-center gap-2">
+                  <Icon className="h-8 w-8" />
+                  <h2 className="text-xl md:text-2xl font-bold">
+                    {section.title}
+                  </h2>
+                </div>
 
               {/* FAQs Accordion */}
               <div className="bg-card border border-border rounded-lg px-6">
@@ -290,7 +293,8 @@ export function FaqContent() {
                 </Accordion>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

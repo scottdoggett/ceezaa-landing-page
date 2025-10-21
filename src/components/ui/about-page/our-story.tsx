@@ -1,3 +1,5 @@
+import { ClipboardList, Clipboard, HeartCrack } from "lucide-react";
+
 export function OurStory() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
@@ -19,21 +21,21 @@ export function OurStory() {
           {/* Right - Story cards */}
           <div className="space-y-6">
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 space-y-3">
-              <div className="text-2xl">📝</div>
+              <ClipboardList className="h-8 w-8" />
               <p className="text-lg">
                 Most guests still arrive with no idea what is happening around them.
               </p>
             </div>
 
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 space-y-3">
-              <div className="text-2xl">📋</div>
+              <Clipboard className="h-8 w-8" />
               <p className="text-lg">
                 Events are written on whiteboards. Menus sit in folders. Group chats get buried in notifications.
               </p>
             </div>
 
             <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6 space-y-3">
-              <div className="text-2xl">💔</div>
+              <HeartCrack className="h-8 w-8" />
               <p className="text-lg">
                 The people who came to connect end up missing the very moments that make hostels special.
               </p>
