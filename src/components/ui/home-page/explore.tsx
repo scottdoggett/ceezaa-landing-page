@@ -2,64 +2,76 @@ import { Map, Palette, Star } from "lucide-react";
 
 export function Explore() {
   return (
-    <section className="w-full py-20 md:py-32 bg-linear-to-t from-primary/5 to-background">
+    <section className="w-full py-16 md:py-24 lg:py-32 bg-linear-to-br from-primary to-primary/95">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-10">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
               Find your next moment{" "}
-              <span className="text-primary">right where you are.</span>
+              <span className="text-secondary">right where you are.</span>
             </h2>
-            <p className="text-xl text-muted-foreground italic">
+            <p className="text-lg lg:text-xl text-white italic">
               A rooftop dinner. A morning surf. A hidden café only the locals know.
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base lg:text-lg text-white/90 leading-relaxed">
               Ceezaa helps travelers discover what is happening nearby, all
               curated to their interests and energy.
             </p>
           </div>
 
           {/* Feature cards */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <Map className="w-10 h-10" />
+          <div className="grid md:grid-cols-3 gap-5">
+            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
+                  <Map className="w-6 h-6 text-secondary" />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-base font-bold text-white">Curated Experiences</h3>
+                  <p className="text-sm text-white/80 leading-relaxed">
+                    See local tours, events, dining spots, and experiences picked
+                    just for you.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold">Curated Experiences</h3>
-              <p className="text-muted-foreground">
-                See local tours, events, dining spots, and experiences picked
-                just for you.
-              </p>
             </div>
 
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <Palette className="w-10 h-10" />
+            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
+                  <Palette className="w-6 h-6 text-secondary" />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-base font-bold text-white">Hostel Activities</h3>
+                  <p className="text-sm text-white/80 leading-relaxed">
+                    Join activities hosted by your hostel or trusted local partners.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold">Hostel Activities</h3>
-              <p className="text-muted-foreground">
-                Join activities hosted by your hostel or trusted local partners.
-              </p>
             </div>
 
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow space-y-4">
-              <div className="bg-primary/10 rounded-xl p-4 w-fit">
-                <Star className="w-10 h-10" />
+            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
+                  <Star className="w-6 h-6 text-secondary" />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-base font-bold text-white">Hidden Gems</h3>
+                  <p className="text-sm text-white/80 leading-relaxed">
+                    Discover new places and people without ever feeling like a tourist.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold">Hidden Gems</h3>
-              <p className="text-muted-foreground">
-                Discover new places and people without ever feeling like a tourist.
-              </p>
             </div>
           </div>
 
           {/* Bottom CTA section */}
-          <div className="bg-secondary text-secondary-foreground rounded-2xl p-8 md:p-12 text-center shadow-xl">
-            <p className="text-2xl md:text-3xl font-bold mb-2">
+          <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-6 md:p-8 text-center shadow-xl hover:shadow-2xl transition-shadow">
+            <p className="text-xl md:text-2xl font-bold text-white mb-2">
               The world outside your hostel is alive.
             </p>
-            <p className="text-xl text-secondary-foreground/80">
+            <p className="text-base md:text-lg text-white/80">
               Ceezaa makes it easier to step into it.
             </p>
           </div>
