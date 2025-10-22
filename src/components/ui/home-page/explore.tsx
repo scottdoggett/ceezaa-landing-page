@@ -11,10 +11,10 @@ export function Explore() {
               Find your next moment{" "}
               <span className="text-secondary">right where you are.</span>
             </h2>
-            <p className="text-lg lg:text-xl text-white italic">
+            <p className="text-lg lg:text-xl text-white font-semibold italic">
               A rooftop dinner. A morning surf. A hidden café only the locals know.
             </p>
-            <p className="text-base lg:text-lg text-white/90 leading-relaxed">
+            <p className="text-base lg:text-lg text-white font-semibold leading-relaxed">
               Ceezaa helps travelers discover what is happening nearby, all
               curated to their interests and energy.
             </p>
@@ -29,7 +29,7 @@ export function Explore() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-base font-bold text-white">Curated Experiences</h3>
-                  <p className="text-sm text-white/80 leading-relaxed">
+                  <p className="text-md text-white/80 leading-relaxed">
                     See local tours, events, dining spots, and experiences picked
                     just for you.
                   </p>
@@ -44,7 +44,7 @@ export function Explore() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-base font-bold text-white">Hostel Activities</h3>
-                  <p className="text-sm text-white/80 leading-relaxed">
+                  <p className="text-md text-white/80 leading-relaxed">
                     Join activities hosted by your hostel or trusted local partners.
                   </p>
                 </div>
@@ -58,7 +58,7 @@ export function Explore() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-base font-bold text-white">Hidden Gems</h3>
-                  <p className="text-sm text-white/80 leading-relaxed">
+                  <p className="text-md text-white/80 leading-relaxed">
                     Discover new places and people without ever feeling like a tourist.
                   </p>
                 </div>
