@@ -1,5 +1,3 @@
-import { HostelDashboard } from "@/components/ui/hostel-dashboard";
-
 export function StayPersonal() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground overflow-hidden">
@@ -54,25 +52,7 @@ export function StayPersonal() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* Right - Dashboard Preview */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
-              <div className="relative bg-white rounded-2xl shadow-2xl border-4 border-primary/20 overflow-hidden">
-                <div className="w-full h-[600px] overflow-hidden">
-                  <div className="origin-top-left" style={{ transform: "scale(0.6)", width: "166.67%", height: "166.67%" }}>
-                    <HostelDashboard />
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-white to-transparent pointer-events-none" />
-              </div>
-              <div className="text-center mt-4">
-                <p className="text-sm text-secondary-foreground/70 font-medium">
-                  Live Dashboard Preview
-                </p>
-              </div>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
