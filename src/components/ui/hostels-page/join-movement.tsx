@@ -54,7 +54,7 @@ export function JoinMovement() {
             </div>
             <Button
               size="lg"
-              className="text-base md:text-lg px-10 py-7 text-lg font-semibold shadow-xl hover:scale-105 transition-transform"
+              className="text-base md:text-lg px-10 py-7 font-semibold shadow-xl hover:scale-105 transition-transform"
             >
               Bring Ceezaa to Your Hostel →
             </Button>

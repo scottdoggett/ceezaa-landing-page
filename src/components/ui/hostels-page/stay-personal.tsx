@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export function StayPersonal() {
   return (
     <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left - Content */}
             <div className="space-y-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -52,7 +54,26 @@ export function StayPersonal() {
                   </p>
                 </div>
               </div>
-            </div>            
+            </div>
+
+            {/* Right - Dashboard Preview */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
+              <div className="relative bg-white rounded-2xl shadow-2xl border-4 border-primary/20 overflow-hidden">
+                <Image
+                  src="/dashboard-guests.png"
+                  alt="Staff Dashboard Preview"
+                  width={1920}
+                  height={1080}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="text-center mt-4">
+                <p className="text-sm text-secondary-foreground/70 font-medium">
+                  Staff Dashboard Preview
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
