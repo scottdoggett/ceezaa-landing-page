@@ -1,4 +1,11 @@
-import { Frown, UserX, Clipboard, Backpack, Hotel, Sparkles } from "lucide-react";
+import {
+  Frown,
+  UserX,
+  Clipboard,
+  Backpack,
+  Hotel,
+  Sparkles,
+} from "lucide-react";
 
 export function BuiltForModern() {
   return (
@@ -21,12 +28,14 @@ export function BuiltForModern() {
           </div>
 
           {/* Two Column Layout: Problems & Solution */}
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start lg:items-stretch">
             {/* Left: Problem cards */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold mb-4 text-muted-foreground">The Challenge</h3>
-              
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4 text-muted-foreground">
+                The Challenge
+              </h3>
+
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -34,12 +43,13 @@ export function BuiltForModern() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed">
-                    Every traveler is different, yet most hostel stays still feel the same.
+                    Every traveler is different, yet most hostel stays still
+                    feel the same.
                   </p>
                 </div>
               </div>
 
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -47,12 +57,13 @@ export function BuiltForModern() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed">
-                    Guests arrive, check in, and try to figure things out on their own.
+                    Guests arrive, check in, and try to figure things out on
+                    their own.
                   </p>
                 </div>
               </div>
 
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -60,35 +71,42 @@ export function BuiltForModern() {
                     </div>
                   </div>
                   <p className="text-base leading-relaxed">
-                    Staff work hard to organize everything through group chats and posters,
-                    but the experience often feels disconnected.
+                    Staff work hard to organize everything through group chats
+                    and posters, but the experience often feels disconnected.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Right: Solution */}
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold mb-4 text-primary">The Solution</h3>
+            {/* Right: Solution */}
+            <div className="flex flex-col space-y-4">
+              <h3 className="text-xl font-bold text-primary">The Solution</h3>
 
-              <div className="relative group">
+              <div className="relative group flex-1">
                 <div className="absolute -inset-1 bg-linear-to-r from-primary to-accent rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
-                <div className="relative bg-linear-to-br from-primary/10 to-accent/5 border-2 border-primary/20 rounded-2xl p-8 space-y-4">
-                  <div className="flex items-center gap-3 mb-4">
+                <div className="relative bg-linear-to-br from-primary/10 to-accent/5 border-2 border-primary/20 rounded-2xl p-8 h-full flex flex-col">
+                  <div className="flex items-center gap-3 mb-6">
                     <div className="p-2 rounded-lg bg-primary/20">
                       <Sparkles className="w-6 h-6 text-primary" />
                     </div>
                     <h4 className="text-2xl font-bold">Ceezaa changes that.</h4>
                   </div>
-                  
-                  <div className="space-y-3 text-base leading-relaxed">
-                    <p>
-                      It learns what each traveler enjoys, what they care about, and how they like to spend their time.
-                    </p>
-                    <p>
-                      It brings every part of a stay together in one place. Room details, bookings, events, dining, and experiences are all personalized for each guest.
-                    </p>
-                  </div>
+
+                  <p className="text-base leading-relaxed mb-2">
+                    It learns what each traveler enjoys, what they care about,
+                    and how they like to spend their time.
+                  </p>
+
+                  <p className="text-base leading-relaxed mb-2">
+                    It brings every part of a stay together in one place. Room
+                    details, bookings, events, dining, and experiences are all
+                    personalized for each guest.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                   No more guessing, no more missing out. Just a seamless, 
+                   connected experience.
+                  </p>
                 </div>
               </div>
             </div>

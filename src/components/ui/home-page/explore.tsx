@@ -22,7 +22,7 @@ export function Explore() {
 
           {/* Feature cards */}
           <div className="grid lg:grid-cols-3 gap-5">
-            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+            <div className="bg-accent-foreground/12 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-accent-foreground/30 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
                   <Map className="w-6 h-6 text-secondary" />
@@ -37,7 +37,7 @@ export function Explore() {
               </div>
             </div>
 
-            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+            <div className="bg-accent-foreground/12 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-accent-foreground/30 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
                   <Palette className="w-6 h-6 text-secondary" />
@@ -51,7 +51,7 @@ export function Explore() {
               </div>
             </div>
 
-            <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
+            <div className="bg-accent-foreground/12 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-accent-foreground/30 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
                   <Star className="w-6 h-6 text-secondary" />

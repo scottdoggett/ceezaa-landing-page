@@ -44,7 +44,7 @@ export function CeezaaId() {
                         </div>
                         <div className="flex-1">
                           <p className="font-semibold text-foreground">Jane Doe</p>
-                          <p className="text-xs text-muted-foreground">Member since 2024</p>
+                          <p className="text-sm text-muted-foreground">Member since 2024</p>
                         </div>
                       </div>
                     </div>
@@ -56,21 +56,21 @@ export function CeezaaId() {
                           <MapPin className="w-4 h-4 text-primary" />
                         </div>
                         <p className="text-lg font-bold text-foreground">12</p>
-                        <p className="text-xs text-muted-foreground">Cities</p>
+                        <p className="text-sm text-muted-foreground">Cities</p>
                       </div>
                       <div className="bg-accent/5 rounded-lg p-3 text-center border border-accent/10">
                         <div className="flex justify-center mb-1">
                           <Calendar className="w-4 h-4 text-accent" />
                         </div>
                         <p className="text-lg font-bold text-foreground">47</p>
-                        <p className="text-xs text-muted-foreground">Events</p>
+                        <p className="text-sm text-muted-foreground">Events</p>
                       </div>
                       <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
                         <div className="flex justify-center mb-1">
                           <Users className="w-4 h-4 text-primary" />
                         </div>
                         <p className="text-lg font-bold text-foreground">89</p>
-                        <p className="text-xs text-muted-foreground">Friends</p>
+                        <p className="text-sm text-muted-foreground">Friends</p>
                       </div>
                     </div>
 
@@ -78,15 +78,15 @@ export function CeezaaId() {
                     <div className="bg-white rounded-xl p-4 shadow-inner border-2 border-dashed border-primary/20">
                       <div className="flex items-center justify-between gap-4">
                         <div className="flex-1">
-                          <p className="text-xs font-semibold text-gray-700 mb-1">Scan to connect</p>
+                          <p className="text-base font-semibold text-gray-700 mb-1">Scan to connect</p>
                           <div className="space-y-1">
                             <div className="flex items-center gap-1.5">
                               <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                              <p className="text-xs text-gray-600">Quick check-in</p>
+                              <p className="text-sm text-gray-600">Quick check-in</p>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <div className="w-1.5 h-1.5 bg-accent rounded-full" />
-                              <p className="text-xs text-gray-600">Share profile</p>
+                              <p className="text-sm text-gray-600">Share profile</p>
                             </div>
                           </div>
                         </div>
@@ -107,7 +107,7 @@ export function CeezaaId() {
 
                     {/* Footer */}
                     <div className="bg-linear-to-r from-primary/15 via-accent/10 to-primary/15 rounded-lg p-3 border border-primary/20">
-                      <p className="text-xs text-center font-medium text-foreground/80 leading-relaxed">
+                      <p className="text-sm text-center font-medium text-foreground/80 leading-relaxed">
                         Your journey, your story, always with you
                       </p>
                     </div>
@@ -144,7 +144,7 @@ export function CeezaaId() {
                   <div className="bg-muted/50 rounded-xl p-5 space-y-2">
                     <Brain className="w-8 h-8" />
                     <p className="font-medium text-foreground">Learns with you</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Understands what you love and seek
                     </p>
                   </div>
@@ -152,7 +152,7 @@ export function CeezaaId() {
                   <div className="bg-muted/50 rounded-xl p-5 space-y-2">
                     <Globe className="w-8 h-8" />
                     <p className="font-medium text-foreground">Grows alongside you</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Each new place feels more familiar
                     </p>
                   </div>
@@ -162,7 +162,7 @@ export function CeezaaId() {
                   <p className="font-medium text-foreground mb-2 flex items-center gap-2">
                     <Sparkles className="w-5 h-5" /> It is your passport to a personalized world.
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     A quiet connection to the experiences, cities, and stories that
                     become part of who you are.
                   </p>
