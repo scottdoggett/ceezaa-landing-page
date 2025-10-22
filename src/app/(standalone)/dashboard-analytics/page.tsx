@@ -45,7 +45,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export default function HostelDashboard() {
+export default function HostelDashboardGuest() {
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar Navigation */}
