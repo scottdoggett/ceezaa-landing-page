@@ -89,7 +89,7 @@ body {
   --card-foreground: oklch(0.989 0.004 250);
   --popover: oklch(0.28 0.045 245);
   --popover-foreground: oklch(0.989 0.004 250);
-  --primary: oklch(0.742 0.123 68.5);
+  --primary: rgb(222, 156, 78);
   --primary-foreground: oklch(0.15 0.02 245);
   --secondary: oklch(0.38 0.06 245);
   --secondary-foreground: oklch(0.989 0.004 250);

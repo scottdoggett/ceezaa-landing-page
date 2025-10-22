@@ -1,4 +1,4 @@
-import { Ticket, MapPin, Calendar, Gem, Sparkles } from "lucide-react";
+import { Ticket, MapPin, Calendar, Gem } from "lucide-react";
 import Image from "next/image";
 
 export function CeezaaId() {
