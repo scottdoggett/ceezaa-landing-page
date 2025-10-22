@@ -46,8 +46,8 @@ export function WhyCeezaa() {
                 <div className="space-y-5">
                   <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-muted/20">
                     <div className="shrink-0 my-auto">
-                      <div className="p-2 rounded-lg bg-secondary-foreground/10 group-hover:bg-secondary-foreground/15 transition-colors">
-                        <HeartCrack className="w-7 h-7 text-secondary-foreground/70" />
+                      <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-secondary-foreground/15 transition-colors">
+                        <HeartCrack className="w-7 h-7 text-primary" />
                       </div>
                     </div>
                     <p className="text-base lg:text-lg text-secondary-foreground/90 leading-relaxed">
@@ -57,8 +57,8 @@ export function WhyCeezaa() {
 
                   <div className="group flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:bg-muted/20">
                     <div className="shrink-0 my-auto">
-                      <div className="p-2 rounded-lg bg-secondary-foreground/10 group-hover:bg-secondary-foreground/15 transition-colors">
-                        <HelpCircle className="w-7 h-7 text-secondary-foreground/70" />
+                      <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-secondary-foreground/15 transition-colors">
+                        <HelpCircle className="w-7 h-7 text-primary" />
                       </div>
                     </div>
                     <p className="text-base lg:text-lg text-secondary-foreground/90 leading-relaxed">
