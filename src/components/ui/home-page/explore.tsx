@@ -2,7 +2,7 @@ import { Map, Palette, Star } from "lucide-react";
 
 export function Explore() {
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32 bg-linear-to-br from-primary to-primary/95">
+    <section className="w-full py-16 md:py-24 lg:py-32 bg-primary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-7xl mx-auto space-y-10">
           {/* Header */}

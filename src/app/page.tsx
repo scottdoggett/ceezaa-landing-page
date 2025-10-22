@@ -11,12 +11,18 @@ export default function Home() {
     <main className="font-sans">
       <Hero />
       <WhyCeezaa />
-      <div className="w-full overflow-hidden -mt-4">
-        <div className="spacer layer1"></div>
+      <div className="w-full overflow-hidden -mt-16">
+        <div className="spacer wave-why-ceezaa-what-ceezaa-is"></div>
       </div>
       <WhatCeezaaIs />
       <YourStay />
+      <div className="w-full overflow-hidden -mt-20 -mb-4">
+        <div className="spacer wave-your-stay-explore"></div>
+      </div>
       <Explore />
+      <div className="w-full overflow-hidden -mt-16 -mb-4">
+        <div className="spacer wave-explore-ceezaa-id"></div>
+      </div>
       <CeezaaId />
       <Community />
     </main>

@@ -2,7 +2,7 @@ import { Eye, Target, Utensils, Sparkles } from "lucide-react";
 
 export function YourStay() {
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32 bg-muted/50">
+    <section className="w-full py-16 md:py-24 lg:py-32 bg-muted">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">

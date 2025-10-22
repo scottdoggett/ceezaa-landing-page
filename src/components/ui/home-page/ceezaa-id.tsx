@@ -1,9 +1,9 @@
-import { Ticket, Brain, Globe, Sparkles, MapPin, Calendar, Users } from "lucide-react";
+import { Ticket, Brain, Globe, Sparkles, MapPin, Calendar, Gem } from "lucide-react";
 import Image from "next/image";
 
 export function CeezaaId() {
   return (
-    <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10">
+    <section className="w-full py-20 md:py-32 bg-linear-to-b from-border via-background to-primary/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
@@ -67,10 +67,10 @@ export function CeezaaId() {
                       </div>
                       <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
                         <div className="flex justify-center mb-1">
-                          <Users className="w-4 h-4 text-primary" />
+                          <Gem className="w-4 h-4 text-primary" />
                         </div>
-                        <p className="text-lg font-bold text-foreground">89</p>
-                        <p className="text-sm text-muted-foreground">Friends</p>
+                        <p className="text-lg font-bold text-foreground">12,344</p>
+                        <p className="text-sm text-muted-foreground">Points</p>
                       </div>
                     </div>
 

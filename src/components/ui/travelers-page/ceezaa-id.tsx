@@ -54,7 +54,7 @@ export function CeezaaId() {
 
                   <div className="bg-linear-to-r from-primary/20 to-accent/20 rounded-xl p-4">
                     <p className="text-xs text-center font-medium flex items-center justify-center gap-2">
-                      <Lock className="w-3 h-3" /> Your data stays yours. You control what you share.
+                      <Lock className="w-3 h-3" /> Your data transforms into personalized stays.
                     </p>
                   </div>
                 </div>
@@ -82,12 +82,13 @@ export function CeezaaId() {
 
                 <div className="bg-card border border-border rounded-2xl p-6 shadow-lg">
                   <p className="text-lg leading-relaxed mb-4">
-                    Add what matters to you, such as your dietary restrictions,
-                    interests, hobbies, favorite meals, and how you like to connect.
+                    Every journey earns you points that grow with your travels. 
+                    Redeem them for experiences that match what you love, from 
+                    local adventures to curated moments that make each stay feel uniquely yours.
                   </p>
                   <p className="text-lg leading-relaxed font-medium text-primary">
-                    Ceezaa turns those details into experiences that feel natural
-                    and personal.
+                    These points turn how you travel into rewards that feel personal
+                    and meaningful.
                   </p>
                 </div>
 

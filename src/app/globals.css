@@ -135,6 +135,16 @@ body {
   margin: 0 auto;
 }
 
-.layer1 {
-  background-image: url('/home-page/home-wave.svg');
+.wave-why-ceezaa-what-ceezaa-is {
+  background-image: url('/home-page/wave-why-ceezaa-what-ceezaa-is.svg');
+}
+
+.wave-your-stay-explore {
+  background-image: url('/home-page/wave-your-stay-explore.svg');
+}
+
+
+.wave-explore-ceezaa-id
+ {
+  background-image: url('/home-page/wave-explore-ceezaa-id.svg');
 }
