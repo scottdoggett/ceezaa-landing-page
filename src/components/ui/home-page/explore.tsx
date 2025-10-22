@@ -21,7 +21,7 @@ export function Explore() {
           </div>
 
           {/* Feature cards */}
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid lg:grid-cols-3 gap-5">
             <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-black/40 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div className="bg-secondary/30 rounded-lg p-2.5 shrink-0">
@@ -64,16 +64,6 @@ export function Explore() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Bottom CTA section */}
-          <div className="bg-accent-foreground/15 backdrop-blur-sm border border-white/15 rounded-xl p-6 md:p-8 text-center shadow-xl hover:shadow-2xl transition-shadow">
-            <p className="text-xl md:text-2xl font-bold text-white mb-2">
-              The world outside your hostel is alive.
-            </p>
-            <p className="text-base md:text-lg text-white/80">
-              Ceezaa makes it easier to step into it.
-            </p>
           </div>
         </div>
       </div>
