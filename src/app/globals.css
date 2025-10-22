@@ -133,6 +133,7 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .wave-why-ceezaa-what-ceezaa-is {
@@ -144,7 +145,10 @@ body {
 }
 
 
-.wave-explore-ceezaa-id
- {
+.wave-explore-ceezaa-id {
   background-image: url('/home-page/wave-explore-ceezaa-id.svg');
+}
+
+.divider-primary-secondary {
+  background-image: url('/travlers-page/divider-primary-secondary.svg');
 }

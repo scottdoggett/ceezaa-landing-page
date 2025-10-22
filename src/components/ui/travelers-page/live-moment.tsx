@@ -2,8 +2,8 @@ import { Star, Check } from "lucide-react";
 
 export function LiveMoment() {
   return (
-    <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground relative">
+      <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
           {/* Left - Image placeholder */}
           <div className="order-2 lg:order-1">
