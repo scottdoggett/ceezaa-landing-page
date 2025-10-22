@@ -1,16 +1,16 @@
-import { Ban, Sparkles } from "lucide-react";
+import { CheckCircle2, MapPin, Calendar, Users } from "lucide-react";
 
 export function TravelPersonal() {
   return (
-    <section className="w-full py-20 md:py-32 lg:py-12 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
+    <section className="w-full py-20 md:py-32 lg:py-24 bg-linear-to-br from-primary/10 via-background to-accent/5 relative overflow-hidden">
       {/* Decorative gradient orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/15 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left - Content */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Left - Hero Content */}
             <div className="space-y-8">
               <div className="inline-block">
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
@@ -21,43 +21,71 @@ export function TravelPersonal() {
                 Travel That Feels{" "}
                 <span className="text-primary">Personal</span>
               </h1>
-              <p className="text-xl md:text-2xl font-semibold">
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
                 Ceezaa helps you get more out of every stay.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 It connects you to the people, moments, and experiences that make
                 travel feel alive.
               </p>
             </div>
 
-            {/* Right - Feature cards */}
-            <div className="space-y-6">
-              <div className="bg-card border-2 border-primary/30 rounded-2xl p-8 shadow-xl">
-                <Ban className="w-10 h-10 mb-4" />
-                <p className="text-lg font-medium mb-2">No more guessing</p>
-                <p className="text-muted-foreground">
-                  No more guessing what is happening or trying to find things
-                  through group chats.
-                </p>
+            {/* Right - Benefits Section */}
+            <div className="space-y-8">
+              {/* Main value proposition */}
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 group">
+                  <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-lg font-semibold">No more guessing</h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      See what&apos;s happening without digging through group chats or asking around.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Calendar className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-lg font-semibold">Everything in one place</h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      Events, dining, and local experiences—all tailored to how you like to explore.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Users className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-lg font-semibold">Connect naturally</h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      Find your people and build meaningful connections at every stay.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 group">
+                  <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-lg font-semibold">Make it your own</h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      Whether staying a night or a month, each experience is uniquely yours.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-                <Sparkles className="w-10 h-10 mb-4" />
-                <p className="text-lg font-semibold mb-3 text-foreground">
-                  Everything in one place
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  With Ceezaa, you see everything your hostel has to offer in one
-                  place.
-                </p>
-                <p className="font-medium text-foreground">
-                  Events, dining, and local experiences are tailored to you and how
-                  you like to explore.
-                </p>
-              </div>
-
-              <div className="bg-accent/10 border-l-4 border-accent rounded-r-xl p-6">
-                <p className="text-lg font-semibold text-foreground">
+              {/* Bottom highlight */}
+              <div className="pt-6 border-t border-primary/20">
+                <p className="text-lg font-medium text-foreground/90">
                   Every stay feels easier, more connected, and more meaningful.
                 </p>
               </div>
