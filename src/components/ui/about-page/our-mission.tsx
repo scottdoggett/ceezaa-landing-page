@@ -1,59 +1,82 @@
 export function OurMission() {
   return (
-    <section className="w-full py-16 md:py-24 lg:py-32 bg-linear-to-br from-primary to-primary/95">
+    <section className="w-full py-16 md:py-24 bg-primary">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-5xl mx-auto space-y-8">
-          {/* Header */}
-          <div className="text-center space-y-3">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-              Our <span className="text-secondary">Mission</span>
-            </h2>
-            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
-              To make every hostel stay feel personal.
-            </p>
-          </div>
-
-          {/* Mission statements */}
-          <div className="space-y-5">
-            <div className="bg-accent-foreground/12 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-accent-foreground/30 transition-all duration-300">
-              <p className="text-base lg:text-lg leading-relaxed text-white">
-                We believe travel should never feel one-size-fits-all. Every traveler has their own rhythm, their own interests, and their own way of connecting.
+        <div className="max-w-6xl mx-auto">
+          {/* Header - Title on left */}
+          <div className="mb-12">
+            <div className="space-y-5">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                Our <span className="text-secondary">Mission</span>
+              </h2>
+              <div className="w-20 h-1 bg-secondary"></div>
+              <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-tight">
+                To make every hostel stay feel personal.
               </p>
-            </div>
-
-            <div className="bg-accent-foreground/12 backdrop-blur-sm border border-white/15 rounded-xl p-5 shadow-lg hover:shadow-2xl hover:bg-accent-foreground/30 transition-all duration-300">
-              <p className="text-base lg:text-lg leading-relaxed text-white">
-                Ceezaa helps hostels recognize those differences and shape every stay around them.
-              </p>
-            </div>
-
-            <div className="bg-secondary/20 backdrop-blur-sm border border-white/20 rounded-xl p-6 shadow-xl">
-              <p className="text-base lg:text-lg font-semibold leading-relaxed text-white">
-                We use technology to make things feel more human, not less.
-              </p>
-              <p className="text-base lg:text-lg mt-3 text-white/90 leading-relaxed">
-                By understanding each traveler&apos;s preferences and habits, Ceezaa turns ordinary stays into experiences that feel effortless and meaningful.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-5 mt-2">
-              <div className="bg-accent-foreground/12 backdrop-blur-sm border-l-4 border-secondary rounded-xl p-5 shadow-lg">
-                <p className="text-base font-bold text-white mb-2">When hostels know their guests better</p>
-                <p className="text-base text-white/80">They create moments that last.</p>
-              </div>
-
-              <div className="bg-accent-foreground/12 backdrop-blur-sm border-l-4 border-secondary rounded-xl p-5 shadow-lg">
-                <p className="text-base font-bold text-white mb-2">When travelers feel understood</p>
-                <p className="text-base text-white/80">They remember the place forever.</p>
-              </div>
             </div>
           </div>
 
-          {/* Closing statement */}
-          <div className="text-center pt-4">
-            <p className="text-lg md:text-xl lg:text-2xl font-semibold text-secondary italic">
-              That is what we are building every day.
-            </p>
+          {/* Main content - Flex layout with order control */}
+          <div className="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
+
+            {/* Philosophy - Order 1 on mobile, row 1 col 3 on desktop */}
+            <div className="order-1 lg:row-start-1 lg:col-start-3 lg:col-span-1 space-y-6">
+              <div className="space-y-5">
+                <h3 className="text-xl font-bold text-secondary uppercase tracking-wide">The Philosophy</h3>
+                <p className="text-lg lg:text-xl font-extrabold leading-relaxed text-white">
+                  We believe travel should never feel one-size-fits-all.
+                </p>
+                <p className="text-base lg:text-lg leading-relaxed font-semibold text-white">
+                  Every traveler has their own rhythm, their own interests, and their own way of connecting.
+                </p>
+              </div>
+            </div>
+
+            {/* Technology box - Order 2 on mobile, row 1 cols 1-2 on desktop */}
+            <div className="order-2 lg:row-start-1 lg:col-start-1 lg:col-span-2">
+              <div className="bg-secondary/20 backdrop-blur-sm border-l-4 border-secondary rounded-r-xl p-7 shadow-xl">
+                <p className="text-xl lg:text-2xl font-semibold leading-relaxed text-white mb-4">
+                  We use technology to make things feel more human, not less.
+                </p>
+                <p className="text-lg lg:text-xl leading-relaxed text-white/90">
+                  By understanding each traveler&apos;s preferences and habits, Ceezaa turns ordinary stays into experiences that feel effortless and meaningful.
+                </p>
+              </div>
+            </div>
+
+            {/* Two key outcomes - Order 3 on mobile, row 2 cols 1-2 on desktop */}
+            <div className="order-3 lg:row-start-2 lg:col-start-1 lg:col-span-2">
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="w-16 h-1 bg-secondary"></div>
+                  <p className="text-xl font-bold text-secondary">
+                    When hostels know their guests better
+                  </p>
+                  <p className="text-lg text-white font-bold">
+                    They create moments that last.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="w-16 h-1 bg-secondary"></div>
+                  <p className="text-xl font-bold text-secondary">
+                    When travelers feel understood
+                  </p>
+                  <p className="text-lg text-white font-bold">
+                    They remember the place forever.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Closing statement - Order 4 on mobile, row 3 cols 1-2 on desktop */}
+            <div className="order-4 lg:row-start-3 lg:col-start-1 lg:col-span-2">
+              <div className="pt-6 border-t border-white/20">
+                <p className="text-2xl lg:text-3xl font-semibold text-secondary italic">
+                  That is what we are building every day.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

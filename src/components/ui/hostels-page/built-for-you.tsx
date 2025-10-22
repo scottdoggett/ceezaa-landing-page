@@ -1,4 +1,4 @@
-import { DollarSign, Gift, Rocket, Sparkles, Target } from "lucide-react";
+import { DollarSign, Rocket, Sparkles, Target } from "lucide-react";
 
 export function BuiltForYou() {
   return (
@@ -28,15 +28,6 @@ export function BuiltForYou() {
                 There are no setup costs or complicated integrations.
               </p>
             </div>
-
-            <div className="bg-card border-2 border-accent/20 rounded-2xl p-8 shadow-xl">
-              <Gift className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Completely Free</h3>
-              <p className="text-lg text-muted-foreground font-semibold">
-                It is completely free to start.
-              </p>
-            </div>
-
             <div className="bg-primary/10 border border-primary/30 rounded-2xl p-8">
               <Rocket className="w-10 h-10 mb-4" />
               <h3 className="text-xl font-bold mb-3">Quick Start</h3>
@@ -57,7 +48,7 @@ export function BuiltForYou() {
           </div>
 
           {/* Bottom CTA callout */}
-          <div className="bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 border-2 border-primary/30 rounded-3xl p-10 md:p-12 text-center">
+          <div className="bg-linear-to-r from-primary/20 via-accent/20 to-primary/20 border-2 border-primary/30 rounded-3xl p-10 md:p-12 text-center">
             <Target className="w-14 h-14 md:w-16 md:h-16 mb-6 mx-auto" />
             <p className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto">
               Simple setup. Zero complexity. Immediate results.
