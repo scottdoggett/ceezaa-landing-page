@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 const navigationLinks = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
-  { name: "Travellers", href: "/travellers", icon: Users },
+  { name: "Travelers", href: "/travelers", icon: Users },
   { name: "Hostels", href: "/hostels", icon: Building2 },
   { name: "Experience Partners", href: "/experience-partners", icon: Sparkles },
   { name: "Contact", href: "/contact", icon: Mail },

@@ -4,7 +4,7 @@ import { LiveMoment } from "@/components/ui/travelers-page/live-moment";
 import { CeezaaId } from "@/components/ui/travelers-page/ceezaa-id";
 import { WorldCloser } from "@/components/ui/travelers-page/world-closer";
 
-export default function Travellers() {
+export default function Travelers() {
   return (
     <main className="font-sans">
       <TravelPersonal />
