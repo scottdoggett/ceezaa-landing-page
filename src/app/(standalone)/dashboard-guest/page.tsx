@@ -224,7 +224,7 @@ export default function HostelDashboardGuest() {
                   <div className="space-y-2.5">
                     <div>
                       <p className="text-sm text-gray-500 mb-1">Email</p>
-                      <p className="text-sm font-medium">sdoggett@gmail.com</p>
+                      <p className="text-sm font-medium">myemail@email.com</p>
                     </div>
 
                     <div>
