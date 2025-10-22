@@ -11,6 +11,9 @@ export default function Home() {
     <main className="font-sans">
       <Hero />
       <WhyCeezaa />
+      <div className="w-full overflow-hidden -mt-4">
+        <div className="spacer layer1"></div>
+      </div>
       <WhatCeezaaIs />
       <YourStay />
       <Explore />

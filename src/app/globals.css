@@ -124,3 +124,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.spacer {
+  aspect-ratio: 700/100;
+  width: 100%;
+  min-width: 1400px; /* Minimum width before it starts cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.layer1 {
+  background-image: url('/home-page/home-wave.svg');
+}

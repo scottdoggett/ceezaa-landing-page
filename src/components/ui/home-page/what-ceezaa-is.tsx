@@ -2,7 +2,7 @@ import { Backpack, Hotel, Check } from "lucide-react";
 
 export function WhatCeezaaIs() {
   return (
-    <section className="w-full py-12 md:py-16 bg-linear-to-br from-background via-primary/5 to-background">
+    <section className="w-full py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto space-y-8">
           {/* Main content with image and text */}
