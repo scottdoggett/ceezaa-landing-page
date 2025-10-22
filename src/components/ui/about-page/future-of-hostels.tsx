@@ -1,43 +1,48 @@
-import { Rocket } from "lucide-react";
+import { Rocket, Sparkles } from "lucide-react";
 
 export function FutureOfHostels() {
   return (
-    <section className="w-full py-20 md:py-32 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
-      {/* Decorative gradient blobs */}
-      <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/3" />
-      <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-x-1/3" />
+    <section className="w-full py-16 md:py-24 bg-linear-to-br from-accent/5 via-background to-primary/5 relative overflow-hidden">
+      {/* Decorative linear blobs */}
+      <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/3 opacity-70" />
+      <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-x-1/3 opacity-70" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-5 gap-12 items-center">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
             {/* Left - Visual element */}
-            <div className="lg:col-span-2">
-              <div className="bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <Rocket className="w-16 h-16 mb-4 mx-auto" />
-                    <p className="text-sm text-muted-foreground uppercase tracking-wider">
-                      Building Tomorrow
-                    </p>
-                    <p className="text-2xl font-bold text-primary mt-2">
-                      The Digital Layer
-                    </p>
-                  </div>
-
-                  <div className="h-px bg-border" />
-
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm">Instant belonging</p>
+            <div className="lg:col-span-2 order-2 lg:order-1">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-linear-to-br from-primary to-accent rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
+                <div className="relative bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-xl">
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-linear-to-br from-primary/20 to-accent/20 mb-4">
+                        <Rocket className="w-10 h-10 text-primary" />
+                      </div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
+                        Building Tomorrow
+                      </p>
+                      <p className="text-2xl font-bold text-primary mt-3">
+                        The Digital Layer
+                      </p>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm">Natural connection</p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <p className="text-sm">Seamless discovery</p>
+
+                    <div className="h-px bg-linear-to-r from-transparent via-border to-transparent" />
+
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
+                        <p className="text-sm font-medium">Instant belonging</p>
+                      </div>
+                      <div className="flex items-center gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
+                        <p className="text-sm font-medium">Natural connection</p>
+                      </div>
+                      <div className="flex items-center gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
+                        <p className="text-sm font-medium">Seamless discovery</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -45,37 +50,46 @@ export function FutureOfHostels() {
             </div>
 
             {/* Right - Content */}
-            <div className="lg:col-span-3 space-y-8">
+            <div className="lg:col-span-3 space-y-8 order-1 lg:order-2">
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
                   The Future of{" "}
                   <span className="text-primary">Hostels</span>
                 </h2>
-                <p className="text-xl font-semibold mb-4">
+                <p className="text-lg md:text-xl text-muted-foreground">
                   Hostels are evolving, and so is how travelers experience them.
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="bg-card border-l-4 border-primary rounded-r-xl p-6 shadow-sm">
-                  <p className="text-lg">
+              <div className="space-y-5">
+                <div className="group bg-card border-l-4 border-primary hover:border-primary/70 rounded-r-xl p-6 shadow-sm hover:shadow-md transition-all">
+                  <p className="text-base md:text-lg leading-relaxed">
                     Ceezaa is building the digital layer that powers that change.
                   </p>
                 </div>
 
-                <div className="bg-primary/10 border border-primary/30 rounded-xl p-8">
-                  <p className="text-lg mb-4">
-                    A world where every traveler can walk into a hostel and instantly feel part of something.
-                  </p>
-                  <p className="text-lg font-medium">
-                    Where connection, discovery, and belonging come naturally.
-                  </p>
+                <div className="relative group">
+                  <div className="absolute -inset-0.5 bg-linear-to-r from-primary to-accent rounded-xl blur opacity-10 group-hover:opacity-20 transition-opacity" />
+                  <div className="relative bg-linear-to-br from-primary/10 to-accent/5 border border-primary/30 rounded-xl p-6 md:p-8">
+                    <div className="flex items-start gap-3 mb-4">
+                      <Sparkles className="w-5 h-5 text-primary shrink-0 mt-1" />
+                      <p className="text-base md:text-lg leading-relaxed">
+                        A world where every traveler can walk into a hostel and instantly feel part of something.
+                      </p>
+                    </div>
+                    <p className="text-base md:text-lg leading-relaxed font-medium pl-8">
+                      Where connection, discovery, and belonging come naturally.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="text-center md:text-left pt-4">
-                  <p className="text-2xl md:text-3xl font-bold text-primary">
-                    That is the world we are building.
-                  </p>
+                <div className="pt-4">
+                  <div className="inline-block">
+                    <p className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                      That is the world we are building.
+                    </p>
+                    <div className="h-1 w-full bg-linear-to-r from-primary to-accent rounded-full" />
+                  </div>
                 </div>
               </div>
             </div>

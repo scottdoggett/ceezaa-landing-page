@@ -78,7 +78,7 @@ export function WhyCeezaa() {
                         </div>
                       </div>
                       <p className="text-lg lg:text-xl font-semibold text-foreground-secondary leading-relaxed">
-                        Ceezaa brings that sense of belonging back to every stay.
+                        Ceezaa brings that sense of belonging back to hostels through tailored experiences and community.
                       </p>
                     </div>
                   </div>

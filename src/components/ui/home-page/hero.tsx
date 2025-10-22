@@ -38,8 +38,8 @@ export function Hero() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-xl font-semibold">
-              Ceezaa connects travelers with the people, experiences, and stories
-              that make every hostel stay unforgettable.
+              Ceezaa connects hostels and travelers through understanding, 
+              creating one identity that makes every stay feel personal.
             </p>
             <div className="flex flex-row gap-2 sm:gap-4">
               <Button size="lg" className="flex-1 bg-primary lg:flex-none hover:bg-secondary text-white text-sm sm:text-base md:text-lg px-3 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-xl">

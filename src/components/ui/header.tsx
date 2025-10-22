@@ -93,7 +93,7 @@ export function Header() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="lg:hidden border-b bg-background overflow-hidden"
+            className="lg:hidden border-b bg-background overflow-hidden fixed top-16 left-0 right-0 z-40"
           >
             <nav className="px-4 sm:px-6 lg:px-8 py-4">
               <div className="grid gap-2">

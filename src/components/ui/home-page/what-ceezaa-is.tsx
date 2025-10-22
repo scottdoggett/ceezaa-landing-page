@@ -55,7 +55,7 @@ export function WhatCeezaaIs() {
               <p className="text-base text-muted-foreground leading-relaxed">
                 More connection and discovery. Every moment personalized to your journey.
               </p>
-              <ul className="space-y-2 text-sm text-muted-foreground pt-1">
+              <ul className="space-y-2 text-md text-muted-foreground pt-1">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Curated experiences</span>
@@ -79,7 +79,7 @@ export function WhatCeezaaIs() {
               <p className="text-base text-muted-foreground leading-relaxed">
                 Guests who are engaged, informed, and feel at home from day one.
               </p>
-              <ul className="space-y-2 text-sm text-muted-foreground pt-1">
+              <ul className="space-y-2 text-md text-muted-foreground pt-1">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                   <span>Streamlined communication</span>
