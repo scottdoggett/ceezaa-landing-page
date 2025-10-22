@@ -22,7 +22,7 @@ export function OurMission() {
             {/* Philosophy - Order 1 on mobile, row 1 col 3 on desktop */}
             <div className="order-1 lg:row-start-1 lg:col-start-3 lg:col-span-1 space-y-6">
               <div className="space-y-5">
-                <h3 className="text-xl font-bold text-secondary uppercase tracking-wide">The Philosophy</h3>
+                <h3 className="text-xl font-extrabold text-secondary uppercase tracking-wide">The Philosophy</h3>
                 <p className="text-lg lg:text-xl font-extrabold leading-relaxed text-white">
                   We believe travel should never feel one-size-fits-all.
                 </p>
@@ -38,7 +38,7 @@ export function OurMission() {
                 <p className="text-xl lg:text-2xl font-semibold leading-relaxed text-white mb-4">
                   We use technology to make things feel more human, not less.
                 </p>
-                <p className="text-lg lg:text-xl leading-relaxed text-white/90">
+                <p className="text-base lg:text-lg leading-relaxed font-semibold text-white">
                   By understanding each traveler&apos;s preferences and habits, Ceezaa turns ordinary stays into experiences that feel effortless and meaningful.
                 </p>
               </div>
@@ -52,7 +52,7 @@ export function OurMission() {
                   <p className="text-xl font-bold text-secondary">
                     When hostels know their guests better
                   </p>
-                  <p className="text-lg text-white font-bold">
+                  <p className="text-lg text-white font-semibold">
                     They create moments that last.
                   </p>
                 </div>
@@ -62,19 +62,10 @@ export function OurMission() {
                   <p className="text-xl font-bold text-secondary">
                     When travelers feel understood
                   </p>
-                  <p className="text-lg text-white font-bold">
+                  <p className="text-lg text-white font-semibold">
                     They remember the place forever.
                   </p>
                 </div>
-              </div>
-            </div>
-
-            {/* Closing statement - Order 4 on mobile, row 3 cols 1-2 on desktop */}
-            <div className="order-4 lg:row-start-3 lg:col-start-1 lg:col-span-2">
-              <div className="pt-6 border-t border-white/20">
-                <p className="text-2xl lg:text-3xl font-semibold text-secondary italic">
-                  That is what we are building every day.
-                </p>
               </div>
             </div>
           </div>
