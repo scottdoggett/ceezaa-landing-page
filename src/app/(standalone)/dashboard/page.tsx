@@ -13,6 +13,13 @@ import {
   Settings,
   CheckCircle2,
   AlertCircle,
+  User,
+  Ticket,
+  History,
+  Activity,
+  StickyNote,
+  TrendingUp,
+  Sparkles,
 } from "lucide-react";
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts";
 import {
@@ -25,8 +32,8 @@ import {
 const interestData = [
   { category: "Adventure", interest: 85 },
   { category: "Food & Dining", interest: 92 },
-  { category: "Nightlife", interest: 78 },
-  { category: "Wellness", interest: 88 },
+  { category: "Nightlife", interest: 76 },
+  { category: "Wellness", interest: 63 },
   { category: "Culture", interest: 65 },
   { category: "Social", interest: 95 },
 ];
@@ -70,10 +77,10 @@ export default function HostelDashboard() {
         <div className="p-4 border-t border-gray-200">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-sm font-semibold text-primary">
-              JD
+              CK
             </div>
             <div>
-              <p className="text-sm font-medium">John Doe</p>
+              <p className="text-sm font-medium">Chinni Kanu</p>
               <p className="text-xs text-gray-500">Front Desk</p>
             </div>
           </div>
@@ -126,7 +133,7 @@ export default function HostelDashboard() {
                   <Button variant="outline" size="sm" className="h-8 px-4 text-sm">
                     Edit
                   </Button>
-                  <Button size="sm" className="h-8 px-4 text-sm bg-primary hover:bg-primary/90">
+                  <Button size="sm" className="h-8 px-4 text-white text-sm bg-primary hover:bg-primary/90">
                     Check In
                   </Button>
                 </div>
@@ -135,7 +142,10 @@ export default function HostelDashboard() {
 
             {/* Interests Section */}
             <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
-              <h3 className="text-base font-semibold text-gray-900 mb-2">Interests</h3>
+              <div className="flex items-center gap-2 mb-2">
+                <Sparkles className="w-5 h-5 text-primary" />
+                <h3 className="text-base font-semibold text-gray-900">Interests</h3>
+              </div>
               <div className="flex flex-wrap gap-1.5">
                 <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
                   Yoga
@@ -182,12 +192,12 @@ export default function HostelDashboard() {
                   <div className="grid grid-cols-3 gap-3">
                     <div>
                       <p className="text-sm text-gray-500">Check-in</p>
-                      <p className="text-sm font-medium">Oct 20, 2024</p>
+                      <p className="text-sm font-medium">Oct 20, 2025</p>
                     </div>
 
                     <div>
                       <p className="text-sm text-gray-500">Check-out</p>
-                      <p className="text-sm font-medium">Oct 25, 2024</p>
+                      <p className="text-sm font-medium">Oct 25, 2025</p>
                     </div>
 
                     <div>
@@ -201,7 +211,10 @@ export default function HostelDashboard() {
               {/* Guest Information */}
               <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-base font-semibold text-gray-900">Guest Information</h3>
+                  <div className="flex items-center gap-2">
+                    <User className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Guest Information</h3>
+                  </div>
                   <button className="text-sm text-primary font-medium hover:underline">
                     View All →
                   </button>
@@ -254,7 +267,10 @@ export default function HostelDashboard() {
               {/* Active Bookings */}
               <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-base font-semibold text-gray-900">Active Bookings</h3>
+                  <div className="flex items-center gap-2">
+                    <Ticket className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Active Bookings</h3>
+                  </div>
                   <button className="text-sm text-primary font-medium hover:underline">
                     View All →
                   </button>
@@ -291,7 +307,10 @@ export default function HostelDashboard() {
               <div className="grid grid-cols-2 gap-3">
                 {/* Booking History */}
                 <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
-                  <h3 className="text-base font-semibold text-gray-900 mb-3">Booking History</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <History className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Booking History</h3>
+                  </div>
 
                   <div className="space-y-2">
                     <div className="pb-2 border-b border-gray-100 last:border-0">
@@ -315,7 +334,10 @@ export default function HostelDashboard() {
 
                 {/* Recent Activity */}
                 <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
-                  <h3 className="text-base font-semibold text-gray-900 mb-3">Recent Activity</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Activity className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Recent Activity</h3>
+                  </div>
 
                   <div className="space-y-2.5">
                     <div className="flex gap-3">
@@ -357,7 +379,10 @@ export default function HostelDashboard() {
               <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
                 {/* Notes & Alerts */}
                 <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm flex flex-col">
-                  <h3 className="text-base font-semibold text-gray-900 mb-3">Notes & Alerts</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <StickyNote className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Notes & Alerts</h3>
+                  </div>
 
                   <div className="space-y-2.5 flex-1 overflow-y-auto">
                     <div className="flex items-start gap-2.5 p-3 bg-gray-50 rounded-lg border border-gray-200">
@@ -391,7 +416,10 @@ export default function HostelDashboard() {
 
                 {/* Interest Profile */}
                 <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm flex flex-col">
-                  <h3 className="text-base font-semibold text-gray-900 mb-3">Interest Profile</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <TrendingUp className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Interest Profile</h3>
+                  </div>
 
                   <div className="flex-1 flex items-center justify-center">
                     <ChartContainer
@@ -404,8 +432,8 @@ export default function HostelDashboard() {
                         <PolarGrid />
                         <Radar
                           dataKey="interest"
-                          fill="var(--color-interest)"
-                          fillOpacity={0.6}
+                          fill="var(--color-secondary)"
+                          fillOpacity={0.5}
                           dot={{
                             r: 4,
                             fillOpacity: 1,
