@@ -14,34 +14,58 @@ export function FutureOfHostels() {
             <div className="lg:col-span-2 order-2 lg:order-1">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-linear-to-br from-primary to-accent rounded-3xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
-                <div className="relative bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-xl">
-                  <div className="space-y-6">
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-linear-to-br from-primary/20 to-accent/20 mb-4">
-                        <Rocket className="w-10 h-10 text-primary" />
+                <div className="relative bg-card border-2 border-primary/30 rounded-3xl p-8 shadow-xl space-y-6">
+
+                  {/* Header */}
+                  <div className="text-center">
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-linear-to-br from-primary/20 to-accent/20 mb-4">
+                      <Rocket className="w-10 h-10 text-primary" />
+                    </div>
+                    <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
+                      The Platform
+                    </p>
+                    <p className="text-2xl font-bold text-primary mt-2">
+                      How It Works
+                    </p>
+                  </div>
+
+                  <div className="h-px bg-linear-to-r from-transparent via-border to-transparent" />
+
+                  {/* What the digital layer does */}
+                  <div className="space-y-5">
+                    <div>
+                      <div className="flex items-start gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0 group-hover/item:scale-150 transition-transform" />
+                        <div className="space-y-1">
+                          <p className="font-semibold text-base">Learns Your Preferences</p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            The platform adapts to your travel style, interests, and pace from the moment you check in.
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
-                        Building Tomorrow
-                      </p>
-                      <p className="text-2xl font-bold text-primary mt-3">
-                        The Digital Layer
-                      </p>
                     </div>
 
-                    <div className="h-px bg-linear-to-r from-transparent via-border to-transparent" />
+                    <div>
+                      <div className="flex items-start gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0 group-hover/item:scale-150 transition-transform" />
+                        <div className="space-y-1">
+                          <p className="font-semibold text-base">Connects You Instantly</p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            See everything happening at your hostel and nearby in real-time—events, activities, and local experiences.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
 
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3 group/item">
-                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
-                        <p className="text-sm font-medium">Instant belonging</p>
-                      </div>
-                      <div className="flex items-center gap-3 group/item">
-                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
-                        <p className="text-sm font-medium">Natural connection</p>
-                      </div>
-                      <div className="flex items-center gap-3 group/item">
-                        <div className="w-2 h-2 bg-primary rounded-full group-hover/item:scale-150 transition-transform" />
-                        <p className="text-sm font-medium">Seamless discovery</p>
+                    <div>
+                      <div className="flex items-start gap-3 group/item">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 shrink-0 group-hover/item:scale-150 transition-transform" />
+                        <div className="space-y-1">
+                          <p className="font-semibold text-base">Simplifies Everything</p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            Book activities, manage your stay, and discover hidden gems—all in one place, without the hassle.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
