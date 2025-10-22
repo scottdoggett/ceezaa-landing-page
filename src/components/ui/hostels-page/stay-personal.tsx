@@ -1,11 +1,11 @@
-import { Megaphone, Zap } from "lucide-react";
+import { HostelDashboard } from "@/components/ui/hostel-dashboard";
 
 export function StayPersonal() {
   return (
-    <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground">
+    <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left - Content */}
             <div className="space-y-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -16,47 +16,60 @@ export function StayPersonal() {
               <p className="text-xl font-semibold">Every traveler is different.</p>
 
               <div className="space-y-6">
-                <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
-                    Ceezaa helps you understand what each guest cares about and
-                    how they like to experience your space.
-                  </p>
+                <p className="text-lg leading-relaxed">
+                  Ceezaa helps you understand what each guest cares about and
+                  how they like to experience your space.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-2 h-2 rounded-full bg-primary shrink-0" />
+                    <p className="text-base leading-relaxed">
+                      From dining and tours to small details like check-in
+                      preferences or dietary needs, Ceezaa makes it easy to
+                      personalize each stay.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-2 h-2 rounded-full bg-primary shrink-0" />
+                    <p className="text-base leading-relaxed">
+                      Post updates, share events, and highlight offers
+                      directly to your guests in real-time.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1 w-2 h-2 rounded-full bg-primary shrink-0" />
+                    <p className="text-base leading-relaxed">
+                      Everything is simple, organized, and made to fit the rhythm of
+                      your hostel—without adding extra work for your staff.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
-                    From dining and tours to small details like check-in
-                    preferences or dietary needs, Ceezaa makes it easy to
-                    personalize each stay without adding extra work for your
-                    staff.
+                <div className="pt-4 border-t border-secondary-foreground/10">
+                  <p className="font-semibold text-lg text-primary">
+                    No extra work. Just better experiences.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Right - Features */}
-            <div className="space-y-6">
-              <div className="bg-card border border-border rounded-2xl p-8 shadow-lg">
-                <Megaphone className="w-10 h-10 mb-4 text-foreground" />
-                <h3 className="text-xl font-bold mb-3 text-foreground">Direct Communication</h3>
-                <p className="text-lg text-muted-foreground font-semibold">
-                  You can post updates, share events, and highlight offers
-                  directly to your guests.
-                </p>
+            {/* Right - Dashboard Preview */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-2xl" />
+              <div className="relative bg-white rounded-2xl shadow-2xl border-4 border-primary/20 overflow-hidden">
+                <div className="w-full h-[600px] overflow-hidden">
+                  <div className="origin-top-left" style={{ transform: "scale(0.6)", width: "166.67%", height: "166.67%" }}>
+                    <HostelDashboard />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-20 bg-linear-to-t from-white to-transparent pointer-events-none" />
               </div>
-
-              <div className="bg-accent/10 border border-accent/30 rounded-2xl p-8">
-                <Zap className="w-10 h-10 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Simple & Organized</h3>
-                <p className="text-lg text-muted-foreground font-semibold">
-                  Everything is simple, organized, and made to fit the rhythm of
-                  your hostel.
-                </p>
-              </div>
-
-              <div className="bg-primary/10 border-l-4 border-primary rounded-r-xl p-6">
-                <p className="font-semibold text-lg">
-                  No extra work. Just better experiences.
+              <div className="text-center mt-4">
+                <p className="text-sm text-secondary-foreground/70 font-medium">
+                  Live Dashboard Preview
                 </p>
               </div>
             </div>
