@@ -1,4 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   Home,
   Users,
@@ -9,9 +12,31 @@ import {
   BarChart3,
   Settings,
   CheckCircle2,
-  Copy,
   AlertCircle,
 } from "lucide-react";
+import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts";
+import {
+  ChartConfig,
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
+
+const interestData = [
+  { category: "Adventure", interest: 85 },
+  { category: "Food & Dining", interest: 92 },
+  { category: "Nightlife", interest: 78 },
+  { category: "Wellness", interest: 88 },
+  { category: "Culture", interest: 65 },
+  { category: "Social", interest: 95 },
+];
+
+const chartConfig = {
+  interest: {
+    label: "Interest Level",
+    color: "hsl(var(--primary))",
+  },
+} satisfies ChartConfig;
 
 export default function HostelDashboard() {
   return (
@@ -19,11 +44,14 @@ export default function HostelDashboard() {
       {/* Sidebar Navigation */}
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
         {/* Logo */}
-        <div className="p-6 border-b border-gray-200">
-          <h1 className="text-2xl font-bold">
-            <span className="text-primary">Ceezaa</span>
-            <span className="text-gray-600 text-sm ml-2">Staff</span>
-          </h1>
+        <div className="p-5 border-b border-gray-200 flex items-center justify-center">
+          <Image
+            src="/ceezaa-logo.svg"
+            alt="Ceezaa"
+            width={120}
+            height={40}
+            className="h-10 w-auto"
+          />
         </div>
 
         {/* Navigation Items */}
@@ -53,193 +81,204 @@ export default function HostelDashboard() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 overflow-auto">
-        <div className="p-8">
-          {/* Header Section */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6 shadow-sm">
-            <div className="flex items-start justify-between">
-              <div className="flex items-center gap-4">
-                {/* Profile Photo */}
-                <div className="relative">
-                  <div className="w-20 h-20 rounded-full bg-linear-to-br from-primary/20 to-accent/20 flex items-center justify-center text-2xl font-bold border-4 border-white shadow-lg">
-                    SC
+      <main className="flex-1 overflow-hidden">
+        <div className="h-full flex flex-col p-4">
+          {/* Top Section - Profile and Interests */}
+          <div className="grid grid-cols-3 gap-3 mb-3">
+            {/* Profile Section */}
+            <div className="col-span-2 bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+              <div className="flex items-start justify-between">
+                <div className="flex items-center gap-4">
+                  {/* Profile Photo */}
+                  <div className="relative">
+                    <div className="w-16 h-16 rounded-full bg-linear-to-br from-primary/20 to-accent/20 flex items-center justify-center text-xl font-bold border-2 border-white shadow-lg">
+                      SD
+                    </div>
+                    <div className="absolute -bottom-0.5 -right-0.5 w-5 h-5 bg-gray-400 rounded-full border-2 border-white" />
                   </div>
-                  <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-gray-400 rounded-full border-2 border-white" />
+
+                  <div>
+                    <h2 className="text-2xl font-bold text-gray-900">Scott Doggett</h2>
+                    <div className="flex items-center gap-2 mt-1.5">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-semibold bg-primary/10 text-primary border border-primary/20">
+                        Ceezaa ID: CZ-2344
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 mt-2">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+                        3rd Stay
+                      </span>
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+                        Gold Member
+                      </span>
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-md text-sm font-medium bg-gray-100 text-gray-700">
+                        Check-out: Oct 25
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900">Sarah Chen</h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
-                      Ceezaa ID: CZ-2847
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 mt-3">
-                    <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700">
-                      3rd Stay
-                    </span>
-                    <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700">
-                      Gold Member
-                    </span>
-                    <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-gray-100 text-gray-700">
-                      Check-out: Oct 25
-                    </span>
-                  </div>
+                {/* Action Buttons */}
+                <div className="flex items-center gap-2">
+                  <Button variant="outline" size="sm" className="h-8 px-4 text-sm">
+                    Message
+                  </Button>
+                  <Button variant="outline" size="sm" className="h-8 px-4 text-sm">
+                    Edit
+                  </Button>
+                  <Button size="sm" className="h-8 px-4 text-sm bg-primary hover:bg-primary/90">
+                    Check In
+                  </Button>
                 </div>
               </div>
+            </div>
 
-              {/* Action Buttons */}
-              <div className="flex items-center gap-2">
-                <Button variant="outline" size="sm">
-                  Message
-                </Button>
-                <Button variant="outline" size="sm">
-                  Edit Profile
-                </Button>
-                <Button size="sm" className="bg-primary hover:bg-primary/90">
-                  Check In
-                </Button>
+            {/* Interests Section */}
+            <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+              <h3 className="text-base font-semibold text-gray-900 mb-2">Interests</h3>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                  Yoga
+                </span>
+                <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                  Nightlife
+                </span>
+                <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                  Coffee
+                </span>
+                <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                  Photography
+                </span>
+                <span className="px-2.5 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full">
+                  Solo Travel
+                </span>
               </div>
             </div>
           </div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-5 gap-3 flex-1 min-h-0">
             {/* Left Column - Main Info */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="col-span-2 space-y-3">
               {/* Current Stay Card */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900">Current Stay</h3>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-200">
-                    <CheckCircle2 className="w-3 h-3 mr-1" />
+              <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-2">
+                    <BedDouble className="w-5 h-5 text-primary" />
+                    <h3 className="text-base font-semibold text-gray-900">Current Stay</h3>
+                  </div>
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 border border-gray-200">
+                    <CheckCircle2 className="w-4 h-4 mr-1" />
                     Paid
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-2">
                   <div>
-                    <div className="flex items-center gap-2 mb-4">
-                      <BedDouble className="w-5 h-5 text-primary" />
-                      <div>
-                        <p className="text-sm text-gray-500">Room</p>
-                        <p className="text-lg font-semibold">204 - Deluxe Dorm</p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-3">
-                      <div>
-                        <p className="text-xs text-gray-500">Check-in</p>
-                        <p className="text-sm font-medium">Oct 20, 2024</p>
-                      </div>
-
-                      <div>
-                        <p className="text-xs text-gray-500">Check-out</p>
-                        <p className="text-sm font-medium">Oct 25, 2024</p>
-                      </div>
-
-                      <div>
-                        <p className="text-xs text-gray-500">Duration</p>
-                        <p className="text-sm font-medium">5 nights</p>
-                      </div>
-                    </div>
+                    <p className="text-sm text-gray-500">Room</p>
+                    <p className="text-base font-semibold">204 - Deluxe Dorm</p>
                   </div>
 
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <p className="text-sm font-medium">WiFi Password</p>
-                      <button className="p-1 hover:bg-white rounded transition-colors">
-                        <Copy className="w-4 h-4 text-gray-400" />
-                      </button>
+                  <div className="grid grid-cols-3 gap-3">
+                    <div>
+                      <p className="text-sm text-gray-500">Check-in</p>
+                      <p className="text-sm font-medium">Oct 20, 2024</p>
                     </div>
-                    <p className="text-base font-mono font-semibold text-gray-900">CeezaaGuest2024</p>
+
+                    <div>
+                      <p className="text-sm text-gray-500">Check-out</p>
+                      <p className="text-sm font-medium">Oct 25, 2024</p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-gray-500">Duration</p>
+                      <p className="text-sm font-medium">5 nights</p>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Guest Information */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Guest Information</h3>
+              <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-base font-semibold text-gray-900">Guest Information</h3>
+                  <button className="text-sm text-primary font-medium hover:underline">
+                    View All →
+                  </button>
+                </div>
 
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2.5">
                     <div>
-                      <p className="text-xs text-gray-500 mb-1">Email</p>
-                      <p className="text-sm font-medium">sarah.chen@email.com</p>
+                      <p className="text-sm text-gray-500 mb-1">Email</p>
+                      <p className="text-sm font-medium">sdoggett@gmail.com</p>
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-500 mb-1">Phone</p>
-                      <p className="text-sm font-medium">+1 (555) 123-4567</p>
+                      <p className="text-sm text-gray-500 mb-1">Phone</p>
+                      <p className="text-sm font-medium">+1 (416) 942-4493</p>
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-500 mb-1">Nationality</p>
-                      <p className="text-sm font-medium">🇺🇸 United States</p>
+                      <p className="text-sm text-gray-500 mb-1">Nationality</p>
+                      <p className="text-sm font-medium">Canadian</p>
                     </div>
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-2.5">
                     <div>
-                      <p className="text-xs text-gray-500 mb-1">Date of Birth</p>
-                      <p className="text-sm font-medium">March 15, 1995 (29 years)</p>
+                      <p className="text-sm text-gray-500 mb-1">Date of Birth</p>
+                      <p className="text-sm font-medium">March 19, 2003 (22 years)</p>
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-500 mb-2">Dietary Preferences</p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-md">
+                      <p className="text-sm text-gray-500 mb-1.5">Dietary Preferences</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        <span className="px-2 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-md">
                           Vegan
                         </span>
-                        <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-md">
+                        <span className="px-2 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-md">
                           Gluten-Free
                         </span>
                       </div>
                     </div>
 
                     <div>
-                      <p className="text-xs text-gray-500 mb-2">Languages</p>
-                      <p className="text-sm font-medium">English, Mandarin</p>
+                      <p className="text-sm text-gray-500 mb-1">Languages</p>
+                      <p className="text-sm font-medium">English, French</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Active Bookings */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Active Bookings</h3>
+              <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-base font-semibold text-gray-900">Active Bookings</h3>
+                  <button className="text-sm text-primary font-medium hover:underline">
+                    View All →
+                  </button>
+                </div>
 
                 <div className="space-y-2">
                   <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div>
                       <p className="text-sm font-medium">City Walking Tour</p>
-                      <p className="text-xs text-gray-500">Tomorrow, 10:00 AM</p>
+                      <p className="text-sm text-gray-500">Tomorrow, 10:00 AM</p>
                     </div>
                     <div className="text-right">
                       <p className="text-sm font-semibold">$35</p>
-                      <span className="text-xs text-gray-600">Confirmed</span>
+                      <span className="text-sm text-gray-600">Confirmed</span>
                     </div>
                   </div>
-
-                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                    <div>
-                      <p className="text-sm font-medium">Rooftop Dinner</p>
-                      <p className="text-xs text-gray-500">Oct 23, 7:00 PM</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-sm font-semibold">$45</p>
-                      <span className="text-xs text-gray-600">Confirmed</span>
-                    </div>
-                  </div>
-
                   <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                     <div>
                       <p className="text-sm font-medium">Morning Yoga Session</p>
-                      <p className="text-xs text-gray-500">Oct 24, 7:00 AM</p>
+                      <p className="text-sm text-gray-500">Oct 24, 7:00 AM</p>
                     </div>
                     <div className="text-right">
                       <p className="text-sm font-semibold">Free</p>
-                      <span className="text-xs text-gray-600">Registered</span>
+                      <span className="text-sm text-gray-600">Registered</span>
                     </div>
                   </div>
                 </div>
@@ -247,117 +286,133 @@ export default function HostelDashboard() {
             </div>
 
             {/* Right Column - Additional Info */}
-            <div className="space-y-6">
-              {/* Booking History */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Booking History</h3>
+            <div className="col-span-3 flex flex-col gap-3">
+              {/* Top Row - Booking History and Recent Activity */}
+              <div className="grid grid-cols-2 gap-3">
+                {/* Booking History */}
+                <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                  <h3 className="text-base font-semibold text-gray-900 mb-3">Booking History</h3>
 
-                <div className="space-y-3">
-                  <div className="pb-3 border-b border-gray-100 last:border-0">
-                    <p className="text-sm font-medium text-gray-900">Summer 2024</p>
-                    <p className="text-xs text-gray-500 mt-1">Aug 15-22, 2024 · 7 nights</p>
+                  <div className="space-y-2">
+                    <div className="pb-2 border-b border-gray-100 last:border-0">
+                      <p className="text-sm font-medium text-gray-900">Summer 2024</p>
+                      <p className="text-sm text-gray-500 mt-1">Aug 15-22 · 7 nights</p>
+                    </div>
+                    <div className="pb-2 border-b border-gray-100 last:border-0">
+                      <p className="text-sm font-medium text-gray-900">Spring Break</p>
+                      <p className="text-sm text-gray-500 mt-1">Mar 10-14 · 4 nights</p>
+                    </div>
+                    <div className="pb-2 border-b border-gray-100 last:border-0">
+                      <p className="text-sm font-medium text-gray-900">New Year 2024</p>
+                      <p className="text-sm text-gray-500 mt-1">Dec 29-Jan 2 · 4 nights</p>
+                    </div>
                   </div>
-                  <div className="pb-3 border-b border-gray-100 last:border-0">
-                    <p className="text-sm font-medium text-gray-900">Spring Break</p>
-                    <p className="text-xs text-gray-500 mt-1">Mar 10-14, 2024 · 4 nights</p>
-                  </div>
-                  <div className="pb-3 border-b border-gray-100 last:border-0">
-                    <p className="text-sm font-medium text-gray-900">New Year 2024</p>
-                    <p className="text-xs text-gray-500 mt-1">Dec 29-Jan 2 · 4 nights</p>
-                  </div>
+
+                  <button className="text-sm text-primary font-medium hover:underline mt-3">
+                    View All →
+                  </button>
                 </div>
 
-                <button className="text-sm text-primary font-medium hover:underline mt-4">
-                  View All History →
-                </button>
-              </div>
+                {/* Recent Activity */}
+                <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+                  <h3 className="text-base font-semibold text-gray-900 mb-3">Recent Activity</h3>
 
-              {/* Preferences & Interests */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Interests & Preferences</h3>
+                  <div className="space-y-2.5">
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
+                      <div>
+                        <p className="text-sm text-gray-900">Checked in</p>
+                        <p className="text-sm text-gray-500">2 days ago</p>
+                      </div>
+                    </div>
 
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                    Yoga
-                  </span>
-                  <span className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                    Nightlife
-                  </span>
-                  <span className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                    Coffee Lover
-                  </span>
-                  <span className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                    Photography
-                  </span>
-                  <span className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs font-medium rounded-full">
-                    Solo Traveler
-                  </span>
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
+                      <div>
+                        <p className="text-sm text-gray-900">Booked City Tour</p>
+                        <p className="text-sm text-gray-500">1 day ago</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
+                      <div>
+                        <p className="text-sm text-gray-900">Registered for Yoga</p>
+                        <p className="text-sm text-gray-500">5 hours ago</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
+                      <div>
+                        <p className="text-sm text-gray-900">Dinner reservation</p>
+                        <p className="text-sm text-gray-500">2 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Notes & Alerts */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Notes & Alerts</h3>
+              {/* Bottom Row - Notes & Alerts and Interest Profile */}
+              <div className="grid grid-cols-2 gap-3 flex-1 min-h-0">
+                {/* Notes & Alerts */}
+                <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm flex flex-col">
+                  <h3 className="text-base font-semibold text-gray-900 mb-3">Notes & Alerts</h3>
 
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
-                    <AlertCircle className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-sm font-medium text-gray-900">Special Request</p>
-                      <p className="text-xs text-gray-700 mt-1">
-                        Guest requested a quiet room away from common areas
+                  <div className="space-y-2.5 flex-1 overflow-y-auto">
+                    <div className="flex items-start gap-2.5 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                      <AlertCircle className="w-4 h-4 text-gray-600 shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">Special Request</p>
+                        <p className="text-sm text-gray-700 mt-1">
+                          Quiet room away from common areas
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="p-3 bg-gray-50 rounded-lg">
+                      <p className="text-sm text-gray-500 mb-1">Staff Note - Oct 20</p>
+                      <p className="text-sm text-gray-900">
+                        Interested in photography spots. Recommended Hidden Gems tour.
+                      </p>
+                    </div>
+                    <div className="p-3 bg-gray-50 rounded-lg">
+                      <p className="text-sm text-gray-500 mb-1">Staff Note - Oct 20</p>
+                      <p className="text-sm text-gray-900">
+                        Loves Pinot Sage from the cafe. Offer discount.
                       </p>
                     </div>
                   </div>
 
-                  <div className="p-3 bg-gray-50 rounded-lg">
-                    <p className="text-xs text-gray-500 mb-2">Staff Note - Oct 20</p>
-                    <p className="text-sm text-gray-900">
-                      Guest mentioned interest in local photography spots. Recommended Hidden Gems tour.
-                    </p>
-                  </div>
+                  <button className="text-sm text-primary font-medium hover:underline mt-3">
+                    Add Note +
+                  </button>
                 </div>
 
-                <button className="text-sm text-primary font-medium hover:underline mt-4">
-                  Add Note +
-                </button>
-              </div>
+                {/* Interest Profile */}
+                <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm flex flex-col">
+                  <h3 className="text-base font-semibold text-gray-900 mb-3">Interest Profile</h3>
 
-              {/* Recent Activity */}
-              <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
-
-                <div className="space-y-4">
-                  <div className="flex gap-3">
-                    <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
-                    <div>
-                      <p className="text-sm text-gray-900">Checked in</p>
-                      <p className="text-xs text-gray-500">2 days ago</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
-                    <div>
-                      <p className="text-sm text-gray-900">Booked City Tour</p>
-                      <p className="text-xs text-gray-500">1 day ago</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
-                    <div>
-                      <p className="text-sm text-gray-900">Registered for Yoga</p>
-                      <p className="text-xs text-gray-500">5 hours ago</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <div className="w-2 h-2 rounded-full bg-gray-400 mt-2" />
-                    <div>
-                      <p className="text-sm text-gray-900">Made dinner reservation</p>
-                      <p className="text-xs text-gray-500">2 hours ago</p>
-                    </div>
+                  <div className="flex-1 flex items-center justify-center">
+                    <ChartContainer
+                      config={chartConfig}
+                      className="w-full h-full max-h-[250px]"
+                    >
+                      <RadarChart data={interestData}>
+                        <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+                        <PolarAngleAxis dataKey="category" />
+                        <PolarGrid />
+                        <Radar
+                          dataKey="interest"
+                          fill="var(--color-interest)"
+                          fillOpacity={0.6}
+                          dot={{
+                            r: 4,
+                            fillOpacity: 1,
+                          }}
+                        />
+                      </RadarChart>
+                    </ChartContainer>
                   </div>
                 </div>
               </div>

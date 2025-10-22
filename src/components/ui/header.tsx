@@ -37,7 +37,7 @@ export function Header() {
         <div className="flex-1 flex justify-start">
           <Link href="/" className="flex items-center space-x-2 shrink-0">
             <Image
-              src="/ceezaa-logo2.svg"
+              src="/ceezaa-logo.svg"
               alt="Ceezaa"
               width={120}
               height={40}
