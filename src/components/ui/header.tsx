@@ -15,6 +15,12 @@ import {
   Menu,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
 const navigationLinks = [
@@ -103,7 +109,48 @@ export function Header() {
 
         {/* Right Side Actions - Right section with flex-1 to create equal spacing */}
         <div className="flex-1 flex justify-end items-center gap-2">
-          <Button variant="join" className="whitespace-nowrap">Join Now</Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="join" className="whitespace-nowrap">
+                Join Now
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuItem asChild>
+                <a
+                  href="https://tally.so/r/w78BYA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 cursor-pointer"
+                >
+                  <Users className="h-4 w-4 text-current" />
+                  <span>Join as Traveler</span>
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a
+                  href="https://tally.so/r/mRXK1j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 cursor-pointer"
+                >
+                  <Building2 className="h-4 w-4 text-current" />
+                  <span>Join as Hostel</span>
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a
+                  href="https://tally.so/r/wdLqeo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 cursor-pointer"
+                >
+                  <Sparkles className="h-4 w-4 text-current" />
+                  <span>Join as Experience Partner</span>
+                </a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           {/* Mobile Menu Button */}
           <Button
