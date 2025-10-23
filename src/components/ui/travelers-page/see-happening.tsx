@@ -1,16 +1,24 @@
-import { Target, Calendar, Utensils, Building, Palette, Map } from "lucide-react";
+import { Target, Calendar, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export function SeeHappening() {
   return (
-    <section className="w-full py-20 md:py-32 bg-primary text-white relative overflow-hidden">
+    <section className="w-full py-12 md:pt-20 lg:py-8 bg-primary text-white relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-size-[20px_20px] z-0" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Content */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
                 See What Is <span className="text-secondary">Happening</span>
               </h2>
@@ -20,7 +28,7 @@ export function SeeHappening() {
               </p>
 
               {/* Key benefits */}
-              <div className="space-y-6 pt-4">
+              <div className="space-y-4 pt-2">
                 <div className="flex items-start gap-4">
                   <div className="p-2.5 bg-white/10 rounded-lg shrink-0">
                     <Target className="w-6 h-6 text-white" />
@@ -49,67 +57,61 @@ export function SeeHappening() {
               </div>
             </div>
 
-            {/* Right - Visual "App Feed" Preview */}
-            <div className="relative">
-              {/* Mockup container with subtle glow */}
-              <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-6 border border-white/20 shadow-2xl">
-                <div className="space-y-4">
-                  {/* Feed item 1 */}
-                  <div className="bg-background text-foreground rounded-2xl p-5 shadow-lg transform hover:scale-105 transition-transform">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Utensils className="w-7 h-7 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-bold text-lg">Dinners</p>
-                        <p className="text-sm text-muted-foreground">Tonight at 7:00 PM</p>
-                      </div>
+            {/* Right - Mobile App Carousel */}
+            <div className="relative flex justify-center items-center">
+              <Carousel className="w-full max-w-sm mx-auto">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="relative aspect-[9/19.5] w-full">
+                      <Image
+                        src="/mobile-ss/app-home.png"
+                        alt="Ceezaa App Home Screen"
+                        fill
+                        className="object-contain rounded-3xl"
+                        priority
+                      />
                     </div>
-                  </div>
-
-                  {/* Feed item 2 */}
-                  <div className="bg-background text-foreground rounded-2xl p-5 shadow-lg transform hover:scale-105 transition-transform">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-accent/10 rounded-xl">
-                        <Building className="w-7 h-7 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-bold text-lg">City Tours</p>
-                        <p className="text-sm text-muted-foreground">Starting at 10:00 AM</p>
-                      </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative aspect-[9/19.5] w-full">
+                      <Image
+                        src="/mobile-ss/app-explore.png"
+                        alt="Ceezaa App Explore Screen"
+                        fill
+                        className="object-contain rounded-3xl"
+                      />
                     </div>
-                  </div>
-
-                  {/* Feed item 3 */}
-                  <div className="bg-background text-foreground rounded-2xl p-5 shadow-lg transform hover:scale-105 transition-transform">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-accent/10 rounded-xl">
-                        <Palette className="w-7 h-7 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-bold text-lg">Local Events</p>
-                        <p className="text-sm text-muted-foreground">This weekend</p>
-                      </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative aspect-[9/19.5] w-full">
+                      <Image
+                        src="/mobile-ss/app-bookings.png"
+                        alt="Ceezaa App Bookings Screen"
+                        fill
+                        className="object-contain rounded-3xl"
+                      />
                     </div>
-                  </div>
-
-                  {/* Feed item 4 */}
-                  <div className="bg-background text-foreground rounded-2xl p-5 shadow-lg transform hover:scale-105 transition-transform">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Map className="w-7 h-7 text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-bold text-lg">Experiences</p>
-                        <p className="text-sm text-muted-foreground">Curated for you</p>
-                      </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative aspect-[9/19.5] w-full">
+                      <Image
+                        src="/mobile-ss/app-profile.png"
+                        alt="Ceezaa App Profile Screen"
+                        fill
+                        className="object-contain rounded-3xl"
+                      />
                     </div>
-                  </div>
-                </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex bg-white text-primary hover:bg-white/90 border-none shadow-lg" />
+                <CarouselNext className="hidden md:flex bg-white text-primary hover:bg-white/90 border-none shadow-lg" />
+              </Carousel>
 
-                {/* Subtle indicator that this is a preview */}
-                <div className="absolute -top-3 -right-3 bg-accent text-accent-foreground rounded-full px-4 py-1.5 text-xs font-semibold shadow-lg">
-                  Live Feed
+              {/* Swipe indicator for mobile */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 md:hidden">
+                <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm text-primary rounded-full px-4 py-2 text-sm font-semibold shadow-lg">
+                  <span>Swipe for more</span>
+                  <ChevronRight className="w-4 h-4 animate-pulse" />
                 </div>
               </div>
 

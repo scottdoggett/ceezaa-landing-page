@@ -9,9 +9,6 @@ export default function Travelers() {
     <main className="font-sans">
       <TravelPersonal />
       <SeeHappening />
-      {/* <div className="w-full overflow-hidden relative z-10 -top-20 -bottom-20 -mb-60">
-        <div className="spacer divider-primary-secondary"></div>
-      </div> */}
       <LiveMoment />
       <CeezaaId />
       <WorldCloser />
