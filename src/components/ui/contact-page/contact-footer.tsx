@@ -2,7 +2,7 @@ import { Rocket } from "lucide-react";
 
 export function ContactFooter() {
   return (
-    <section className="w-full py-12 md:py-16 bg-muted/50">
+    <section className="w-full py-12 md:py-16 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto space-y-6">
           {/* Quick Questions */}
@@ -30,7 +30,7 @@ export function ContactFooter() {
           </div>
 
           {/* Join the Movement */}
-          <div className="bg-linear-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-xl p-8 text-center">
+          <div className="bg-linear-to-b from-primary/30 to-accent/30 text-white border-2 border-primary/30 rounded-xl p-8 text-center">
             <Rocket className="w-12 h-12 mb-3 mx-auto" />
             <h3 className="text-xl md:text-2xl font-bold mb-3">
               Join the Movement
