@@ -1,12 +1,4 @@
 import { Button } from "@/components/ui/button";
-import {
-  Globe,
-  BookOpen,
-  Utensils,
-  Sparkles,
-  Rocket,
-  Star,
-} from "lucide-react";
 
 export function JoinMovement() {
   return (
