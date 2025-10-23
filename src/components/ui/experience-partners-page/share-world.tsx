@@ -3,7 +3,7 @@ import { MapPin, Waves } from "lucide-react";
 
 export function ShareWorld() {
   return (
-    <section className="w-full py-20 md:py-32 lg:py-40 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
+    <section className="w-full py-16 md:py-20 lg:py-24 bg-linear-to-br from-accent/10 via-background to-primary/10 relative overflow-hidden">
       {/* Decorative gradient orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl -translate-x-1/4 -translate-y-1/4" />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
@@ -43,7 +43,7 @@ export function ShareWorld() {
           </div>
 
           {/* Content sections */}
-          <div className="space-y-8 md:space-y-10 max-w-4xl mx-auto mt-12 md:mt-16">
+          <div className="space-y-4 max-w-4xl mx-auto mt-12 md:mt-16">
             <div className="grid md:grid-cols-2 gap-5 md:gap-6">
               <div className="group bg-card border-2 border-primary/20 rounded-2xl p-5 md:p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-center gap-2 sm:gap-4">
@@ -75,11 +75,9 @@ export function ShareWorld() {
                 Ceezaa makes it easy for travelers to discover what you create
                 and join in.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-0 text-base md:text-lg font-semibold">
-                <span>You focus on hosting.</span>
-                <span className="text-muted-foreground mx-2 hidden sm:inline">•</span>
-                <span>We help travelers find you.</span>
-              </div>
+              <p className="text-base md:text-lg font-semibold">
+                You focus on hosting. <span className="text-muted-foreground mx-2">•</span> We help travelers find you.
+              </p>
             </div>
           </div>
         </div>

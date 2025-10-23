@@ -56,7 +56,7 @@ export function BuiltGrowth() {
 
             {/* Desktop: Horizontal Growth Chart */}
             <div className="hidden md:block">
-              <div className="space-y-6 max-w-4xl mx-auto">
+              <div className="space-y-6 max-w-5xl mx-auto">
                 {/* Point 1 */}
                 <div className="flex items-center gap-4" style={{ marginLeft: '0' }}>
                   <div className="shrink-0 w-12 h-12 rounded-full bg-primary border-4 border-primary/30 flex items-center justify-center font-bold text-white text-lg shadow-lg">
