@@ -13,7 +13,11 @@ const footerLinks = {
   ],
   resources: [
     { name: "FAQ", href: "/faq" },
-    { name: "Privacy Policy", href: "/privacy" },
+    {
+      name: "Privacy Policy",
+      href: "https://app.termly.io/policy-viewer/policy.html?policyUUID=ff955319-ce45-44b3-8fc9-6ce90bb47c89",
+      external: true
+    },
     { name: "Terms and Conditions", href: "/terms" },
     { name: "Cookie Policy", href: "/cookies" },
     { name: "EULA", href: "/eula" },
@@ -98,12 +102,23 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-x-3 sm:gap-x-4 gap-y-2 sm:gap-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
