@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 
 export function ContactForm() {
   return (
-    <section className="w-full py-12 md:py-16 bg-secondary/10">
+    <section className="w-full py-12 md:py-16 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-secondary-foreground">
               Send Us a <span className="text-primary">Message</span>
             </h2>
-            <p className="text-sm font-semibold text-muted-foreground">
+            <p className="text-sm font-semibold text-secondary-foreground/80">
               We love hearing from our community. Use the form below for general
               questions, ideas, or feedback, and our team will be in touch soon.
             </p>

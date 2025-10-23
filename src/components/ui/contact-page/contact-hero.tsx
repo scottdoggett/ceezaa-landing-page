@@ -1,6 +1,6 @@
 export function ContactHero() {
   return (
-    <section className="w-full py-12 md:py-16 bg-linear-to-br from-primary/10 via-background to-accent/5">
+    <section className="w-full pt-12 md:pt-16 bg-linear-to-b from-primary/10 via-background to-accent/5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">

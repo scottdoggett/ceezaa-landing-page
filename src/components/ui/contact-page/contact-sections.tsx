@@ -86,17 +86,20 @@ export function ContactSections() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-16 bg-muted/30">
+    <section className="w-full py-12 md:py-16 bg-accent/5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto space-y-6">
           {/* Contact sections grid */}
           <div className="grid md:grid-cols-2 gap-4">
             {contactSections.map((section, index) => {
               const IconComponent = iconMap[section.icon as keyof typeof iconMap];
+              const isLastItem = index === contactSections.length - 1;
               return (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow"
+                className={`bg-card border border-border rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow ${
+                  isLastItem ? "md:col-span-2 md:max-w-[calc(50%-0.5rem)] md:mx-auto" : ""
+                }`}
               >
                 <div className="flex items-start gap-3 mb-3">
                   <IconComponent className="w-7 h-7 shrink-0" />
