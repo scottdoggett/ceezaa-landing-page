@@ -1,4 +1,4 @@
-import { Check, Palette, Lock, Sparkles, Handshake, Star } from "lucide-react";
+import { Palette, Lock, Sparkles, Handshake, Star } from "lucide-react";
 
 export function PartnerPurpose() {
   return (
@@ -18,7 +18,7 @@ export function PartnerPurpose() {
 
               <div className="space-y-5 md:space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold mt-1">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold my-auto">
                     1
                   </div>
                   <p className="text-base md:text-lg font-semibold pt-1">
@@ -28,8 +28,8 @@ export function PartnerPurpose() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mt-1">
-                    <Check className="w-5 h-5 text-primary" />
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold my-auto">
+                    2
                   </div>
                   <p className="text-base md:text-lg font-semibold pt-1">
                     Every partner is reviewed to ensure guests have trusted,
@@ -38,7 +38,7 @@ export function PartnerPurpose() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold mt-1">
+                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold my-auto">
                     3
                   </div>
                   <p className="text-base md:text-lg font-semibold pt-1">

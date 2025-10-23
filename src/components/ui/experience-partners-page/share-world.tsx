@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Target, MapPin, Waves } from "lucide-react";
+import { MapPin, Waves } from "lucide-react";
 
 export function ShareWorld() {
   return (
@@ -31,29 +31,23 @@ export function ShareWorld() {
             >
               Become a Partner →
             </Button>
-            <p className="text-sm text-muted-foreground font-semibold">
-              Join the network connecting travelers with unforgettable local
-              experiences.
-            </p>
+            <div className="space-y-2">
+              <p className="text-sm text-muted-foreground font-semibold">
+                Join the network connecting travelers with unforgettable local
+                experiences.
+              </p>
+              <p className="text-lg md:text-2xl font-semibold">
+                Ceezaa helps you reach the right travelers at the right time.
+              </p>
+            </div>
           </div>
 
           {/* Content sections */}
           <div className="space-y-8 md:space-y-10 max-w-4xl mx-auto mt-12 md:mt-16">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <Target className="w-6 h-6 md:w-7 md:h-7 text-primary" />
-                </div>
-                <p className="text-lg md:text-xl font-semibold leading-relaxed">
-                  Ceezaa helps you reach the right travelers at the right time.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-5 md:gap-6 text-left">
-              <div className="group bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-shadow">
-                <div className="flex flex-col gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+              <div className="group bg-card border-2 border-primary/20 rounded-2xl p-5 md:p-6 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
                   <p className="text-base md:text-lg font-semibold leading-relaxed">
@@ -63,9 +57,9 @@ export function ShareWorld() {
                 </div>
               </div>
 
-              <div className="group bg-card border-2 border-accent/20 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-shadow">
-                <div className="flex flex-col gap-4">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+              <div className="group bg-card border-2 border-primary/20 rounded-2xl p-5 md:p-6 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Waves className="w-5 h-5 md:w-6 md:h-6 text-accent" />
                   </div>
                   <p className="text-base md:text-lg font-semibold leading-relaxed">
@@ -76,22 +70,15 @@ export function ShareWorld() {
               </div>
             </div>
 
-            <div className="text-center py-6 md:py-8">
+            <div className="text-center pt-6 md:pt-8 pb-0 space-y-3">
               <p className="text-lg md:text-xl font-semibold text-muted-foreground">
                 Ceezaa makes it easy for travelers to discover what you create
                 and join in.
               </p>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
-              <div className="bg-accent/10 border-l-4 border-accent rounded-lg p-5 md:p-6 text-center">
-                <p className="text-base md:text-lg font-semibold">You focus on hosting.</p>
-              </div>
-
-              <div className="bg-primary/10 border-l-4 border-primary rounded-lg p-5 md:p-6 text-center">
-                <p className="text-base md:text-lg font-semibold">
-                  We help travelers find you.
-                </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-0 text-base md:text-lg font-semibold">
+                <span>You focus on hosting.</span>
+                <span className="text-muted-foreground mx-2 hidden sm:inline">•</span>
+                <span>We help travelers find you.</span>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Handshake, Sparkles } from "lucide-react";
+import { Handshake } from "lucide-react";
 
 export function ConnectGuests() {
   return (
@@ -48,9 +48,7 @@ export function ConnectGuests() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="shrink-0 mt-1">
-                    <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-primary" />
-                  </div>
+                  <div className="shrink-0 w-2 h-2 rounded-full bg-primary mt-2.5"></div>
                   <p className="text-base md:text-lg font-semibold">
                     Your tours, classes, and gatherings become part of the
                     memories that define someone&apos;s trip.
