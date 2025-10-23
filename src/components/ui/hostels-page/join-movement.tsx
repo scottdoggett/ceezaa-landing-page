@@ -12,28 +12,29 @@ export function JoinMovement() {
               Join the <span className="text-primary">Movement</span>
             </h2>
             <div className="space-y-4">
-              <p className="text-xl md:text-2xl font-semibold">
-                Hostels are the heart of global travel.
-              </p>
-              <p className="text-lg md:text-xl font-semibold">
+              <p className="text-lg md:text-2xl font-semibold">
                 Ceezaa helps you bring that spirit to life in a way that feels
                 modern, organized, and human.
               </p>
             </div>
           </div>
 
-          {/* Content cards */}
-          <div className="grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <Star className="w-10 h-10 mb-4" />
-              <p className="text-lg font-semibold">
+          {/* Content with icons */}
+          <div className="space-y-6 max-w-3xl mx-auto">
+            <div className="flex items-center gap-4">
+              <div className="shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                <Star className="w-6 h-6 text-primary" />
+              </div>
+              <p className="text-lg font-semibold text-left">
                 Join the hostels shaping the future of connection and belonging.
               </p>
             </div>
 
-            <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-2xl p-8">
-              <Rocket className="w-10 h-10 mb-4" />
-              <p className="text-lg font-semibold">
+            <div className="flex items-center gap-4">
+              <div className="shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                <Rocket className="w-6 h-6 text-primary" />
+              </div>
+              <p className="text-lg font-semibold text-left">
                 Be part of a community that believes hostels can be more than
                 just a place to sleep.
               </p>
@@ -41,44 +42,22 @@ export function JoinMovement() {
           </div>
 
           {/* CTA */}
-          <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-3xl p-10 md:p-12 space-y-8">
-            <div className="space-y-4">
-              <Sparkles className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
-              <h3 className="text-2xl md:text-3xl font-bold">
+          <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-2xl p-8 md:p-10 space-y-6 max-w-3xl mx-auto">
+            <div className="space-y-3">
+              <h3 className="text-xl md:text-2xl font-bold">
                 Ready to transform your hostel?
               </h3>
-              <p className="text-lg text-secondary-foreground/90 max-w-2xl mx-auto">
+              <p className="text-base text-secondary-foreground/90 max-w-xl mx-auto">
                 Join early hostels bringing Ceezaa to life at no cost to your
                 property.
               </p>
             </div>
             <Button
               size="lg"
-              className="text-base md:text-lg px-10 py-7 font-semibold shadow-xl hover:scale-105 transition-transform"
+              className="text-base px-8 py-6 font-semibold shadow-lg hover:scale-105 transition-transform"
             >
               Bring Ceezaa to Your Hostel →
             </Button>
-          </div>
-
-          {/* Partner logos / social proof */}
-          <div className="pt-8">
-            <p className="text-sm text-secondary-foreground/60 uppercase tracking-wider mb-4">
-              Trusted by hostels worldwide
-            </p>
-            <div className="flex justify-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm">
-                <Home className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                <Home className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                <Home className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                +
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -20,37 +20,49 @@ export function BuiltForYou() {
           </div>
 
           {/* Features grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
-              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <DollarSign className="w-8 h-8 text-primary" />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-row lg:flex-col gap-3 lg:gap-0">
+                <div className="shrink-0 bg-primary/10 w-12 h-12 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center lg:mb-6 group-hover:bg-primary/20 transition-colors">
+                  <DollarSign className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg lg:text-2xl font-bold mb-2 lg:mb-4">No Setup Costs</h3>
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
+                    There are no setup costs or complicated integrations.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">No Setup Costs</h3>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                There are no setup costs or complicated integrations.
-              </p>
             </div>
 
-            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
-              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <Rocket className="w-8 h-8 text-primary" />
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-row lg:flex-col gap-3 lg:gap-0">
+                <div className="shrink-0 bg-primary/10 w-12 h-12 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center lg:mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Rocket className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg lg:text-2xl font-bold mb-2 lg:mb-4">Quick Start</h3>
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
+                    You can add your property, upload your events and experiences,
+                    and begin connecting with guests right away.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Quick Start</h3>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                You can add your property, upload your events and experiences,
-                and begin connecting with guests right away.
-              </p>
             </div>
 
-            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
-              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <Sparkles className="w-8 h-8 text-primary" />
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="flex flex-row lg:flex-col gap-3 lg:gap-0">
+                <div className="shrink-0 bg-primary/10 w-12 h-12 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center lg:mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Sparkles className="w-6 h-6 lg:w-8 lg:h-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg lg:text-2xl font-bold mb-2 lg:mb-4">Instant Impact</h3>
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
+                    Ceezaa is designed to make your property feel more alive and
+                    your guests more connected from day one.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Instant Impact</h3>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Ceezaa is designed to make your property feel more alive and
-                your guests more connected from day one.
-              </p>
             </div>
           </div>
         </div>
