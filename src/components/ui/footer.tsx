@@ -19,7 +19,11 @@ const footerLinks = {
       external: true
     },
     { name: "Terms and Conditions", href: "/terms" },
-    { name: "Cookie Policy", href: "/cookies" },
+    {
+      name: "Cookie Policy",
+      href: "https://app.termly.io/policy-viewer/policy.html?policyUUID=2745ca3b-02c4-47c9-b99f-1fd933f9ddc6",
+      external: true
+    },
     { name: "EULA", href: "/eula" },
     { name: "Disclaimer", href: "/disclaimer" },
     { name: "Acceptable Use Policy", href: "/use-policy" },
