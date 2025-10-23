@@ -1,5 +1,5 @@
 import { MessageCircle, Home, Handshake, Plane, Newspaper } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 
 export function ContactSections() {
   const contactSections = [
@@ -52,38 +52,38 @@ export function ContactSections() {
     Newspaper: Newspaper,
   };
 
-  const socialLinks = [
-    {
-      name: "Instagram",
-      href: "#",
-      icon: "/social-icons/instagram.svg",
-      iconDark: "/social-icons/instagram-dark.svg",
-    },
-    {
-      name: "X",
-      href: "#",
-      icon: "/social-icons/x.svg",
-      iconDark: "/social-icons/x-dark.svg",
-    },
-    {
-      name: "YouTube",
-      href: "#",
-      icon: "/social-icons/youtube.svg",
-      iconDark: "/social-icons/youtube-dark.svg",
-    },
-    {
-      name: "TikTok",
-      href: "#",
-      icon: "/social-icons/tiktok.svg",
-      iconDark: "/social-icons/tiktok-dark.svg",
-    },
-    {
-      name: "LinkedIn",
-      href: "#",
-      icon: "/social-icons/linkedin.svg",
-      iconDark: "/social-icons/linkedin-dark.svg",
-    },
-  ];
+  // const socialLinks = [
+  //   {
+  //     name: "Instagram",
+  //     href: "#",
+  //     icon: "/social-icons/instagram.svg",
+  //     iconDark: "/social-icons/instagram-dark.svg",
+  //   },
+  //   {
+  //     name: "X",
+  //     href: "#",
+  //     icon: "/social-icons/x.svg",
+  //     iconDark: "/social-icons/x-dark.svg",
+  //   },
+  //   {
+  //     name: "YouTube",
+  //     href: "#",
+  //     icon: "/social-icons/youtube.svg",
+  //     iconDark: "/social-icons/youtube-dark.svg",
+  //   },
+  //   {
+  //     name: "TikTok",
+  //     href: "#",
+  //     icon: "/social-icons/tiktok.svg",
+  //     iconDark: "/social-icons/tiktok-dark.svg",
+  //   },
+  //   {
+  //     name: "LinkedIn",
+  //     href: "#",
+  //     icon: "/social-icons/linkedin.svg",
+  //     iconDark: "/social-icons/linkedin-dark.svg",
+  //   },
+  // ];
 
   return (
     <section className="w-full py-12 md:py-16 bg-accent/5">
@@ -125,7 +125,7 @@ export function ContactSections() {
           </div>
 
           {/* Stay Connected */}
-          <div className="bg-linear-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-xl p-6 mt-8">
+          {/* <div className="bg-linear-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-xl p-6 mt-8">
             <h3 className="text-xl font-bold mb-3 text-center">
               Stay Connected
             </h3>
@@ -139,7 +139,6 @@ export function ContactSections() {
                   href={social.href}
                   className="bg-card border border-border rounded-lg px-4 py-2 flex items-center gap-2 text-sm font-semibold hover:bg-primary/10 transition-colors"
                 >
-                  {/* Light mode icon */}
                   <Image
                     src={social.icon}
                     alt={social.name}
@@ -147,7 +146,6 @@ export function ContactSections() {
                     height={20}
                     className="dark:hidden"
                   />
-                  {/* Dark mode icon */}
                   <Image
                     src={social.iconDark}
                     alt={social.name}
@@ -159,7 +157,7 @@ export function ContactSections() {
                 </a>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
