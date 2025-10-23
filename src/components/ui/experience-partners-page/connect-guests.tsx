@@ -1,4 +1,4 @@
-import { Handshake } from "lucide-react";
+import Image from "next/image";
 
 export function ConnectGuests() {
   return (
@@ -6,20 +6,16 @@ export function ConnectGuests() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left - Image placeholder */}
+            {/* Left - Image */}
             <div className="order-2 lg:order-1">
-              <div className="relative h-[450px] rounded-2xl overflow-hidden bg-muted/10 border border-secondary-foreground/10 shadow-xl">
-                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                  <div className="text-center space-y-4 p-8">
-                    <Handshake className="w-16 h-16 mx-auto" />
-                    <p className="text-secondary-foreground/70 font-semibold">
-                      Connecting Image
-                    </p>
-                    <p className="text-sm text-secondary-foreground/60 max-w-xs">
-                      Partners connecting with engaged travelers
-                    </p>
-                  </div>
-                </div>
+              <div className="hidden lg:block relative sm:h-[450px] h-[300px] rounded-2xl overflow-hidden border border-secondary-foreground/10 shadow-xl">
+                <Image
+                  src="/ConnectGuests.jpg"
+                  alt="Connect With Guests - Partners connecting with engaged travelers"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 

@@ -1,4 +1,5 @@
-import { Eye, Target, Utensils, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { Eye, Target, Utensils } from "lucide-react";
 
 export function YourStay() {
   return (
@@ -86,26 +87,14 @@ export function YourStay() {
 
             {/* Image side */}
             <div className="relative">
-              <div className="sticky top-[calc(50vh-200px)] lg:top-[calc(50vh-250px)] h-[400px] lg:h-[500px] rounded-2xl overflow-hidden bg-linear-to-br from-primary/5 via-accent/5 to-primary/10 shadow-xl">
-                <div className="absolute inset-0 flex items-center justify-center backdrop-blur-[1px]">
-                  <div className="text-center space-y-6 p-8">
-                    <div className="relative inline-block">
-                      <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full" />
-                      <Sparkles className="w-20 h-20 mx-auto relative text-primary stroke-[1.5]" />
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-lg font-semibold text-foreground/80">
-                        Stay Experience
-                      </p>
-                      <p className="text-sm text-muted-foreground max-w-xs mx-auto">
-                        Travelers enjoying hostel activities and connections
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* Decorative elements */}
-                <div className="absolute top-8 right-8 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
-                <div className="absolute bottom-8 left-8 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
+              <div className="hidden lg:block sticky top-[calc(50vh-200px)] lg:top-[calc(50vh-250px)] h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/YourStay.jpg"
+                  alt="Your Stay Experience - Travelers enjoying hostel activities and connections"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

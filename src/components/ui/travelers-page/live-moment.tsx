@@ -1,28 +1,25 @@
-import { Star, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { Sparkles } from "lucide-react";
 
 export function LiveMoment() {
   return (
-    <section className="w-full py-20 md:py-32 bg-secondary text-secondary-foreground relative overflow-hidden">
+    <section className="w-full py-16 md:py-24 bg-secondary text-secondary-foreground relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
-          {/* Left - Image placeholder */}
+          {/* Left - Image */}
           <div className="order-2 lg:order-1">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden bg-muted/10 border border-secondary-foreground/10 shadow-xl">
-              <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center space-y-4 p-8">
-                  <Star className="w-16 h-16 mx-auto" />
-                  <p className="text-secondary-foreground/70 font-medium">
-                    Moment Image
-                  </p>
-                  <p className="text-sm text-secondary-foreground/60 max-w-xs">
-                    People connecting and sharing experiences at a hostel
-                  </p>
-                </div>
-              </div>
+            <div className="hidden lg:block relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden border border-secondary-foreground/10 shadow-xl">
+              <Image
+                src="/LiveMoment.jpg"
+                alt="Live the Moment - People on beach"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 

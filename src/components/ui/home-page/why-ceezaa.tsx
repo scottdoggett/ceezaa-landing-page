@@ -1,4 +1,5 @@
-import { Handshake, HeartCrack, HelpCircle, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { HeartCrack, HelpCircle, Sparkles } from "lucide-react";
 
 export function WhyCeezaa() {
   return (
@@ -8,26 +9,14 @@ export function WhyCeezaa() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Image side */}
             <div className="order-2 lg:order-1">
-              <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden bg-linear-to-br from-primary/5 via-accent/5 to-primary/10 shadow-xl">
-                <div className="absolute inset-0 flex items-center justify-center backdrop-blur-[1px]">
-                  <div className="text-center space-y-6 p-8">
-                    <div className="relative inline-block">
-                      <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full" />
-                      <Handshake className="w-20 h-20 mx-auto relative text-primary stroke-[1.5]" />
-                    </div>
-                    <div className="space-y-2">
-                      <p className="text-lg font-semibold text-secondary-foreground/80">
-                        Where Travelers Connect
-                      </p>
-                      <p className="text-sm text-secondary-foreground/60 max-w-xs mx-auto">
-                        Experience authentic connections in every stay
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* Decorative elements */}
-                <div className="absolute top-8 right-8 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
-                <div className="absolute bottom-8 left-8 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
+              <div className="hidden lg:block relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/WhyCeezaa.jpg"
+                  alt="Why Ceezaa - Travelers connecting in hostels"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 
