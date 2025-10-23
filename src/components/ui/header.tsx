@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -29,6 +29,39 @@ const navigationLinks = [
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Close menu when clicking outside or scrolling
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        buttonRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleScroll = () => {
+      if (isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isOpen]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
@@ -74,6 +107,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <Button
+            ref={buttonRef}
             variant="ghost"
             size="icon"
             className="lg:hidden"
@@ -89,6 +123,7 @@ export function Header() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={menuRef}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
