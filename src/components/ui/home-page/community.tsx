@@ -49,7 +49,7 @@ export function Community() {
                 </ul>
                 <Button asChild size="lg" className="w-full sm:w-auto mt-4">
                   <a
-                    href="https://tally.so/r/mRXK1j"
+                    href="https://hostelinterestform.ceezaa.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -91,7 +91,7 @@ export function Community() {
                 </ul>
                 <Button asChild size="lg" className="w-full sm:w-auto mt-4">
                   <a
-                    href="https://tally.so/r/wdLqeo"
+                    href="https://experiencecommunityform.ceezaa.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -64,7 +64,7 @@ export function WorldCloser() {
                   className="text-sm md:text-base px-8 py-6 font-semibold shadow-xl hover:scale-105 transition-transform"
                 >
                   <a
-                    href="https://tally.so/r/w78BYA"
+                    href="https://travelerpulse.ceezaa.com/r/w78BYA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

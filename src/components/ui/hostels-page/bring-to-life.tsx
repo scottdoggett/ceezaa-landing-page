@@ -78,7 +78,7 @@ export function BringToLife() {
                   className="text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform w-full sm:w-auto"
                 >
                   <a
-                    href="https://tally.so/r/mRXK1j"
+                    href="https://hostelinterestform.ceezaa.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

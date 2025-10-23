@@ -32,7 +32,7 @@ export function JoinMovement() {
               </p>
               <Button asChild size="lg" className="w-full mt-auto">
                 <a
-                  href="https://tally.so/r/w78BYA"
+                  href="https://travelerpulse.ceezaa.com/r/w78BYA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,7 +52,7 @@ export function JoinMovement() {
               </p>
               <Button asChild size="lg" className="w-full mt-auto">
                 <a
-                  href="https://tally.so/r/mRXK1j"
+                  href="https://hostelinterestform.ceezaa.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -72,7 +72,7 @@ export function JoinMovement() {
               </p>
               <Button asChild size="lg" className="w-full mt-auto">
                 <a
-                  href="https://tally.so/r/wdLqeo"
+                  href="https://experiencecommunityform.ceezaa.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

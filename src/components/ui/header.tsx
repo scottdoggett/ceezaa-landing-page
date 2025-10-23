@@ -118,7 +118,7 @@ export function Header() {
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuItem asChild>
                 <a
-                  href="https://tally.so/r/w78BYA"
+                  href="https://travelerpulse.ceezaa.com/r/w78BYA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 cursor-pointer"
@@ -129,7 +129,7 @@ export function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <a
-                  href="https://tally.so/r/mRXK1j"
+                  href="https://hostelinterestform.ceezaa.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 cursor-pointer"
@@ -140,7 +140,7 @@ export function Header() {
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <a
-                  href="https://tally.so/r/wdLqeo"
+                  href="https://experiencecommunityform.ceezaa.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 cursor-pointer"

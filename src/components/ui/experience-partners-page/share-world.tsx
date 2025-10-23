@@ -31,7 +31,7 @@ export function ShareWorld() {
               className="text-white font-semibold text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform"
             >
               <a
-                href="https://tally.so/r/wdLqeo"
+                href="https://experiencecommunityform.ceezaa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

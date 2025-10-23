@@ -58,7 +58,7 @@ export function JoinMovement() {
               className="text-base px-8 py-6 font-semibold shadow-lg hover:scale-105 transition-transform"
             >
               <a
-                href="https://tally.so/r/mRXK1j"
+                href="https://hostelinterestform.ceezaa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
