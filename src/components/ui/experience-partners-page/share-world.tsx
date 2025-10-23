@@ -38,46 +38,58 @@ export function ShareWorld() {
           </div>
 
           {/* Content sections */}
-          <div className="space-y-6 max-w-4xl mx-auto mt-16">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-              <Target className="w-10 h-10 mb-4" />
-              <p className="text-xl font-semibold leading-relaxed">
-                Ceezaa helps you reach the right travelers at the right time.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-                <MapPin className="w-10 h-10 mb-4" />
-                <p className="text-lg font-semibold leading-relaxed">
-                  Your experiences appear directly inside the places where
-                  guests stay and explore.
-                </p>
-              </div>
-
-              <div className="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8">
-                <Waves className="w-10 h-10 mb-4" />
-                <p className="text-lg font-semibold leading-relaxed">
-                  From surf lessons and food tours to yoga sessions, café
-                  tastings, and community events.
+          <div className="space-y-8 md:space-y-10 max-w-4xl mx-auto mt-12 md:mt-16">
+            <div className="bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 shadow-lg">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Target className="w-6 h-6 md:w-7 md:h-7 text-primary" />
+                </div>
+                <p className="text-lg md:text-xl font-semibold leading-relaxed">
+                  Ceezaa helps you reach the right travelers at the right time.
                 </p>
               </div>
             </div>
 
-            <div className="bg-card/50 backdrop-blur border border-border rounded-xl p-6">
-              <p className="text-lg font-semibold">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6 text-left">
+              <div className="group bg-card border-2 border-primary/20 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                  </div>
+                  <p className="text-base md:text-lg font-semibold leading-relaxed">
+                    Your experiences appear directly inside the places where
+                    guests stay and explore.
+                  </p>
+                </div>
+              </div>
+
+              <div className="group bg-card border-2 border-accent/20 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col gap-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <Waves className="w-5 h-5 md:w-6 md:h-6 text-accent" />
+                  </div>
+                  <p className="text-base md:text-lg font-semibold leading-relaxed">
+                    From surf lessons and food tours to yoga sessions, café
+                    tastings, and community events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center py-6 md:py-8">
+              <p className="text-lg md:text-xl font-semibold text-muted-foreground">
                 Ceezaa makes it easy for travelers to discover what you create
                 and join in.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="bg-accent/20 backdrop-blur border-l-4 border-accent rounded-r-xl p-6">
-                <p className="text-lg font-semibold">You focus on hosting.</p>
+            <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
+              <div className="bg-accent/10 border-l-4 border-accent rounded-lg p-5 md:p-6 text-center">
+                <p className="text-base md:text-lg font-semibold">You focus on hosting.</p>
               </div>
 
-              <div className="bg-primary/20 backdrop-blur border-l-4 border-primary rounded-r-xl p-6">
-                <p className="text-lg font-semibold">
+              <div className="bg-primary/10 border-l-4 border-primary rounded-lg p-5 md:p-6 text-center">
+                <p className="text-base md:text-lg font-semibold">
                   We help travelers find you.
                 </p>
               </div>

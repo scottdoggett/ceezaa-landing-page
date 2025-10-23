@@ -24,37 +24,41 @@ export function ConnectGuests() {
             </div>
 
             {/* Right - Content */}
-            <div className="space-y-8 order-1 lg:order-2">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
                 Connect With Guests Who{" "}
                 <span className="text-primary">Care</span>
               </h2>
 
-              <div className="space-y-6">
-                <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
+              <div className="space-y-5 md:space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 w-2 h-2 rounded-full bg-primary mt-2.5"></div>
+                  <p className="text-base md:text-lg font-semibold">
                     Ceezaa matches travelers with experiences that fit their
                     interests, energy, and style.
                   </p>
                 </div>
 
-                <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 w-2 h-2 rounded-full bg-primary mt-2.5"></div>
+                  <p className="text-base md:text-lg font-semibold">
                     Every recommendation feels personal, helping your events
                     attract people who truly want to be there.
                   </p>
                 </div>
 
-                <div className="bg-accent/20 backdrop-blur border border-accent/30 rounded-xl p-6">
-                  <Sparkles className="w-8 h-8 mb-3" />
-                  <p className="text-lg font-semibold">
+                <div className="flex items-start gap-4">
+                  <div className="shrink-0 mt-1">
+                    <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+                  </div>
+                  <p className="text-base md:text-lg font-semibold">
                     Your tours, classes, and gatherings become part of the
                     memories that define someone&apos;s trip.
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur border-2 border-primary/30 rounded-xl p-8">
-                  <p className="text-xl font-semibold">
+                <div className="bg-primary/10 border-l-4 border-primary rounded-lg p-5 md:p-6 mt-6 md:mt-8">
+                  <p className="text-lg md:text-xl font-semibold">
                     Ceezaa helps you turn every experience into a story
                     travelers remember and share.
                   </p>

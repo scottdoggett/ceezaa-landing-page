@@ -17,66 +17,78 @@ export function JoinMovement() {
           </div>
 
           {/* Content card */}
-          <div className="bg-card border-2 border-primary/30 rounded-2xl p-10 shadow-xl">
-            <Globe className="w-12 h-12 mb-6 mx-auto" />
-            <p className="text-lg md:text-xl font-semibold max-w-2xl mx-auto">
-              Join us in creating a world where every traveler can connect with
-              the best local stories, flavors, and experiences.
-            </p>
+          <div className="bg-card border-2 border-primary/30 rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg">
+            <div className="flex flex-col items-center gap-5 md:gap-6">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Globe className="w-7 h-7 md:w-8 md:h-8 text-primary" />
+              </div>
+              <p className="text-base md:text-lg lg:text-xl font-semibold max-w-2xl leading-relaxed">
+                Join us in creating a world where every traveler can connect with
+                the best local stories, flavors, and experiences.
+              </p>
+            </div>
           </div>
 
           {/* Features grid */}
-          <div className="grid sm:grid-cols-3 gap-6">
-            <div className="bg-linear-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-              <BookOpen className="w-10 h-10 mb-3 mx-auto" />
-              <p className="font-semibold">Local Stories</p>
+          <div className="grid grid-cols-3 gap-3 md:gap-5 lg:gap-6 max-w-2xl mx-auto">
+            <div className="bg-card border-2 border-primary/20 rounded-xl p-4 md:p-6 text-center hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-2 md:mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
+                <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+              </div>
+              <p className="font-semibold text-xs md:text-sm lg:text-base">Local Stories</p>
             </div>
-            <div className="bg-linear-to-br from-accent/20 to-accent/5 border border-accent/30 rounded-xl p-6">
-              <Utensils className="w-10 h-10 mb-3 mx-auto" />
-              <p className="font-semibold">Authentic Flavors</p>
+            <div className="bg-card border-2 border-accent/20 rounded-xl p-4 md:p-6 text-center hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-2 md:mb-3 rounded-lg bg-accent/10 flex items-center justify-center">
+                <Utensils className="w-5 h-5 md:w-6 md:h-6 text-accent" />
+              </div>
+              <p className="font-semibold text-xs md:text-sm lg:text-base">Authentic Flavors</p>
             </div>
-            <div className="bg-linear-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-              <Sparkles className="w-10 h-10 mb-3 mx-auto" />
-              <p className="font-semibold">Unique Experiences</p>
+            <div className="bg-card border-2 border-primary/20 rounded-xl p-4 md:p-6 text-center hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-2 md:mb-3 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-primary" />
+              </div>
+              <p className="font-semibold text-xs md:text-sm lg:text-base">Unique Experiences</p>
             </div>
           </div>
 
           {/* CTA */}
-          <div className="bg-linear-to-br from-primary/30 to-accent/30 backdrop-blur border-2 border-primary/40 rounded-3xl p-10 md:p-12 space-y-8">
-            <div className="space-y-4">
-              <Rocket className="w-14 h-14 md:w-16 md:h-16 mx-auto" />
-              <h3 className="text-2xl md:text-3xl font-bold">
+          <div className="bg-primary/20 backdrop-blur border-2 border-primary/30 rounded-2xl p-6 md:p-8 lg:p-10 space-y-6 md:space-y-7">
+            <div className="space-y-3 md:space-y-4">
+              <div className="w-14 h-14 md:w-16 md:h-16 mx-auto rounded-xl bg-primary/20 flex items-center justify-center">
+                <Rocket className="w-7 h-7 md:w-8 md:h-8 text-primary" />
+              </div>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">
                 Ready to share your world?
               </h3>
-              <p className="text-lg text-foreground/90 max-w-2xl mx-auto font-semibold">
+              <p className="text-base md:text-lg text-foreground/90 max-w-2xl mx-auto font-semibold leading-relaxed">
                 Become a partner and help travelers discover what makes your
                 community special.
               </p>
             </div>
             <Button
               size="lg"
-              className="text-lg md:text-lg px-10 py-7 font-semibold shadow-xl hover:scale-105 transition-transform"
+              className="text-base md:text-lg px-8 md:px-10 py-6 md:py-7 font-semibold shadow-lg hover:scale-105 transition-transform"
             >
               Become a Partner →
             </Button>
           </div>
 
           {/* Partner count */}
-          <div className="pt-8">
-            <p className="text-sm text-muted-foreground uppercase tracking-wider mb-4">
+          <div className="pt-6 md:pt-8">
+            <p className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider mb-3 md:mb-4">
               Join our growing network of partners
             </p>
-            <div className="flex justify-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm">
-                <Star className="w-5 h-5" />
+            <div className="flex justify-center items-center">
+              <div className="w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center text-sm relative z-40">
+                <Star className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                <Star className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center text-sm relative z-30 -ml-3">
+                <Star className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
-                <Star className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center text-sm relative z-20 -ml-3">
+                <Star className="w-5 h-5 text-primary" />
               </div>
-              <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-sm -ml-3">
+              <div className="w-10 h-10 rounded-full bg-background border-2 border-primary flex items-center justify-center text-sm font-bold relative z-10 -ml-3">
                 +
               </div>
             </div>
