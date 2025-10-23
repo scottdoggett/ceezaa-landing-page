@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -42,15 +43,10 @@ export function Hero() {
               creating one identity that makes every stay feel personal.
             </p>
             <div className="flex flex-row gap-2 sm:gap-4">
-              <Button size="lg" className="flex-1 bg-primary lg:flex-none hover:bg-secondary text-white text-sm sm:text-base md:text-lg px-3 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-xl">
-                Discover Ceezaa
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="flex-1 lg:flex-none text-sm sm:text-base md:text-lg px-3 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 border-2"
-              >
-                Watch Demo
+              <Button asChild size="lg" className="lg:bg-primary lg:hover:bg-secondary bg-secondary hover:bg-primary text-white text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 shadow-xl">
+                <Link href="/about">
+                  Discover Ceezaa
+                </Link>
               </Button>
             </div>
           </div>

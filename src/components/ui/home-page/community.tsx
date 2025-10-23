@@ -47,8 +47,14 @@ export function Community() {
                     <span>Build lasting connections</span>
                   </li>
                 </ul>
-                <Button size="lg" className="w-full sm:w-auto mt-4">
-                  Bring Ceezaa to your hostel →
+                <Button asChild size="lg" className="w-full sm:w-auto mt-4">
+                  <a
+                    href="https://tally.so/r/mRXK1j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bring Ceezaa to your hostel →
+                  </a>
                 </Button>
               </div>
             </div>
@@ -83,8 +89,14 @@ export function Community() {
                     <span>Grow your local impact</span>
                   </li>
                 </ul>
-                <Button size="lg" className="w-full sm:w-auto mt-4">
-                  Join as an Experience Partner →
+                <Button asChild size="lg" className="w-full sm:w-auto mt-4">
+                  <a
+                    href="https://tally.so/r/wdLqeo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Join as an Experience Partner →
+                  </a>
                 </Button>
               </div>
             </div>
