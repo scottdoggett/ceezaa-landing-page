@@ -59,10 +59,17 @@ export function WorldCloser() {
 
               <div className="pt-1">
                 <Button
+                  asChild
                   size="lg"
                   className="text-sm md:text-base px-8 py-6 font-semibold shadow-xl hover:scale-105 transition-transform"
                 >
-                  Join the Waitlist →
+                  <a
+                    href="https://tally.so/r/w78BYA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Take the Travler Pulse →
+                  </a>
                 </Button>
               </div>
             </div>

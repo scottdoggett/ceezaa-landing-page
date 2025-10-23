@@ -73,10 +73,17 @@ export function BringToLife() {
               {/* Bottom CTA */}
               <div className="pt-6 border-t border-primary/20 space-y-3">
                 <Button
+                  asChild
                   size="lg"
                   className="text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform w-full sm:w-auto"
                 >
-                  Bring Ceezaa to Your Hostel →
+                  <a
+                    href="https://tally.so/r/mRXK1j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bring Ceezaa to Your Hostel →
+                  </a>
                 </Button>
                 <p className="text-sm text-muted-foreground font-medium">
                   Join early hostels bringing connection to life at no cost to your property.

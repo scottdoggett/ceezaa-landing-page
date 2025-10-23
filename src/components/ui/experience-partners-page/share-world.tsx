@@ -9,7 +9,7 @@ export function ShareWorld() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl translate-x-1/4 translate-y-1/4" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-12">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Header */}
           <div className="space-y-6">
             <div className="inline-block">
@@ -24,12 +24,19 @@ export function ShareWorld() {
           </div>
 
           {/* CTA */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <Button
+              asChild
               size="lg"
-              className="text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform"
+              className="text-white font-semibold text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform"
             >
-              Become a Partner →
+              <a
+                href="https://tally.so/r/wdLqeo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Partner →
+              </a>
             </Button>
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground font-semibold">

@@ -20,9 +20,9 @@ export function JoinMovement() {
           </div>
 
           {/* CTA Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-3 gap-6">
             {/* For Travelers */}
-            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
+            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center flex flex-col">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Backpack className="w-12 h-12" />
               </div>
@@ -30,13 +30,19 @@ export function JoinMovement() {
               <p className="text-secondary-foreground/80 mb-6">
                 Experience hostels that know you and stays that feel personal from day one.
               </p>
-              <Button size="lg" className="w-full">
-                Explore Ceezaa →
+              <Button asChild size="lg" className="w-full mt-auto">
+                <a
+                  href="https://tally.so/r/w78BYA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Take the Traveler Pulse →
+                </a>
               </Button>
             </div>
 
             {/* For Hostels */}
-            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
+            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center flex flex-col">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Hotel className="w-12 h-12" />
               </div>
@@ -44,13 +50,19 @@ export function JoinMovement() {
               <p className="text-secondary-foreground/80 mb-6">
                 Create experiences guests remember and run your hostel with clarity and connection.
               </p>
-              <Button size="lg" className="w-full">
-                Bring Ceezaa to Your Hostel →
+              <Button asChild size="lg" className="w-full mt-auto">
+                <a
+                  href="https://tally.so/r/mRXK1j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bring Ceezaa to Your Hostel →
+                </a>
               </Button>
             </div>
 
             {/* For Experience Partners */}
-            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center">
+            <div className="bg-card/10 backdrop-blur border-2 border-secondary-foreground/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/50 transition-all group text-center flex flex-col">
               <div className="bg-primary/20 rounded-full p-4 w-fit mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <Target className="w-12 h-12" />
               </div>
@@ -58,8 +70,14 @@ export function JoinMovement() {
               <p className="text-secondary-foreground/80 mb-6">
                 Connect with travelers seeking authentic experiences and grow your local impact.
               </p>
-              <Button size="lg" className="w-full">
-                Become a Partner →
+              <Button asChild size="lg" className="w-full mt-auto">
+                <a
+                  href="https://tally.so/r/wdLqeo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Become a Partner →
+                </a>
               </Button>
             </div>
           </div>

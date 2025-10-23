@@ -53,10 +53,17 @@ export function JoinMovement() {
               </p>
             </div>
             <Button
+              asChild
               size="lg"
               className="text-base px-8 py-6 font-semibold shadow-lg hover:scale-105 transition-transform"
             >
-              Bring Ceezaa to Your Hostel →
+              <a
+                href="https://tally.so/r/mRXK1j"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bring Ceezaa to Your Hostel →
+              </a>
             </Button>
           </div>
         </div>

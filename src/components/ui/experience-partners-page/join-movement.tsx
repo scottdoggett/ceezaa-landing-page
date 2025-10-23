@@ -31,10 +31,17 @@ export function JoinMovement() {
               </p>
             </div>
             <Button
+              asChild
               size="lg"
-              className="text-base md:text-lg px-8 md:px-10 py-6 md:py-7 font-semibold shadow-lg hover:scale-105 transition-transform"
+              className="text-white md:text-lg px-8 md:px-10 py-6 md:py-7 font-semibold shadow-lg hover:scale-105 transition-transform"
             >
-              Become a Partner →
+              <a
+                href="https://tally.so/r/wdLqeo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Become a Partner →
+              </a>
             </Button>
           </div>
         </div>
