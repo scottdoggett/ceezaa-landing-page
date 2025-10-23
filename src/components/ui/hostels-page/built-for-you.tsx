@@ -1,4 +1,4 @@
-import { DollarSign, Rocket, Sparkles, Target } from "lucide-react";
+import { DollarSign, Rocket, Sparkles } from "lucide-react";
 
 export function BuiltForYou() {
   return (
@@ -20,39 +20,38 @@ export function BuiltForYou() {
           </div>
 
           {/* Features grid */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-xl">
-              <DollarSign className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-bold mb-3">No Setup Costs</h3>
-              <p className="text-lg text-muted-foreground font-semibold">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <DollarSign className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">No Setup Costs</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
                 There are no setup costs or complicated integrations.
               </p>
             </div>
-            <div className="bg-primary/10 border border-primary/30 rounded-2xl p-8">
-              <Rocket className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Quick Start</h3>
-              <p className="text-lg text-muted-foreground font-semibold">
+
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <Rocket className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Quick Start</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
                 You can add your property, upload your events and experiences,
                 and begin connecting with guests right away.
               </p>
             </div>
 
-            <div className="bg-accent/10 border border-accent/30 rounded-2xl p-8">
-              <Sparkles className="w-10 h-10 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Instant Impact</h3>
-              <p className="text-lg text-muted-foreground font-semibold">
+            <div className="group bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-primary/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <Sparkles className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Instant Impact</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Ceezaa is designed to make your property feel more alive and
                 your guests more connected from day one.
               </p>
             </div>
-          </div>
-
-          {/* Bottom CTA callout */}
-          <div className="bg-linear-to-r from-primary/20 via-accent/20 to-primary/20 border-2 border-primary/30 rounded-3xl p-10 md:p-12 text-center">
-            <Target className="w-14 h-14 md:w-16 md:h-16 mb-6 mx-auto" />
-            <p className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto">
-              Simple setup. Zero complexity. Immediate results.
-            </p>
           </div>
         </div>
       </div>
