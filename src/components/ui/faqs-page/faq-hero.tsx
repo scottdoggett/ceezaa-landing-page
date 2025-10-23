@@ -1,6 +1,6 @@
 export function FaqHero() {
   return (
-    <section className="w-full py-12 md:py-16 bg-linear-to-br from-primary/10 via-background to-accent/5">
+    <section className="w-full py-12 md:py-16 bg-linear-to-b from-secondary/15 to-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -15,7 +15,7 @@ export function FaqHero() {
             hostels, and experience partners.
           </p>
           <div className="bg-card border border-border rounded-lg p-3 mt-6 inline-block">
-            <p className="text-xs font-semibold">
+            <p className="text-sm font-semibold">
               If you do not see what you are looking for, reach out through our{" "}
               <a href="/contact" className="text-primary hover:underline">
                 Contact

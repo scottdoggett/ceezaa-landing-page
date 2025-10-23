@@ -1,10 +1,9 @@
 export function FaqFooter() {
   return (
-    <section className="w-full py-12 md:py-16 bg-linear-to-r from-primary/10 to-accent/10">
+    <section className="w-full py-12 md:py-16 bg-linear-to-b from-muted/30 to-primary/20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 shadow-lg">
-            <div className="text-4xl mb-4">❓</div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Still have <span className="text-primary">questions?</span>
             </h2>
