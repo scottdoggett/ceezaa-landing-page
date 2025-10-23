@@ -19,8 +19,8 @@ export function SaveTime() {
 
           {/* Content with icons on the right */}
           <div className="space-y-12">
-            <div className="flex items-start gap-6 max-w-4xl ml-auto">
-              <div className="space-y-4 pt-1 text-right">
+            <div className="flex items-start gap-6 w-full max-w-4xl ml-auto">
+              <div className="space-y-4 pt-1 text-right flex-1">
                 <p className="text-lg md:text-xl font-semibold text-white">
                   Ceezaa cuts down the small, repetitive tasks that take
                   energy away from your guests.
@@ -30,17 +30,17 @@ export function SaveTime() {
                   live in one place.
                 </p>
               </div>
-              <Clock className="w-12 h-12 shrink-0 text-white" />
+              <Clock className="w-12 h-12 shrink-0 my-auto text-white hidden sm:block" />
             </div>
 
-            <div className="flex items-start gap-6 max-w-4xl ml-auto">
-              <div className="space-y-4 pt-1 text-right">
+            <div className="flex items-start gap-6 w-full max-w-4xl ml-auto">
+              <div className="space-y-4 pt-1 text-right flex-1">
                 <p className="text-lg md:text-xl font-semibold text-white">
                   Everything runs more smoothly, giving you and your team time to
                   focus on hospitality, connection, and growth.
                 </p>
               </div>
-              <Sparkles className="w-12 h-12 shrink-0 text-white" />
+              <Sparkles className="w-12 h-12 shrink-0 my-auto text-white hidden sm:block" />
             </div>
           </div>
         </div>
