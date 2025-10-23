@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star, Rocket, Sparkles, Home } from "lucide-react";
+import { Star, Rocket } from "lucide-react";
 
 export function JoinMovement() {
   return (
