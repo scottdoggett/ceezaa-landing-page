@@ -1,4 +1,4 @@
-import { Handshake, Heart, Globe } from "lucide-react";
+import { Heart, Globe, ArrowRight } from "lucide-react";
 
 export function CreateConnection() {
   return (
@@ -8,28 +8,26 @@ export function CreateConnection() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left - Content */}
             <div className="space-y-8">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
                 Create Connection That{" "}
                 <span className="text-primary">Lasts</span>
               </h2>
 
-              <div className="space-y-6">
-                <div className="bg-card/5 backdrop-blur border border-secondary-foreground/10 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
-                    Hostels are about more than beds and bookings.
-                  </p>
-                </div>
+              <div className="space-y-6 text-lg md:text-xl">
+                <p className="font-semibold leading-relaxed">
+                  Hostels are about more than beds and bookings.
+                </p>
 
-                <div className="bg-primary/20 backdrop-blur border border-primary/30 rounded-xl p-6">
-                  <p className="text-lg font-semibold">
-                    They are communities filled with stories, friendships, and
-                    shared experiences.
-                  </p>
-                </div>
+                <p className="text-2xl md:text-3xl font-bold leading-tight opacity-90">
+                  They are communities filled with{" "}
+                  <span className="text-primary">stories</span>,{" "}
+                  <span className="text-primary">friendships</span>, and{" "}
+                  <span className="text-primary">shared experiences</span>.
+                </p>
 
-                <div className="bg-accent/20 backdrop-blur border border-accent/30 rounded-xl p-6">
-                  <Handshake className="w-8 h-8 mb-3" />
-                  <p className="text-lg font-semibold">
+                <div className="flex items-center gap-3 pt-4">
+                  <ArrowRight className="w-6 h-6 text-primary shrink-0" />
+                  <p className="text-xl font-semibold">
                     Ceezaa helps you strengthen that community.
                   </p>
                 </div>
@@ -38,29 +36,33 @@ export function CreateConnection() {
 
             {/* Right - Benefits */}
             <div className="space-y-6">
-              <div className="bg-card border border-border rounded-2xl p-8 shadow-xl">
-                <Heart className="w-10 h-10 mb-4 text-foreground" />
-                <h3 className="text-xl font-bold mb-3 text-foreground">
-                  Belonging Creates Loyalty
-                </h3>
-                <p className="text-lg text-muted-foreground font-semibold">
-                  When guests feel like they belong, they come back and tell
-                  others.
-                </p>
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <Heart className="w-8 h-8 shrink-0 text-primary mt-1" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">
+                      Belonging Creates Loyalty
+                    </h3>
+                    <p className="text-lg opacity-80">
+                      When guests feel like they belong, they come back and tell others.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <Globe className="w-8 h-8 shrink-0 text-primary mt-1" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">
+                      Lasting Impact
+                    </h3>
+                    <p className="text-lg opacity-80">
+                      Your hostel becomes a place people talk about long after they leave.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-8">
-                <Globe className="w-10 h-10 mb-4 text-secondary-foreground" />
-                <h3 className="text-xl font-bold mb-3 text-secondary-foreground">
-                  Lasting Impact
-                </h3>
-                <p className="text-lg text-secondary-foreground/70 font-semibold">
-                  Your hostel becomes a place people talk about long after they
-                  leave.
-                </p>
-              </div>
-
-              <div className="bg-linear-to-r from-accent/20 to-primary/20 backdrop-blur border-l-4 border-accent rounded-r-xl p-6">
+              <div className="bg-linear-to-r from-accent/20 to-primary/20 backdrop-blur border-l-4 border-accent rounded-r-xl p-6 mt-8">
                 <p className="text-xl font-semibold text-secondary-foreground">
                   Build a community that lasts beyond a single stay.
                 </p>
