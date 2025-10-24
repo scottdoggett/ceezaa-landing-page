@@ -14,7 +14,7 @@ export function ContactFooter() {
                   If you are looking for fast answers about how Ceezaa works,
                   verification, or payments, visit our{" "}
                   <a
-                    href="/faqs"
+                    href="/faq"
                     className="text-primary hover:underline font-bold"
                   >
                     FAQs
