@@ -12,12 +12,12 @@ export function ShareWorld() {
         <div className="max-w-5xl mx-auto text-center space-y-8">
           {/* Header */}
           <div className="space-y-6">
-            <div className="inline-block">
+            <div className="inline-block animate-fade-in-up">
               <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                 For Experience Partners
               </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight animate-fade-in-up">
               Share What Makes Your World{" "}
               <span className="text-primary">Special</span>
             </h1>
@@ -28,7 +28,7 @@ export function ShareWorld() {
             <Button
               asChild
               size="lg"
-              className="text-white font-semibold text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform"
+              className="text-white font-semibold text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform animate-fade-in-up"
             >
               <a
                 href="https://experiencecommunityform.ceezaa.com/"
@@ -38,7 +38,7 @@ export function ShareWorld() {
                 Become a Partner →
               </a>
             </Button>
-            <div className="space-y-2">
+            <div className="space-y-2 animate-fade-in-up animate-delay-100">
               <p className="text-sm text-muted-foreground font-semibold">
                 Join the network connecting travelers with unforgettable local
                 experiences.
@@ -51,7 +51,7 @@ export function ShareWorld() {
 
           {/* Content sections */}
           <div className="space-y-4 max-w-4xl mx-auto mt-12 md:mt-16">
-            <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6 animate-fade-in-up animate-delay-200">
               <div className="group bg-card border-2 border-primary/20 rounded-2xl p-5 md:p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-center gap-2 sm:gap-4">
                   <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center">

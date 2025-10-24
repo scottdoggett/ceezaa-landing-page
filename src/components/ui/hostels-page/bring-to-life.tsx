@@ -85,7 +85,7 @@ export function BringToLife() {
                     Bring Ceezaa to Your Hostel →
                   </a>
                 </Button>
-                <p className="text-sm text-muted-foreground font-medium animate-fade-in-up animate-delay-300">
+                <p className="text-sm text-muted-foreground font-medium">
                   Join early hostels bringing connection to life at no cost to your property.
                 </p>
               </div>
