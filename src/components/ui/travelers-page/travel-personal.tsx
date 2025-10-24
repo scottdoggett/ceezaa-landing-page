@@ -12,19 +12,19 @@ export function TravelPersonal() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Left - Hero Content */}
             <div className="space-y-8">
-              <div className="inline-block">
+              <div className="inline-block animate-fade-in-up">
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                   For Travelers
                 </span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight animate-fade-in-up">
                 Travel That Feels{" "}
                 <span className="text-primary">Personal</span>
               </h1>
-              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed animate-fade-in-up animate-delay-100">
                 Ceezaa helps you get more out of every stay.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-in-up animate-delay-200">
                 It connects you to the people, moments, and experiences that make
                 travel feel alive.
               </p>
@@ -34,7 +34,7 @@ export function TravelPersonal() {
             <div className="space-y-8">
               {/* Main value proposition */}
               <div className="space-y-6">
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                   </div>
@@ -46,7 +46,7 @@ export function TravelPersonal() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left animate-delay-100">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
@@ -58,7 +58,7 @@ export function TravelPersonal() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left animate-delay-200">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Users className="w-5 h-5 text-primary" />
                   </div>
@@ -70,7 +70,7 @@ export function TravelPersonal() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left animate-delay-300">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
@@ -84,7 +84,7 @@ export function TravelPersonal() {
               </div>
 
               {/* Bottom highlight */}
-              <div className="pt-6 border-t border-primary/20">
+              <div className="pt-6 border-t border-primary/20 animate-fade-in-up">
                 <p className="text-lg font-medium text-foreground/90">
                   Every stay feels easier, more connected, and more meaningful.
                 </p>
