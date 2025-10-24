@@ -1,4 +1,4 @@
-import { Ticket, Brain, Globe, Sparkles, MapPin, Calendar, Gem } from "lucide-react";
+import { Ticket, Brain, Globe, Sparkles, MapPin, Calendar, Gem, Plane } from "lucide-react";
 import Image from "next/image";
 
 export function CeezaaId() {
@@ -108,7 +108,7 @@ export function CeezaaId() {
                     {/* Footer */}
                     <div className="bg-linear-to-r from-primary/15 via-accent/10 to-primary/15 rounded-lg p-3 border border-primary/20">
                       <p className="text-sm text-center font-medium text-foreground/80 leading-relaxed">
-                        Your journey, your story, always with you
+                        One identity. Every stay. Always yours.
                       </p>
                     </div>
                   </div>
@@ -128,9 +128,12 @@ export function CeezaaId() {
               <div className="space-y-6 text-lg">
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Every traveler carries moments that shape them. The places
-                    they have stayed, the experiences that made them feel alive,
-                    and the people who became part of their journey.
+                    Every traveler carries moments that shape them. The
+                    places they&apos;ve stayed, the experiences that made
+                    them feel alive, and the people who became part of
+                    their journey. Now, your preferences and memories
+                    travel with you, connecting every hostel and stay into
+                    one personal story that feels more familiar each time.
                   </p>
 
                   <div className="bg-card border-l-4 border-primary rounded-r-xl p-6 shadow-sm">
@@ -140,8 +143,8 @@ export function CeezaaId() {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="bg-muted/50 rounded-xl p-5 space-y-2">
+                <div className="grid sm:grid-cols-3 gap-4">
+                  <div className="bg-muted/70 rounded-xl p-5 space-y-2">
                     <Brain className="w-8 h-8" />
                     <p className="font-medium text-foreground">Learns with you</p>
                     <p className="text-base text-muted-foreground">
@@ -149,18 +152,26 @@ export function CeezaaId() {
                     </p>
                   </div>
 
-                  <div className="bg-muted/50 rounded-xl p-5 space-y-2">
+                  <div className="bg-muted/70 rounded-xl p-5 space-y-2">
                     <Globe className="w-8 h-8" />
-                    <p className="font-medium text-foreground">Grows alongside you</p>
+                    <p className="font-medium text-foreground">Grows with you</p>
                     <p className="text-base text-muted-foreground">
-                      Each new place feels more familiar
+                      Carries your preferences across every stay
+                    </p>
+                  </div>
+
+                  <div className="bg-muted/70 rounded-xl p-5 space-y-2">
+                    <Plane className="w-8 h-8" />
+                    <p className="font-medium text-foreground">Remembers you</p>
+                    <p className="text-base text-muted-foreground">
+                      Carries your preferences across every stay
                     </p>
                   </div>
                 </div>
 
                 <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
                   <p className="font-medium text-foreground mb-2 flex items-center gap-2">
-                    <Sparkles className="w-5 h-5" /> It is your passport to a personalized world.
+                    <Sparkles className="w-5 h-5 shrink-0" /> It is your passport to a personalized world of hostel adventures.
                   </p>
                   <p className="text-base text-muted-foreground">
                     A quiet connection to the experiences, cities, and stories that

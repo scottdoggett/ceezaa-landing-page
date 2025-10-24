@@ -51,7 +51,7 @@ export function FutureOfHostels() {
                         <div className="space-y-1">
                           <p className="font-semibold text-base">Connects You Instantly</p>
                           <p className="text-xs text-muted-foreground leading-relaxed">
-                            See everything happening at your hostel and nearby in real-time—events, activities, and local experiences.
+                            See everything happening at your hostel and nearby in real-time. Events, activities, and local experiences and more.
                           </p>
                         </div>
                       </div>
@@ -63,7 +63,7 @@ export function FutureOfHostels() {
                         <div className="space-y-1">
                           <p className="font-semibold text-base">Simplifies Everything</p>
                           <p className="text-xs text-muted-foreground leading-relaxed">
-                            Book activities, manage your stay, and discover hidden gems—all in one place, without the hassle.
+                            Book activities, manage your stay, and discover hidden gems all in one place.
                           </p>
                         </div>
                       </div>

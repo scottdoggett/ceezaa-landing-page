@@ -18,11 +18,11 @@ export function BuiltForModern() {
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight animate-fade-in-up">
               Built for the{" "}
               <span className="text-primary">modern hostel experience</span>
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground animate-fade-in-up animate-delay-100">
               Ceezaa was created to make hostel travel personal.
             </p>
           </div>
@@ -31,11 +31,11 @@ export function BuiltForModern() {
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start lg:items-stretch">
             {/* Left: Problem cards */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold mb-4 text-muted-foreground">
+              <h3 className="text-xl font-bold mb-4 text-muted-foreground animate-fade-in-up animate-delay-200">
                 The Challenge
               </h3>
 
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300 animate-fade-in-up animate-delay-200">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -44,12 +44,12 @@ export function BuiltForModern() {
                   </div>
                   <p className="text-base leading-relaxed">
                     Every traveler is different, yet most hostel stays still
-                    feel the same.
+                    feel extremely generic.
                   </p>
                 </div>
               </div>
 
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300 animate-fade-in-up animate-delay-300">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -63,7 +63,7 @@ export function BuiltForModern() {
                 </div>
               </div>
 
-              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300">
+              <div className="group bg-card border border-border rounded-xl p-6 hover:border-red-200 hover:shadow-lg transition-all duration-300 animate-fade-in-up animate-delay-400">
                 <div className="flex gap-4">
                   <div className="shrink-0 my-auto">
                     <div className="p-2 rounded-lg bg-muted">
@@ -81,9 +81,9 @@ export function BuiltForModern() {
             {/* Right: Solution */}
             {/* Right: Solution */}
             <div className="flex flex-col space-y-4">
-              <h3 className="text-xl font-bold text-primary">The Solution</h3>
+              <h3 className="text-xl font-bold text-primary animate-fade-in-up animate-delay-200">The Solution</h3>
 
-              <div className="relative group flex-1">
+              <div className="relative group flex-1 animate-fade-in-up animate-delay-200">
                 <div className="absolute -inset-1 bg-linear-to-r from-primary to-accent rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity" />
                 <div className="relative bg-linear-to-br from-primary/10 to-accent/5 border-2 border-primary/20 rounded-2xl p-8 h-full flex flex-col">
                   <div className="flex items-center gap-3 mb-6">
@@ -113,12 +113,12 @@ export function BuiltForModern() {
           </div>
 
           {/* Benefits - Horizontal Cards */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-linear-to-br from-accent/10 to-accent/5 border-l-4 border-accent rounded-xl p-6 hover:shadow-lg transition-shadow">
+          <div className="grid lg:grid-cols-3 gap-6 animate-fade-in-up animate-delay-400">
+            <div className="bg-linear-to-br from-secondary/10 to-secondary/5 border-l-4 border-secondary rounded-xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex gap-4">
                 <div className="shrink-0">
-                  <div className="p-2 rounded-lg bg-accent/20">
-                    <Backpack className="w-7 h-7 text-accent" />
+                  <div className="p-2 rounded-lg bg-secondary/20">
+                    <Backpack className="w-7 h-7 text-secondary" />
                   </div>
                 </div>
                 <div>
@@ -145,6 +145,23 @@ export function BuiltForModern() {
                 </div>
               </div>
             </div>
+
+            <div className="bg-linear-to-br from-secondary/10 to-secondary/5 border-l-4 border-secondary rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex gap-4">
+                <div className="shrink-0">
+                  <div className="p-2 rounded-lg bg-secondary/20">
+                    <Sparkles className="w-7 h-7 text-secondary" />
+                  </div>
+                </div>
+                <div>
+                  <p className="text-lg font-semibold mb-2">For Experience Partners</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Significant reach to travelers who value what you create.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

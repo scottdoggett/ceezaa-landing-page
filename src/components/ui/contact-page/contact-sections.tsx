@@ -20,11 +20,11 @@ export function ContactSections() {
       icon: "Home",
     },
     {
-      title: "For Experience Partners",
+      title: "For Partners",
       description:
-        "If you would like to apply to join Ceezaa or have questions about becoming a verified partner, contact our partnerships team.",
+        "If you would like to explore partnering with Ceezaa, whether as a creator, influencer, brand, or experience partner, our team would love to connect.",
       subdescription:
-        "We work closely with local creators, guides, and hosts who bring authentic experiences to travelers around the world.",
+        "We work with partners who share our mission of bringing travelers closer to authentic and meaningful experiences around the world.",
       email: "partnerships@ceezaa.com",
       icon: "Handshake",
     },
@@ -90,7 +90,7 @@ export function ContactSections() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto space-y-6">
           {/* Contact sections grid */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4 animate-fade-in-up animate-delay-300">
             {contactSections.map((section, index) => {
               const IconComponent = iconMap[section.icon as keyof typeof iconMap];
               const isLastItem = index === contactSections.length - 1;

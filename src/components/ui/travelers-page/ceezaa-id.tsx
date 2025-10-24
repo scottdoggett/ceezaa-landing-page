@@ -1,5 +1,4 @@
-import { Ticket, MapPin, Calendar, Gem } from "lucide-react";
-import Image from "next/image";
+import { Ticket, Save, TrendingUp, Heart, Gem } from "lucide-react";
 
 export function CeezaaId() {
   return (
@@ -10,7 +9,7 @@ export function CeezaaId() {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-5 gap-12 items-start">
+          <div className="grid lg:grid-cols-5 gap-12 items-center">
             {/* Left - Visual Card */}
             <div className="lg:col-span-2">
               <div className="relative group">
@@ -40,80 +39,59 @@ export function CeezaaId() {
                     {/* Divider */}
                     <div className="h-px bg-linear-to-r from-transparent via-primary/30 to-transparent" />
 
-                    {/* User Info Section */}
-                    <div className="bg-muted/30 backdrop-blur-sm rounded-xl p-4 border border-primary/10">
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-full bg-linear-to-br from-primary/20 to-accent/20 flex items-center justify-center text-lg font-bold border-2 border-primary/30">
-                          JD
+                    {/* Features List */}
+                    <div className="space-y-4">
+                      {/* Set Once, Remembered Forever */}
+                      <div className="flex items-start gap-3">
+                        <div className="bg-primary/10 rounded-lg p-2 mt-1">
+                          <Save className="w-5 h-5 text-primary" />
                         </div>
                         <div className="flex-1">
-                          <p className="font-semibold text-foreground">Jane Doe</p>
-                          <p className="text-sm text-muted-foreground">Member since 2024</p>
+                          <p className="font-semibold text-foreground mb-1">Set Once, Remembered Forever</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            Input your preferences once and never repeat them again.
+                          </p>
                         </div>
                       </div>
-                    </div>
 
-                    {/* Stats Grid */}
-                    <div className="grid grid-cols-3 gap-3">
-                      <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
-                        <div className="flex justify-center mb-1">
-                          <MapPin className="w-4 h-4 text-primary" />
+                      {/* Evolves With Every Stay */}
+                      <div className="flex items-start gap-3">
+                        <div className="bg-accent/10 rounded-lg p-2 mt-1">
+                          <TrendingUp className="w-5 h-5 text-accent" />
                         </div>
-                        <p className="text-lg font-bold text-foreground">12</p>
-                        <p className="text-sm text-muted-foreground">Cities</p>
-                      </div>
-                      <div className="bg-accent/5 rounded-lg p-3 text-center border border-accent/10">
-                        <div className="flex justify-center mb-1">
-                          <Calendar className="w-4 h-4 text-accent" />
-                        </div>
-                        <p className="text-lg font-bold text-foreground">47</p>
-                        <p className="text-sm text-muted-foreground">Events</p>
-                      </div>
-                      <div className="bg-primary/5 rounded-lg p-3 text-center border border-primary/10">
-                        <div className="flex justify-center mb-1">
-                          <Gem className="w-4 h-4 text-primary" />
-                        </div>
-                        <p className="text-lg font-bold text-foreground">12,344</p>
-                        <p className="text-sm text-muted-foreground">Points</p>
-                      </div>
-                    </div>
-
-                    {/* QR Code Section */}
-                    <div className="bg-white rounded-xl p-4 shadow-inner border-2 border-dashed border-primary/20">
-                      <div className="flex items-center justify-between gap-4">
                         <div className="flex-1">
-                          <p className="text-base font-semibold text-gray-700 mb-1">Scan to connect</p>
-                          <div className="space-y-1">
-                            <div className="flex items-center gap-1.5">
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                              <p className="text-sm text-gray-600">Quick check-in</p>
-                            </div>
-                            <div className="flex items-center gap-1.5">
-                              <div className="w-1.5 h-1.5 bg-accent rounded-full" />
-                              <p className="text-sm text-gray-600">Share profile</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="relative">
-                          <div className="absolute -inset-1 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg blur-sm" />
-                          <div className="relative bg-white p-2 rounded-lg shadow-md">
-                            <Image
-                              src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1uleQyowjo3wFBUySAzPRH57mICT2n9eLgdMY"
-                              alt="Ceezaa ID QR Code"
-                              width={80}
-                              height={80}
-                              className="rounded"
-                            />
-                          </div>
+                          <p className="font-semibold text-foreground mb-1">Evolves With Every Stay</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            Each journey builds on the last, enriching your preferences and adapting to you over time.
+                          </p>
                         </div>
                       </div>
-                    </div>
 
-                    {/* Footer */}
-                    <div className="bg-linear-to-r from-primary/15 via-accent/10 to-primary/15 rounded-lg p-3 border border-primary/20">
-                      <p className="text-sm text-center font-medium text-foreground/80 leading-relaxed">
-                        Your journey, your story, always with you
-                      </p>
+                      {/* Personalized Stays */}
+                      <div className="flex items-start gap-3">
+                        <div className="bg-primary/10 rounded-lg p-2 mt-1">
+                          <Heart className="w-5 h-5 text-primary" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-semibold text-foreground mb-1">Personalized Stays</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            Every experience aligns with your rhythm, taste, and comfort.
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Earn and Redeem Points */}
+                      <div className="flex items-start gap-3">
+                        <div className="bg-accent/10 rounded-lg p-2 mt-1">
+                          <Gem className="w-5 h-5 text-accent" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-semibold text-foreground mb-1">Earn and Redeem Points</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            Turn your travels into rewards that reflect who you are.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

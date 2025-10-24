@@ -13,18 +13,18 @@ export function BringToLife() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Left - Hero Content */}
             <div className="space-y-8">
-              <div className="inline-block">
+              <div className="inline-block animate-fade-in-up">
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                   For Hostels
                 </span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight animate-fade-in-up">
                 Bring Your Hostel to <span className="text-primary">Life</span>
               </h1>
-              <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+              <p className="text-xl md:text-2xl font-semibold leading-relaxed animate-fade-in-up animate-delay-100">
                 Create memorable experiences that keep guests engaged and connected.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-in-up animate-delay-200">
                 Ceezaa helps you build a thriving community where travelers feel at home and keep coming back.
               </p>
             </div>
@@ -33,7 +33,7 @@ export function BringToLife() {
             <div className="space-y-8">
               {/* Main value proposition */}
               <div className="space-y-6">
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
@@ -45,7 +45,7 @@ export function BringToLife() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left animate-delay-100">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                   </div>
@@ -57,7 +57,7 @@ export function BringToLife() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 group">
+                <div className="flex items-start gap-4 group animate-fade-in-left animate-delay-200">
                   <div className="mt-1 p-2 bg-primary/10 rounded-lg shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Users className="w-5 h-5 text-primary" />
                   </div>
@@ -71,11 +71,11 @@ export function BringToLife() {
               </div>
 
               {/* Bottom CTA */}
-              <div className="pt-6 border-t border-primary/20 space-y-3">
+              <div className="pt-6 border-t border-primary/20 space-y-3 animate-fade-in-up animate-delay-300">
                 <Button
                   asChild
                   size="lg"
-                  className="text-base md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform w-full sm:w-auto"
+                  className="text-base text-white md:text-lg px-10 py-7 shadow-xl hover:scale-105 transition-transform w-full sm:w-auto"
                 >
                   <a
                     href="https://hostelinterestform.ceezaa.com/"

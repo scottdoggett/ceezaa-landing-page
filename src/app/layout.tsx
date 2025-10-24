@@ -10,7 +10,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Ceezaa - Your Digital Passport to Hostel Adventures",
+  title: "Ceezaa - Your Passport to a Personalized World of Hostel Adventures",
   description: "Every hostel stay should feel personal. With Ceezaa, your stay adapts to you — your vibe, your tastes, and your rhythm. Feel at home wherever you are through curated dining, local moments, and experiences that make every stay uniquely yours.",
   icons: {
     icon: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Ceezaa - Your Digital Passport to Hostel Adventures",
+    title: "Ceezaa - Your Passport to a Personalized World of Hostel Adventures",
     description:
       "Every hostel stay should feel personal. With Ceezaa, your stay adapts to you — your vibe, your tastes, and your rhythm.",
     url: "https://ceezaa.com",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ceezaa - Your Digital Passport to Hostel Adventures",
+    title: "Ceezaa - Your Passport to a Personalized World of Hostel Adventures",
     description:
       "Every hostel stay should feel personal. With Ceezaa, your stay adapts to you — your vibe, your tastes, and your rhythm.",
     images: ["https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1gwu44a0X6UpLkW4Zv2BarPy9lFbSdHIsonzi"], // 👈 same UploadThing URL

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Globe, Handshake, Sparkles, Users } from "lucide-react";
+import { Globe, Handshake, Sparkles } from "lucide-react";
 
 export function WorldCloser() {
   return (
@@ -71,29 +71,6 @@ export function WorldCloser() {
                     Take the Travler Pulse →
                   </a>
                 </Button>
-              </div>
-            </div>
-          </div>
-
-          {/* Social proof */}
-          <div className="text-center">
-            <p className="text-xs md:text-sm text-secondary-foreground/70 uppercase tracking-wider mb-3">
-              Join thousands of travelers
-            </p>
-            <div className="flex justify-center">
-              <div className="flex -space-x-2.5">
-                <div className="w-10 h-10 rounded-full bg-primary/25 border-2 border-secondary flex items-center justify-center shadow-lg">
-                  <Users className="w-4 h-4 text-primary" />
-                </div>
-                <div className="w-10 h-10 rounded-full bg-accent/25 border-2 border-secondary flex items-center justify-center shadow-lg">
-                  <Users className="w-4 h-4 text-accent" />
-                </div>
-                <div className="w-10 h-10 rounded-full bg-primary/25 border-2 border-secondary flex items-center justify-center shadow-lg">
-                  <Users className="w-4 h-4 text-primary" />
-                </div>
-                <div className="w-10 h-10 rounded-full bg-secondary-foreground/10 border-2 border-primary flex items-center justify-center text-xs font-bold shadow-lg">
-                  +
-                </div>
               </div>
             </div>
           </div>
