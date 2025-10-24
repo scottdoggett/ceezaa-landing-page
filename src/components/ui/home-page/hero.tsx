@@ -13,7 +13,7 @@ export function Hero() {
           playsInline
           className="w-full h-[120%] lg:h-full object-cover object-[60%_center] lg:object-center -translate-y-[20%] lg:translate-y-0"
         >
-          <source src="/home-page/hero-video.mp4" type="video/mp4" />
+          <source src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1tfeFTxhR5vcX9sTwIJ30CxSqMnzF7uoUyYNr" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Gradient overlay for text readability - changes direction at lg */}
