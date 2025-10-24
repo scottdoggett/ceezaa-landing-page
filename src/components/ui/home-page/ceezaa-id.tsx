@@ -94,7 +94,7 @@ export function CeezaaId() {
                           <div className="absolute -inset-1 bg-linear-to-br from-primary/20 to-accent/20 rounded-lg blur-sm" />
                           <div className="relative bg-white p-2 rounded-lg shadow-md">
                             <Image
-                              src="/qr-code.png"
+                              src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1uleQyowjo3wFBUySAzPRH57mICT2n9eLgdMY"
                               alt="Ceezaa ID QR Code"
                               width={80}
                               height={80}

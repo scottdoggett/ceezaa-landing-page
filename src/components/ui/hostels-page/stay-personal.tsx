@@ -93,7 +93,7 @@ export function StayPersonal() {
                   </div>
                 </div>
                 <Image
-                  src="/dashboard-guests.png"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1uAdA1Kwjo3wFBUySAzPRH57mICT2n9eLgdMY"
                   alt="Staff Dashboard Preview"
                   width={1920}
                   height={1080}
@@ -128,7 +128,7 @@ export function StayPersonal() {
           >
             <div className="bg-white rounded-lg md:rounded-2xl shadow-2xl border-2 md:border-4 border-primary/30 overflow-hidden">
               <Image
-                src="/dashboard-guests.png"
+                src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1uAdA1Kwjo3wFBUySAzPRH57mICT2n9eLgdMY"
                 alt="Staff Dashboard Preview - Expanded"
                 width={1920}
                 height={1080}

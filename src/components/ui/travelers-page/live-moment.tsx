@@ -14,7 +14,7 @@ export function LiveMoment() {
           <div className="order-2 lg:order-1">
             <div className="hidden lg:block relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden border border-secondary-foreground/10 shadow-xl">
               <Image
-                src="/LiveMoment.jpg"
+                src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1rvw2tNn7hLPWksCfOpoDnYIGXJgtQNu8RVb5"
                 alt="Live the Moment - People on beach"
                 fill
                 className="object-cover"

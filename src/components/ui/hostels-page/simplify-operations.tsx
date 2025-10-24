@@ -50,7 +50,7 @@ export function SimplifyOperations() {
                   </div>
                 </div>
                 <Image
-                  src="/dashboard-analytics.png"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1JdMynumyVWtmzxHM0Te6kG3vn4DLN91cCwao"
                   alt="Analytics Dashboard Preview"
                   width={1920}
                   height={1080}
@@ -151,7 +151,7 @@ export function SimplifyOperations() {
           >
             <div className="bg-white rounded-lg md:rounded-2xl shadow-2xl border-2 md:border-4 border-primary/30 overflow-hidden">
               <Image
-                src="/dashboard-analytics.png"
+                src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1JdMynumyVWtmzxHM0Te6kG3vn4DLN91cCwao"
                 alt="Analytics Dashboard Preview - Expanded"
                 width={1920}
                 height={1080}
