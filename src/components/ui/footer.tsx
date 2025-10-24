@@ -13,22 +13,12 @@ const footerLinks = {
     { name: "FAQ", href: "/faq" },
   ],
   resources: [
-    {
-      name: "Privacy Policy",
-      href: "https://app.termly.io/policy-viewer/policy.html?policyUUID=ff955319-ce45-44b3-8fc9-6ce90bb47c89",
-      external: true
-    },
+    { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms and Conditions", href: "/terms" },
-    {
-      name: "Cookie Policy",
-      href: "https://app.termly.io/policy-viewer/policy.html?policyUUID=2745ca3b-02c4-47c9-b99f-1fd933f9ddc6",
-      external: true
-    },
+    { name: "Cookie Policy", href: "/cookies" },
     { name: "EULA", href: "/eula" },
     { name: "Disclaimer", href: "/disclaimer" },
     { name: "Acceptable Use Policy", href: "/use-policy" },
-
-
   ],
 };
 
@@ -106,23 +96,12 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-x-3 sm:gap-x-4 gap-y-2 sm:gap-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
-                  {link.external ? (
-                    <a
-                      href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  ) : (
-                    <Link
-                      href={link.href}
-                      className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  )}
+                  <Link
+                    href={link.href}
+                    className="text-xs sm:text-sm text-secondary-foreground/80 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
