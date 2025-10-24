@@ -90,7 +90,7 @@ export function ContactSections() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto space-y-6">
           {/* Contact sections grid */}
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4 animate-fade-in-up animate-delay-300">
             {contactSections.map((section, index) => {
               const IconComponent = iconMap[section.icon as keyof typeof iconMap];
               const isLastItem = index === contactSections.length - 1;
