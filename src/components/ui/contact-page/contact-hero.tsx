@@ -13,10 +13,9 @@ export function ContactHero() {
             Whether you are a traveler, a hostel, or a partner creating
             experiences, we would love to connect.
           </p>
-          <div className="bg-card border border-border rounded-xl p-4 mt-6 animate-fade-in-up animate-delay-200">
+          <div className="bg-card border border-border max-w-xl rounded-xl p-4 mt-6 mx-auto animate-fade-in-up animate-delay-200">
             <p className="text-sm font-semibold">
-              You can reach our team directly through the details below or use
-              the form at the end of this page.
+              You can reach our team directly through the details below.
             </p>
             <p className="text-xs text-muted-foreground mt-2">
               We read every message and do our best to respond within a few days.

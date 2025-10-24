@@ -22,9 +22,9 @@ export function ContactSections() {
     {
       title: "For Experience Partners",
       description:
-        "If you would like to apply to join Ceezaa or have questions about becoming a verified partner, contact our partnerships team.",
+        "If you would like to explore partnering with Ceezaa, whether as a creator, influencer, brand, or experience partner, our team would love to connect.",
       subdescription:
-        "We work closely with local creators, guides, and hosts who bring authentic experiences to travelers around the world.",
+        "We work with partners who share our mission of bringing travelers closer to authentic and meaningful experiences around the world.",
       email: "partnerships@ceezaa.com",
       icon: "Handshake",
     },
