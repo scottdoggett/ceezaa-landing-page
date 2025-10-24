@@ -10,7 +10,7 @@ const footerLinks = {
     { name: "Hostels", href: "/hostels" },
     { name: "Experience Partners", href: "/experience-partners" },
     { name: "Contact", href: "/contact" },
-    { name: "FAQ", href: "/faq" },
+    { name: "FAQs", href: "/faq" },
   ],
   resources: [
     { name: "Privacy Policy", href: "/privacy" },
