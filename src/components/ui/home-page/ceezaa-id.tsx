@@ -108,7 +108,7 @@ export function CeezaaId() {
                     {/* Footer */}
                     <div className="bg-linear-to-r from-primary/15 via-accent/10 to-primary/15 rounded-lg p-3 border border-primary/20">
                       <p className="text-sm text-center font-medium text-foreground/80 leading-relaxed">
-                        Your journey, your story, always with you
+                        One identity. Every stay. Always yours.
                       </p>
                     </div>
                   </div>
