@@ -20,7 +20,7 @@ export function ContactSections() {
       icon: "Home",
     },
     {
-      title: "For Experience Partners",
+      title: "For Partners",
       description:
         "If you would like to explore partnering with Ceezaa, whether as a creator, influencer, brand, or experience partner, our team would love to connect.",
       subdescription:
