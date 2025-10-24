@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Globe, Handshake, Sparkles, Users } from "lucide-react";
+import { Globe, Handshake, Sparkles } from "lucide-react";
 
 export function WorldCloser() {
   return (
