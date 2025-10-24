@@ -81,15 +81,15 @@ export function WhatCeezaaIs() {
                   <ul className="space-y-2 text-md text-muted-foreground pt-1">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Streamlined communication</span>
+                      <span>Higher guest satisfaction</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Increase engagement</span>
+                      <span>Craft unique stays</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Build community</span>
+                      <span>Smarter communication</span>
                     </li>
                   </ul>
                 </div>
@@ -134,15 +134,15 @@ export function WhatCeezaaIs() {
                   <ul className="space-y-2 text-md text-muted-foreground pt-1">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Streamlined communication</span>
+                      <span>Higher guest satisfaction</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Increase engagement</span>
+                      <span>Craft unique stays</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span>Build community</span>
+                      <span>Smarter communication</span>
                     </li>
                   </ul>
                 </div>

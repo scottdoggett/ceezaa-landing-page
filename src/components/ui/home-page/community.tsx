@@ -36,15 +36,15 @@ export function Community() {
                 <ul className="space-y-2 text-secondary-foreground/70">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
-                    <span>Increase guest engagement</span>
+                    <span>Deliver more than a bed</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
-                    <span>Streamline communication</span>
+                    <span>Streamline guest interactions</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 shrink-0" />
-                    <span>Build lasting connections</span>
+                    <span>Build loyalty that lasts</span>
                   </li>
                 </ul>
                 <Button asChild size="lg" className="w-full sm:w-auto mt-4">
