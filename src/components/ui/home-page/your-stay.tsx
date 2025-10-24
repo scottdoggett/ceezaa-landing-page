@@ -89,7 +89,7 @@ export function YourStay() {
             <div className="relative">
               <div className="hidden lg:block sticky top-[calc(50vh-200px)] lg:top-[calc(50vh-250px)] h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/YourStay.jpg"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg17ZPp2RfWoZnQIry8B5JMPtvdHjGmAlKuDg9h"
                   alt="Your Stay Experience - Travelers enjoying hostel activities and connections"
                   fill
                   className="object-cover"
