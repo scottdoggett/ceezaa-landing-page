@@ -10,9 +10,9 @@ const footerLinks = {
     { name: "Hostels", href: "/hostels" },
     { name: "Experience Partners", href: "/experience-partners" },
     { name: "Contact", href: "/contact" },
+    { name: "FAQ", href: "/faq" },
   ],
   resources: [
-    { name: "FAQ", href: "/faq" },
     {
       name: "Privacy Policy",
       href: "https://app.termly.io/policy-viewer/policy.html?policyUUID=ff955319-ce45-44b3-8fc9-6ce90bb47c89",
