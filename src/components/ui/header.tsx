@@ -111,7 +111,7 @@ export function Header() {
         <div className="flex-1 flex justify-end items-center gap-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="join" className="whitespace-nowrap">
+              <Button variant="join" className="whitespace-nowrap" id="join-now-button">
                 Join Now
               </Button>
             </DropdownMenuTrigger>
