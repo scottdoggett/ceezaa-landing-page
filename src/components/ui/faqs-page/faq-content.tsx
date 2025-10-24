@@ -43,13 +43,6 @@ export function FaqContent() {
           ],
         },
         {
-          question: "Is Ceezaa free to use?",
-          answer: [
-            "Ceezaa is free for travelers and hostels.",
-            "Experience partners and restaurants only pay a commission or service fee on completed bookings or promotional placements.",
-          ],
-        },
-        {
           question: "How does Ceezaa protect my privacy?",
           answer: [
             "Ceezaa gives travelers full control over their data and preferences.",
@@ -98,7 +91,10 @@ export function FaqContent() {
         },
         {
           question: "Do I need to pay to use Ceezaa?",
-          answer: "No. Ceezaa is free for travelers to use.",
+          answer: [
+            "No. Ceezaa is free for travelers to use.",
+            "Certain in-app purchases or bookings may include a small service fee.",
+          ],
         },
       ],
     },
@@ -123,8 +119,8 @@ export function FaqContent() {
         {
           question: "Is Ceezaa free for hostels?",
           answer: [
-            "Yes. There are no setup fees or monthly charges.",
-            "Hostels can join and use Ceezaa at no cost.",
+            "Ceezaa is free for hostels to join and use.",
+            "We only charge a small service fee on completed transactions made through the platform"
           ],
         },
         {
