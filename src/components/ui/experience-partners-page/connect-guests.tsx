@@ -10,7 +10,7 @@ export function ConnectGuests() {
             <div className="order-2 lg:order-1">
               <div className="hidden lg:block relative sm:h-[450px] h-[300px] rounded-2xl overflow-hidden border border-secondary-foreground/10 shadow-xl">
                 <Image
-                  src="/ConnectGuests.jpg"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1Lj9AJq8E7IWnp2JwMUmoR4sBVKefxXQ8CF60"
                   alt="Connect With Guests - Partners connecting with engaged travelers"
                   fill
                   className="object-cover"

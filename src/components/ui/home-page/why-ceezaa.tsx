@@ -11,7 +11,7 @@ export function WhyCeezaa() {
             <div className="order-2 lg:order-1">
               <div className="hidden lg:block relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/WhyCeezaa.jpg"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg18yWydNSmWlZXga92o6rjJMEthfwVNHeD41kC"
                   alt="Why Ceezaa - Travelers connecting in hostels"
                   fill
                   className="object-cover"
