@@ -84,7 +84,7 @@ export function TravelPersonal() {
               </div>
 
               {/* Bottom highlight */}
-              <div className="pt-6 border-t border-primary/20 animate-fade-in-up">
+              <div className="pt-6 border-t border-primary/20 animate-fade-in-up animate-delay-200">
                 <p className="text-lg font-medium text-foreground/90">
                   Every stay feels easier, more connected, and more meaningful.
                 </p>
