@@ -154,9 +154,9 @@ export function CeezaaId() {
 
                   <div className="bg-muted/70 rounded-xl p-5 space-y-2">
                     <Globe className="w-8 h-8" />
-                    <p className="font-medium text-foreground">Grows alongside you</p>
+                    <p className="font-medium text-foreground">Grows with you</p>
                     <p className="text-base text-muted-foreground">
-                      Each new place feels more familiar
+                      Carries your preferences across every stay
                     </p>
                   </div>
 
@@ -171,7 +171,7 @@ export function CeezaaId() {
 
                 <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
                   <p className="font-medium text-foreground mb-2 flex items-center gap-2">
-                    <Sparkles className="w-5 h-5" /> It is your passport to a personalized world.
+                    <Sparkles className="w-5 h-5 shrink-0" /> It is your passport to a personalized world of hostel adventures.
                   </p>
                   <p className="text-base text-muted-foreground">
                     A quiet connection to the experiences, cities, and stories that
