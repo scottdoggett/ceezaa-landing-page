@@ -64,7 +64,7 @@ export function SeeHappening() {
                   <CarouselItem>
                     <div className="relative aspect-[9/19.5] w-full">
                       <Image
-                        src="/mobile-ss/app-home.png"
+                        src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1b2hYKeNks2weAdSjmptZznqFh1UJ6YlTgCQD"
                         alt="Ceezaa App Home Screen"
                         fill
                         className="object-contain rounded-3xl"
@@ -75,7 +75,7 @@ export function SeeHappening() {
                   <CarouselItem>
                     <div className="relative aspect-[9/19.5] w-full">
                       <Image
-                        src="/mobile-ss/app-explore.png"
+                        src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1ajx4ki2iEG95mh1fIv7qCpdOJs36wxYAWljT"
                         alt="Ceezaa App Explore Screen"
                         fill
                         className="object-contain rounded-3xl"
@@ -85,7 +85,7 @@ export function SeeHappening() {
                   <CarouselItem>
                     <div className="relative aspect-[9/19.5] w-full">
                       <Image
-                        src="/mobile-ss/app-bookings.png"
+                        src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1o1J7jBy6UYoFX3OQpTzglJD98SkWemtV5dRn"
                         alt="Ceezaa App Bookings Screen"
                         fill
                         className="object-contain rounded-3xl"
@@ -95,7 +95,7 @@ export function SeeHappening() {
                   <CarouselItem>
                     <div className="relative aspect-[9/19.5] w-full">
                       <Image
-                        src="/mobile-ss/app-profile.png"
+                        src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1yfVNJoagrCDOJLqYIcwMaBAjFsm8StvpTd1e"
                         alt="Ceezaa App Profile Screen"
                         fill
                         className="object-contain rounded-3xl"

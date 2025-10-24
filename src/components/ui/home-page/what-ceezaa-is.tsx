@@ -12,7 +12,7 @@ export function WhatCeezaaIs() {
             <div className="w-[280px] shrink-0 mx-auto lg:mx-0 order-2 lg:order-1">
               <div className="relative h-full">
                 <Image
-                  src="/mobile-ss/app-home.png"
+                  src="https://bl974d7s47.ufs.sh/f/eiqM2oDvPqg1b2hYKeNks2weAdSjmptZznqFh1UJ6YlTgCQD"
                   alt="What Ceezaa Is - Everything in one place"
                   width={280}
                   height={600}
