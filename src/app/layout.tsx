@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Manrope } from "next/font/google";
 import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
@@ -55,6 +56,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} antialiased`}>
+        {/* Termly Cookie Consent - Loads after page is interactive */}
+        <Script src="https://app.termly.io/resource-blocker/c67357f1-2cf8-484d-82ec-4a6ea4990a8f?autoBlock=on"/>
         <Header />
           {children}
         <Footer />
